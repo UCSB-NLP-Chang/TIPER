@@ -1,0 +1,42 @@
+[
+  {
+    "cluster": 0,
+    "name": "Polite Persistent Optimist",
+    "effect": "HELPS the task",
+    "n": 307,
+    "frac": 0.13,
+    "seed_file": "data/persona_opt/seeds_alaska_k5/brinks_00_polite_persistent_optimist/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Polite But Pressing",
+    "effect": "HARMS the task",
+    "n": 59,
+    "frac": 0.025,
+    "seed_file": "data/persona_opt/seeds_alaska_k5/brinks_01_polite_but_pressing/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Polite Detail-Seeker",
+    "effect": "HELPS the task",
+    "n": 275,
+    "frac": 0.116,
+    "seed_file": "data/persona_opt/seeds_alaska_k5/brinks_02_polite_detail_seeker/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Direct Problem-Solver",
+    "effect": "HARMS the task",
+    "n": 1257,
+    "frac": 0.531,
+    "seed_file": "data/persona_opt/seeds_alaska_k5/brinks_03_direct_problem_solver/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Pragmatic & Direct",
+    "effect": "HELPS the task",
+    "n": 470,
+    "frac": 0.198,
+    "seed_file": "data/persona_opt/seeds_alaska_k5/brinks_04_pragmatic_direct/gen_00.md"
+  }
+]

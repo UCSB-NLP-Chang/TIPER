@@ -1,0 +1,42 @@
+[
+  {
+    "cluster": 0,
+    "name": "Cautious Info-Seeker",
+    "effect": "HELPS the task",
+    "n": 356,
+    "frac": 0.161,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k5/gc_00_cautious_info_seeker/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Pragmatic & Cooperative",
+    "effect": "HELPS the task",
+    "n": 351,
+    "frac": 0.158,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k5/gc_01_pragmatic_cooperative/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Polite But Exacting",
+    "effect": "HARMS the task",
+    "n": 181,
+    "frac": 0.082,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k5/gc_02_polite_but_exacting/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Practical Deal Seeker",
+    "effect": "HELPS the task",
+    "n": 813,
+    "frac": 0.367,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k5/gc_03_practical_deal_seeker/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Direct & Confirming",
+    "effect": "HELPS the task",
+    "n": 516,
+    "frac": 0.233,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k5/gc_04_direct_confirming/gen_00.md"
+  }
+]

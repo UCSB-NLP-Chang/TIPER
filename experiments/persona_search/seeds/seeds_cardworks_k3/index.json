@@ -1,0 +1,26 @@
+[
+  {
+    "cluster": 0,
+    "name": "Anxious Step-By-Step",
+    "effect": "HARMS the task",
+    "n": 1766,
+    "frac": 0.695,
+    "seed_file": "data/persona_opt/seeds_cardworks_k3/cw_00_anxious_step_by_step/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Cooperative Detail-Giver",
+    "effect": "HELPS the task",
+    "n": 550,
+    "frac": 0.217,
+    "seed_file": "data/persona_opt/seeds_cardworks_k3/cw_01_cooperative_detail_giver/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Worried Detail Dumper",
+    "effect": "HARMS the task",
+    "n": 224,
+    "frac": 0.088,
+    "seed_file": "data/persona_opt/seeds_cardworks_k3/cw_02_worried_detail_dumper/gen_00.md"
+  }
+]

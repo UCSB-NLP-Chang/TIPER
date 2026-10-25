@@ -1,0 +1,1027 @@
+{
+  "banking": [
+    "task_002",
+    "task_003",
+    "task_015",
+    "task_018",
+    "task_020",
+    "task_026",
+    "task_028",
+    "task_031",
+    "task_032",
+    "task_033",
+    "task_034",
+    "task_036",
+    "task_044",
+    "task_045",
+    "task_048",
+    "task_050",
+    "task_051",
+    "task_054",
+    "task_055",
+    "task_059",
+    "task_089",
+    "task_093",
+    "task_098",
+    "task_099",
+    "task_100"
+  ],
+  "telecom": [
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|unseat_sim_card[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_mode_off|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_usage_exceeded[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]bad_network_preference|bad_wifi_calling|break_app_sms_permission|data_mode_off|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]bad_wifi_calling|break_apn_mms_setting|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]bad_wifi_calling|data_mode_off|data_usage_exceeded[PERSONA:Easy]",
+    "[mms_issue]break_apn_mms_setting|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:Hard]",
+    "[mms_issue]break_apn_mms_setting|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]break_app_both_permissions|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Hard]",
+    "[mms_issue]break_app_storage_permission|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:None]",
+    "[mobile_data_issue]airplane_mode_on|user_abroad_roaming_enabled_off[PERSONA:None]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:None]",
+    "[service_issue]airplane_mode_on|break_apn_settings|unseat_sim_card[PERSONA:None]",
+    "[service_issue]airplane_mode_on|lock_sim_card_pin|overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]",
+    "[service_issue]airplane_mode_on|overdue_bill_suspension[PERSONA:None]",
+    "[service_issue]airplane_mode_on|overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]",
+    "[service_issue]contract_end_suspension|lock_sim_card_pin[PERSONA:Hard]",
+    "[service_issue]overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]"
+  ],
+  "metadata": {
+    "selection_method": "irt_discrimination_stratified",
+    "banking_models": [
+      "s46",
+      "g54",
+      "g55"
+    ],
+    "telecom_models": [
+      "s46",
+      "g54",
+      "qwen3"
+    ],
+    "banking_pool": 97,
+    "telecom_pool": 114,
+    "banking_informative": 68,
+    "telecom_informative": 114,
+    "banking_stats": {
+      "task_048": {
+        "pooled_rate": 0.16666666666666666,
+        "model_disc": 0.23570226039551584,
+        "preset_disc": 0.13981174880131017,
+        "total_disc": 0.375514009196826,
+        "per_model_rate": {
+          "s46": 0.0,
+          "g54": 0.0,
+          "g55": 0.5
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.0,
+          "hardimp": 0.2222222222222222,
+          "techsavvy": 0.3333333333333333,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "task_099": {
+        "pooled_rate": 0.18518518518518517,
+        "model_disc": 0.261891400439462,
+        "preset_disc": 0.10475656017578482,
+        "total_disc": 0.36664796061524685,
+        "per_model_rate": {
+          "s46": 0.0,
+          "g54": 0.0,
+          "g55": 0.5555555555555555
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.2222222222222222,
+          "hardimp": 0.1111111111111111,
+          "techsavvy": 0.0,
+          "terscoop": 0.3333333333333333,
+          "verbwith": 0.2222222222222222
+        }
+      },
+      "task_018": {
+        "pooled_rate": 0.16666666666666666,
+        "model_disc": 0.13608276348795434,
+        "preset_disc": 0.15382636783181622,
+        "total_disc": 0.2899091313197706,
+        "per_model_rate": {
+          "s46": 0.3333333333333333,
+          "g54": 0.0,
+          "g55": 0.16666666666666666
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.2222222222222222,
+          "hardimp": 0.2222222222222222,
+          "techsavvy": 0.4444444444444444,
+          "terscoop": 0.0,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "task_020": {
+        "pooled_rate": 0.12962962962962962,
+        "model_disc": 0.1833239803076234,
+        "preset_disc": 0.09972527420619452,
+        "total_disc": 0.2830492545138179,
+        "per_model_rate": {
+          "s46": 0.38888888888888884,
+          "g54": 0.0,
+          "g55": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.1111111111111111,
+          "hardimp": 0.0,
+          "techsavvy": 0.2222222222222222,
+          "terscoop": 0.2222222222222222,
+          "verbwith": 0.2222222222222222
+        }
+      },
+      "task_045": {
+        "pooled_rate": 0.12962962962962962,
+        "model_disc": 0.1833239803076234,
+        "preset_disc": 0.09972527420619452,
+        "total_disc": 0.2830492545138179,
+        "per_model_rate": {
+          "s46": 0.0,
+          "g54": 0.0,
+          "g55": 0.38888888888888884
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.1111111111111111,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "task_033": {
+        "pooled_rate": 0.16666666666666663,
+        "model_disc": 0.12001371663718258,
+        "preset_disc": 0.15382636783181622,
+        "total_disc": 0.27384008446899877,
+        "per_model_rate": {
+          "s46": 0.0,
+          "g54": 0.27777777777777773,
+          "g55": 0.2222222222222222
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.0,
+          "hardimp": 0.2222222222222222,
+          "techsavvy": 0.2222222222222222,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.4444444444444444
+        }
+      },
+      "task_054": {
+        "pooled_rate": 0.16666666666666663,
+        "model_disc": 0.16355112715421938,
+        "preset_disc": 0.10638078975070422,
+        "total_disc": 0.2699319169049236,
+        "per_model_rate": {
+          "s46": 0.1111111111111111,
+          "g54": 0.0,
+          "g55": 0.38888888888888884
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.1111111111111111,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.0,
+          "verbwith": 0.2222222222222222
+        }
+      },
+      "task_031": {
+        "pooled_rate": 0.16666666666666663,
+        "model_disc": 0.15713484026367722,
+        "preset_disc": 0.10638078975070422,
+        "total_disc": 0.26351563001438144,
+        "per_model_rate": {
+          "s46": 0.05555555555555555,
+          "g54": 0.05555555555555555,
+          "g55": 0.38888888888888884
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.1111111111111111,
+          "hardimp": 0.2222222222222222,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.2222222222222222,
+          "verbwith": 0.0
+        }
+      },
+      "task_093": {
+        "pooled_rate": 0.1851851851851852,
+        "model_disc": 0.13857990321384966,
+        "preset_disc": 0.12283795519834813,
+        "total_disc": 0.2614178584121978,
+        "per_model_rate": {
+          "s46": 0.2222222222222222,
+          "g54": 0.0,
+          "g55": 0.3333333333333333
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.1111111111111111,
+          "hardimp": 0.4444444444444444,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "task_003": {
+        "pooled_rate": 0.16666666666666666,
+        "model_disc": 0.12001371663718259,
+        "preset_disc": 0.13981174880131017,
+        "total_disc": 0.2598254654384928,
+        "per_model_rate": {
+          "s46": 0.05555555555555555,
+          "g54": 0.1111111111111111,
+          "g55": 0.3333333333333333
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.1111111111111111,
+          "hardimp": 0.0,
+          "techsavvy": 0.0,
+          "terscoop": 0.2222222222222222,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "task_015": {
+        "pooled_rate": 0.3333333333333333,
+        "model_disc": 0.43271560909436746,
+        "preset_disc": 0.06415002990995841,
+        "total_disc": 0.4968656390043259,
+        "per_model_rate": {
+          "s46": 0.0,
+          "g54": 0.05555555555555555,
+          "g55": 0.9444444444444443
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.2222222222222222,
+          "terscoop": 0.4444444444444444,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "task_051": {
+        "pooled_rate": 0.3148148148148148,
+        "model_disc": 0.40656478518703976,
+        "preset_disc": 0.07635380788180852,
+        "total_disc": 0.48291859306884827,
+        "per_model_rate": {
+          "s46": 0.05555555555555555,
+          "g54": 0.0,
+          "g55": 0.8888888888888888
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.3333333333333333,
+          "terscoop": 0.4444444444444444,
+          "verbwith": 0.2222222222222222
+        }
+      },
+      "task_034": {
+        "pooled_rate": 0.40740740740740733,
+        "model_disc": 0.24982847339318595,
+        "preset_disc": 0.2095131203515696,
+        "total_disc": 0.4593415937447556,
+        "per_model_rate": {
+          "s46": 0.5555555555555555,
+          "g54": 0.611111111111111,
+          "g55": 0.05555555555555555
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.4444444444444444,
+          "hardimp": 0.6666666666666666,
+          "techsavvy": 0.4444444444444444,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "task_100": {
+        "pooled_rate": 0.5185185185185185,
+        "model_disc": 0.39108726077671996,
+        "preset_disc": 0.05237828008789238,
+        "total_disc": 0.4434655408646123,
+        "per_model_rate": {
+          "s46": 0.9444444444444445,
+          "g54": 0.0,
+          "g55": 0.611111111111111
+        },
+        "per_setting_rate": {
+          "original": 0.4444444444444444,
+          "cc_baseline": 0.5555555555555555,
+          "hardimp": 0.4444444444444444,
+          "techsavvy": 0.5555555555555555,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.5555555555555555
+        }
+      },
+      "task_044": {
+        "pooled_rate": 0.24074074074074073,
+        "model_disc": 0.34045882057130067,
+        "preset_disc": 0.09972527420619451,
+        "total_disc": 0.4401840947774952,
+        "per_model_rate": {
+          "s46": 0.0,
+          "g54": 0.0,
+          "g55": 0.7222222222222222
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.1111111111111111,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.3333333333333333,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "task_059": {
+        "pooled_rate": 0.4074074074074074,
+        "model_disc": 0.2916299212596967,
+        "preset_disc": 0.13857990321384966,
+        "total_disc": 0.4302098244735464,
+        "per_model_rate": {
+          "s46": 0.6666666666666666,
+          "g54": 0.0,
+          "g55": 0.5555555555555556
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 0.4444444444444444,
+          "techsavvy": 0.3333333333333333,
+          "terscoop": 0.2222222222222222,
+          "verbwith": 0.4444444444444444
+        }
+      },
+      "task_002": {
+        "pooled_rate": 0.5555555555555555,
+        "model_disc": 0.2721655269759087,
+        "preset_disc": 0.15713484026367722,
+        "total_disc": 0.42930036723958587,
+        "per_model_rate": {
+          "s46": 0.8888888888888888,
+          "g54": 0.2222222222222222,
+          "g55": 0.5555555555555555
+        },
+        "per_setting_rate": {
+          "original": 0.8888888888888888,
+          "cc_baseline": 0.4444444444444444,
+          "hardimp": 0.4444444444444444,
+          "techsavvy": 0.4444444444444444,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.5555555555555555
+        }
+      },
+      "task_055": {
+        "pooled_rate": 0.5555555555555556,
+        "model_disc": 0.2721655269759087,
+        "preset_disc": 0.15713484026367722,
+        "total_disc": 0.42930036723958587,
+        "per_model_rate": {
+          "s46": 0.5555555555555555,
+          "g54": 0.2222222222222222,
+          "g55": 0.8888888888888888
+        },
+        "per_setting_rate": {
+          "original": 0.4444444444444444,
+          "cc_baseline": 0.4444444444444444,
+          "hardimp": 0.6666666666666666,
+          "techsavvy": 0.3333333333333333,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.7777777777777777
+        }
+      },
+      "task_032": {
+        "pooled_rate": 0.7407407407407407,
+        "model_disc": 0.36664796061524685,
+        "preset_disc": 0.08281733249999221,
+        "total_disc": 0.4494652931152391,
+        "per_model_rate": {
+          "s46": 0.2222222222222222,
+          "g54": 1.0,
+          "g55": 1.0
+        },
+        "per_setting_rate": {
+          "original": 0.8888888888888888,
+          "cc_baseline": 0.7777777777777777,
+          "hardimp": 0.7777777777777777,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.6666666666666666
+        }
+      },
+      "task_050": {
+        "pooled_rate": 0.6111111111111112,
+        "model_disc": 0.2759197115879878,
+        "preset_disc": 0.13981174880131017,
+        "total_disc": 0.415731460389298,
+        "per_model_rate": {
+          "s46": 0.4444444444444444,
+          "g54": 0.3888888888888889,
+          "g55": 1.0
+        },
+        "per_setting_rate": {
+          "original": 0.4444444444444444,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 0.5555555555555555,
+          "techsavvy": 0.8888888888888888,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.5555555555555555
+        }
+      },
+      "task_089": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.2618914004394621,
+        "preset_disc": 0.1527076157636171,
+        "total_disc": 0.41459901620307915,
+        "per_model_rate": {
+          "s46": 0.8888888888888888,
+          "g54": 0.3333333333333333,
+          "g55": 0.8888888888888888
+        },
+        "per_setting_rate": {
+          "original": 0.7777777777777777,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 1.0,
+          "techsavvy": 0.5555555555555555,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.5555555555555555
+        }
+      },
+      "task_026": {
+        "pooled_rate": 0.018518518518518517,
+        "model_disc": 0.026189140043946204,
+        "preset_disc": 0.041408666249996104,
+        "total_disc": 0.06759780629394231,
+        "per_model_rate": {
+          "s46": 0.05555555555555555,
+          "g54": 0.0,
+          "g55": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.0,
+          "hardimp": 0.0,
+          "techsavvy": 0.0,
+          "terscoop": 0.0,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "task_028": {
+        "pooled_rate": 0.1111111111111111,
+        "model_disc": 0.15713484026367722,
+        "preset_disc": 0.06415002990995841,
+        "total_disc": 0.22128487017363563,
+        "per_model_rate": {
+          "s46": 0.3333333333333333,
+          "g54": 0.0,
+          "g55": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.0,
+          "cc_baseline": 0.2222222222222222,
+          "hardimp": 0.1111111111111111,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "task_098": {
+        "pooled_rate": 0.2962962962962963,
+        "model_disc": 0.22376011062212167,
+        "preset_disc": 0.13857990321384964,
+        "total_disc": 0.3623400138359713,
+        "per_model_rate": {
+          "s46": 0.611111111111111,
+          "g54": 0.16666666666666666,
+          "g55": 0.1111111111111111
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.5555555555555555,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.2222222222222222,
+          "terscoop": 0.2222222222222222,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "task_036": {
+        "pooled_rate": 0.5740740740740741,
+        "model_disc": 0.1833239803076234,
+        "preset_disc": 0.11857637476727498,
+        "total_disc": 0.3019003550748984,
+        "per_model_rate": {
+          "s46": 0.7777777777777777,
+          "g54": 0.611111111111111,
+          "g55": 0.3333333333333333
+        },
+        "per_setting_rate": {
+          "original": 0.5555555555555555,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 0.6666666666666666,
+          "techsavvy": 0.5555555555555555,
+          "terscoop": 0.3333333333333333,
+          "verbwith": 0.6666666666666666
+        }
+      }
+    },
+    "telecom_stats": {
+      "[mms_issue]bad_network_preference|bad_wifi_calling|break_app_sms_permission|data_mode_off|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.18518518518518517,
+        "model_disc": 0.18885257457751053,
+        "preset_disc": 0.19945054841238902,
+        "total_disc": 0.38830312298989955,
+        "per_model_rate": {
+          "s46": 0.4444444444444444,
+          "g54": 0.1111111111111111,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.1111111111111111,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.0,
+          "techsavvy": 0.0,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "[mms_issue]break_apn_mms_setting|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:Hard]": {
+        "pooled_rate": 0.16666666666666666,
+        "model_disc": 0.13608276348795434,
+        "preset_disc": 0.23787467738268758,
+        "total_disc": 0.3739574408706419,
+        "per_model_rate": {
+          "s46": 0.3333333333333333,
+          "g54": 0.16666666666666666,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.0,
+          "hardimp": 0.0,
+          "techsavvy": 0.0,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "[mms_issue]break_app_both_permissions|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Hard]": {
+        "pooled_rate": 0.14814814814814814,
+        "model_disc": 0.11415581486979584,
+        "preset_disc": 0.2371527495345499,
+        "total_disc": 0.35130856440434577,
+        "per_model_rate": {
+          "s46": 0.27777777777777773,
+          "g54": 0.16666666666666666,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.1111111111111111,
+          "cc_baseline": 0.1111111111111111,
+          "hardimp": 0.0,
+          "techsavvy": 0.0,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.0
+        }
+      },
+      "[mms_issue]break_app_storage_permission|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]": {
+        "pooled_rate": 0.16666666666666666,
+        "model_disc": 0.12001371663718258,
+        "preset_disc": 0.20030840419244383,
+        "total_disc": 0.3203221208296264,
+        "per_model_rate": {
+          "s46": 0.27777777777777773,
+          "g54": 0.2222222222222222,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.0,
+          "hardimp": 0.0,
+          "techsavvy": 0.0,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.2222222222222222
+        }
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_mode_off|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.14814814814814814,
+        "model_disc": 0.171733675842513,
+        "preset_disc": 0.13857990321384966,
+        "total_disc": 0.3103135790563627,
+        "per_model_rate": {
+          "s46": 0.38888888888888884,
+          "g54": 0.05555555555555555,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.1111111111111111,
+          "cc_baseline": 0.0,
+          "hardimp": 0.0,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.3333333333333333,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_usage_exceeded[PERSONA:Hard]": {
+        "pooled_rate": 0.1851851851851852,
+        "model_disc": 0.2237601106221217,
+        "preset_disc": 0.08281733249999221,
+        "total_disc": 0.3065774431221139,
+        "per_model_rate": {
+          "s46": 0.5,
+          "g54": 0.05555555555555555,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.2222222222222222,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.12962962962962962,
+        "model_disc": 0.14581496062984833,
+        "preset_disc": 0.14930106941293608,
+        "total_disc": 0.2951160300427844,
+        "per_model_rate": {
+          "s46": 0.3333333333333333,
+          "g54": 0.05555555555555555,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.1111111111111111,
+          "cc_baseline": 0.0,
+          "hardimp": 0.0,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.4444444444444444,
+          "verbwith": 0.1111111111111111
+        }
+      },
+      "[mms_issue]bad_wifi_calling|data_mode_off|data_usage_exceeded[PERSONA:Easy]": {
+        "pooled_rate": 0.1851851851851852,
+        "model_disc": 0.18885257457751053,
+        "preset_disc": 0.10475656017578482,
+        "total_disc": 0.29360913475329536,
+        "per_model_rate": {
+          "s46": 0.4444444444444444,
+          "g54": 0.1111111111111111,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.2222222222222222,
+          "cc_baseline": 0.2222222222222222,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.2222222222222222,
+          "terscoop": 0.1111111111111111,
+          "verbwith": 0.0
+        }
+      },
+      "[mms_issue]break_apn_mms_setting|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.4259259259259259,
+        "model_disc": 0.21436735005167082,
+        "preset_disc": 0.2260473262172908,
+        "total_disc": 0.4404146762689616,
+        "per_model_rate": {
+          "s46": 0.7222222222222222,
+          "g54": 0.3333333333333333,
+          "qwen3": 0.2222222222222222
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.4444444444444444,
+          "hardimp": 0.2222222222222222,
+          "techsavvy": 0.4444444444444444,
+          "terscoop": 0.8888888888888888,
+          "verbwith": 0.2222222222222222
+        }
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|unseat_sim_card[PERSONA:Hard]": {
+        "pooled_rate": 0.6481481481481481,
+        "model_disc": 0.35233884426741574,
+        "preset_disc": 0.17470335429734454,
+        "total_disc": 0.5270421985647603,
+        "per_model_rate": {
+          "s46": 1.0,
+          "g54": 0.7777777777777777,
+          "qwen3": 0.16666666666666666
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 0.5555555555555555,
+          "techsavvy": 0.7777777777777778,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.8888888888888888
+        }
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]": {
+        "pooled_rate": 0.3888888888888889,
+        "model_disc": 0.2832788618662658,
+        "preset_disc": 0.2545875386086578,
+        "total_disc": 0.5378664004749236,
+        "per_model_rate": {
+          "s46": 0.6666666666666666,
+          "g54": 0.5,
+          "qwen3": 0.0
+        },
+        "per_setting_rate": {
+          "original": 0.4444444444444444,
+          "cc_baseline": 0.4444444444444444,
+          "hardimp": 0.0,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.6666666666666666
+        }
+      },
+      "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_disabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.48148148148148145,
+        "model_disc": 0.3020278968574091,
+        "preset_disc": 0.2191140660407265,
+        "total_disc": 0.5211419628981356,
+        "per_model_rate": {
+          "s46": 0.7222222222222222,
+          "g54": 0.6666666666666666,
+          "qwen3": 0.05555555555555555
+        },
+        "per_setting_rate": {
+          "original": 0.7777777777777778,
+          "cc_baseline": 0.5555555555555555,
+          "hardimp": 0.1111111111111111,
+          "techsavvy": 0.4444444444444444,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:None]": {
+        "pooled_rate": 0.2962962962962963,
+        "model_disc": 0.3020278968574091,
+        "preset_disc": 0.17762338975232295,
+        "total_disc": 0.47965128660973205,
+        "per_model_rate": {
+          "s46": 0.7222222222222223,
+          "g54": 0.1111111111111111,
+          "qwen3": 0.05555555555555555
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.4444444444444444,
+          "hardimp": 0.0,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.4444444444444444,
+          "verbwith": 0.4444444444444444
+        }
+      },
+      "[mobile_data_issue]data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.6111111111111112,
+        "model_disc": 0.32710225430843876,
+        "preset_disc": 0.16666666666666669,
+        "total_disc": 0.49376892097510544,
+        "per_model_rate": {
+          "s46": 0.9444444444444443,
+          "g54": 0.7222222222222222,
+          "qwen3": 0.16666666666666666
+        },
+        "per_setting_rate": {
+          "original": 0.5555555555555555,
+          "cc_baseline": 0.8888888888888888,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.6666666666666666,
+          "verbwith": 0.5555555555555555
+        }
+      },
+      "[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.11415581486979584,
+        "preset_disc": 0.2539131333481868,
+        "total_disc": 0.36806894821798264,
+        "per_model_rate": {
+          "s46": 0.7777777777777777,
+          "g54": 0.611111111111111,
+          "qwen3": 0.49999999999999994
+        },
+        "per_setting_rate": {
+          "original": 0.7777777777777777,
+          "cc_baseline": 0.7777777777777778,
+          "hardimp": 0.1111111111111111,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.8888888888888888,
+          "verbwith": 0.5555555555555555
+        }
+      },
+      "[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:None]": {
+        "pooled_rate": 0.48148148148148145,
+        "model_disc": 0.36944328413444455,
+        "preset_disc": 0.10475656017578479,
+        "total_disc": 0.4741998443102293,
+        "per_model_rate": {
+          "s46": 1.0,
+          "g54": 0.27777777777777773,
+          "qwen3": 0.16666666666666666
+        },
+        "per_setting_rate": {
+          "original": 0.5555555555555555,
+          "cc_baseline": 0.5555555555555555,
+          "hardimp": 0.3333333333333333,
+          "techsavvy": 0.5555555555555555,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "[service_issue]airplane_mode_on|overdue_bill_suspension[PERSONA:None]": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.3175264481385602,
+        "preset_disc": 0.14344382763731175,
+        "total_disc": 0.4609702757758719,
+        "per_model_rate": {
+          "s46": 0.9444444444444445,
+          "g54": 0.8333333333333334,
+          "qwen3": 0.2222222222222222
+        },
+        "per_setting_rate": {
+          "original": 0.5555555555555555,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 0.7777777777777778,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.4444444444444444,
+          "verbwith": 0.8888888888888888
+        }
+      },
+      "[service_issue]overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.2771598064276994,
+        "preset_disc": 0.15270761576361705,
+        "total_disc": 0.42986742219131646,
+        "per_model_rate": {
+          "s46": 1.0,
+          "g54": 0.7777777777777778,
+          "qwen3": 0.3333333333333333
+        },
+        "per_setting_rate": {
+          "original": 0.8888888888888888,
+          "cc_baseline": 0.6666666666666666,
+          "hardimp": 0.4444444444444444,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.8888888888888888,
+          "verbwith": 0.6666666666666666
+        }
+      },
+      "[service_issue]airplane_mode_on|lock_sim_card_pin|overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]": {
+        "pooled_rate": 0.7962962962962963,
+        "model_disc": 0.24982847339318595,
+        "preset_disc": 0.1493010694129361,
+        "total_disc": 0.39912954280612206,
+        "per_model_rate": {
+          "s46": 1.0,
+          "g54": 0.9444444444444443,
+          "qwen3": 0.4444444444444444
+        },
+        "per_setting_rate": {
+          "original": 0.6666666666666666,
+          "cc_baseline": 0.5555555555555555,
+          "hardimp": 0.8888888888888888,
+          "techsavvy": 1.0,
+          "terscoop": 0.8888888888888888,
+          "verbwith": 0.7777777777777778
+        }
+      },
+      "[service_issue]airplane_mode_on|overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]": {
+        "pooled_rate": 0.6111111111111112,
+        "model_disc": 0.2759197115879878,
+        "preset_disc": 0.10638078975070422,
+        "total_disc": 0.382300501338692,
+        "per_model_rate": {
+          "s46": 1.0,
+          "g54": 0.4444444444444444,
+          "qwen3": 0.38888888888888884
+        },
+        "per_setting_rate": {
+          "original": 0.4444444444444444,
+          "cc_baseline": 0.5555555555555555,
+          "hardimp": 0.6666666666666666,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.7777777777777777
+        }
+      },
+      "[service_issue]airplane_mode_on|break_apn_settings|unseat_sim_card[PERSONA:None]": {
+        "pooled_rate": 0.648148148148148,
+        "model_disc": 0.24982847339318598,
+        "preset_disc": 0.09972527420619451,
+        "total_disc": 0.3495537475993805,
+        "per_model_rate": {
+          "s46": 1.0,
+          "g54": 0.4444444444444444,
+          "qwen3": 0.49999999999999994
+        },
+        "per_setting_rate": {
+          "original": 0.5555555555555555,
+          "cc_baseline": 0.7777777777777777,
+          "hardimp": 0.5555555555555555,
+          "techsavvy": 0.6666666666666666,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.7777777777777777
+        }
+      },
+      "[mobile_data_issue]airplane_mode_on|user_abroad_roaming_enabled_off[PERSONA:None]": {
+        "pooled_rate": 0.7777777777777777,
+        "model_disc": 0.04536092116265147,
+        "preset_disc": 0.15713484026367722,
+        "total_disc": 0.2024957614263287,
+        "per_model_rate": {
+          "s46": 0.7777777777777778,
+          "g54": 0.8333333333333334,
+          "qwen3": 0.7222222222222222
+        },
+        "per_setting_rate": {
+          "original": 0.8888888888888888,
+          "cc_baseline": 0.8888888888888888,
+          "hardimp": 0.4444444444444444,
+          "techsavvy": 0.7777777777777777,
+          "terscoop": 0.8888888888888888,
+          "verbwith": 0.7777777777777777
+        }
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.24074074074074073,
+        "model_disc": 0.11415581486979584,
+        "preset_disc": 0.18610880779853498,
+        "total_disc": 0.3002646226683308,
+        "per_model_rate": {
+          "s46": 0.2222222222222222,
+          "g54": 0.38888888888888884,
+          "qwen3": 0.1111111111111111
+        },
+        "per_setting_rate": {
+          "original": 0.1111111111111111,
+          "cc_baseline": 0.3333333333333333,
+          "hardimp": 0.0,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.5555555555555555,
+          "verbwith": 0.3333333333333333
+        }
+      },
+      "[service_issue]contract_end_suspension|lock_sim_card_pin[PERSONA:Hard]": {
+        "pooled_rate": 0.7962962962962963,
+        "model_disc": 0.09442628728875528,
+        "preset_disc": 0.04140866624999611,
+        "total_disc": 0.13583495353875139,
+        "per_model_rate": {
+          "s46": 0.8888888888888888,
+          "g54": 0.8333333333333334,
+          "qwen3": 0.6666666666666666
+        },
+        "per_setting_rate": {
+          "original": 0.7777777777777778,
+          "cc_baseline": 0.8888888888888888,
+          "hardimp": 0.7777777777777778,
+          "techsavvy": 0.7777777777777777,
+          "terscoop": 0.7777777777777777,
+          "verbwith": 0.7777777777777777
+        }
+      },
+      "[mms_issue]bad_wifi_calling|break_apn_mms_setting|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.27777777777777773,
+        "model_disc": 0.0907218423253029,
+        "preset_disc": 0.24637286473426057,
+        "total_disc": 0.33709470705956346,
+        "per_model_rate": {
+          "s46": 0.27777777777777773,
+          "g54": 0.3888888888888889,
+          "qwen3": 0.16666666666666666
+        },
+        "per_setting_rate": {
+          "original": 0.3333333333333333,
+          "cc_baseline": 0.2222222222222222,
+          "hardimp": 0.0,
+          "techsavvy": 0.1111111111111111,
+          "terscoop": 0.7777777777777778,
+          "verbwith": 0.2222222222222222
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "cluster": 0,
+    "name": "Polite Detail Seeker",
+    "effect": "HARMS the task",
+    "n": 358,
+    "frac": 0.161,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k4/gc_00_polite_detail_seeker/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Direct & Persistent",
+    "effect": "HELPS the task",
+    "n": 425,
+    "frac": 0.192,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k4/gc_01_direct_persistent/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Polite Persistent Planner",
+    "effect": "HELPS the task",
+    "n": 396,
+    "frac": 0.179,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k4/gc_02_polite_persistent_planner/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Pragmatic Detail-Seeker",
+    "effect": "HELPS the task",
+    "n": 1038,
+    "frac": 0.468,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k4/gc_03_pragmatic_detail_seeker/gen_00.md"
+  }
+]

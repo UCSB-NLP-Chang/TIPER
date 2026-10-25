@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "benchmark": "tau2",
+  "domains": {
+    "telecom": {
+      "runtime_domain": "telecom",
+      "split_file": "experiments/persona_search/configs/telecom_island_split.json",
+      "seed_persona": "experiments/persona_search/seeds/standalone/brinks_01_terse_erratic/gen_00.md",
+      "minibatch": 10,
+      "mutation_edit_pct": "50-60%"
+    },
+    "retail": {
+      "runtime_domain": "retail",
+      "split_file": "experiments/persona_search/configs/retail_guitar_center_split_v4.json",
+      "seed_persona": "experiments/persona_search/seeds/seeds_guitar_center_k7/gc_01_pragmatic_time_sensitive/gen_00.md",
+      "minibatch": 10,
+      "mutation_edit_pct": "40-50%"
+    },
+    "airline": {
+      "runtime_domain": "airline",
+      "split_file": "experiments/persona_search/configs/airline_alaska_split_v5.json",
+      "seed_persona": "experiments/persona_search/seeds/seeds_alaska_k7/brinks_03_direct_impatient/gen_00.md",
+      "minibatch": 8,
+      "mutation_edit_pct": "25-35%"
+    },
+    "banking": {
+      "runtime_domain": "banking",
+      "tau2_domain": "banking_knowledge",
+      "split_file": "experiments/persona_search/configs/banking_knowledge_split_v2.json",
+      "seed_persona": "experiments/persona_search/seeds/seeds_cardworks_k6/cw_01_compliant_courteous/gen_00.md",
+      "minibatch": 8,
+      "mutation_edit_pct": "30-40%",
+      "retrieval_config": "terminal_use"
+    }
+  }
+}

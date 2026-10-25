@@ -1,0 +1,48 @@
+{
+  "train": {
+    "math": [
+      "sharded-GSM8K/234",
+      "sharded-GSM8K/534"
+    ],
+    "code": [
+      "sharded-livecodebench/2811",
+      "sharded-HumanEval/44"
+    ],
+    "database": [
+      "sharded-spider-val-688-medium",
+      "sharded-spider-val-699-medium"
+    ],
+    "actions": [
+      "sharded-BFCL/parallel_177",
+      "sharded-BFCL/parallel_167"
+    ]
+  },
+  "val": {
+    "math": [
+      "sharded-GSM8K/378"
+    ],
+    "code": [
+      "sharded-livecodebench/2754"
+    ],
+    "database": [
+      "sharded-spider-val-595-hard"
+    ],
+    "actions": [
+      "sharded-BFCL/parallel_62"
+    ]
+  },
+  "test": {
+    "math": [
+      "sharded-GSM8K/117"
+    ],
+    "code": [
+      "sharded-HumanEval/83"
+    ],
+    "database": [
+      "sharded-spider-val-798-medium"
+    ],
+    "actions": [
+      "sharded-BFCL/parallel_135"
+    ]
+  }
+}

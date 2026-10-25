@@ -1,0 +1,58 @@
+[
+  {
+    "cluster": 0,
+    "name": "Polite Deal-Seeker",
+    "effect": "HELPS the task",
+    "n": 162,
+    "frac": 0.073,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_00_polite_deal_seeker/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Pragmatic Time-Sensitive",
+    "effect": "HELPS the task",
+    "n": 264,
+    "frac": 0.119,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_01_pragmatic_time_sensitive/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Polite Step-Follower",
+    "effect": "HELPS the task",
+    "n": 308,
+    "frac": 0.139,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_02_polite_step_follower/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Practical Deal-Seeker",
+    "effect": "HELPS the task",
+    "n": 748,
+    "frac": 0.337,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_03_practical_deal_seeker/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Direct & Compliant",
+    "effect": "HELPS the task",
+    "n": 333,
+    "frac": 0.15,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_04_direct_compliant/gen_00.md"
+  },
+  {
+    "cluster": 5,
+    "name": "Inquisitive Cautious Shopper",
+    "effect": "HARMS the task",
+    "n": 320,
+    "frac": 0.144,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_05_inquisitive_cautious_shopper/gen_00.md"
+  },
+  {
+    "cluster": 6,
+    "name": "Pragmatic Clarifier",
+    "effect": "HELPS the task",
+    "n": 82,
+    "frac": 0.037,
+    "seed_file": "data/persona_opt/seeds_guitar_center_k7/gc_06_pragmatic_clarifier/gen_00.md"
+  }
+]

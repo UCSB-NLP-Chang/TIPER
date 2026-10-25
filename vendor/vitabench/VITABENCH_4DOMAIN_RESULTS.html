@@ -1,0 +1,303 @@
+<style>
+  :root{
+    --bg:#F6F7F9; --surface:#FFFFFF; --surface-2:#EDEFF3; --ink:#14171C;
+    --muted:#586072; --faint:#8A92A2; --rule:#DCE0E7; --accent:#3B6EA8;
+    --accent-soft:#E8EFF7; --good:#2E7D5B; --good-soft:#E4F0EA; --warn:#B26A00;
+    --display:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;
+    --body:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,Roboto,sans-serif;
+    --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0D0F13; --surface:#161922; --surface-2:#1D212C; --ink:#DDE2EA;
+      --muted:#97A0B0; --faint:#6A7282; --rule:#282D3A; --accent:#7AA8D8;
+      --accent-soft:#1B2735; --good:#6FBF94; --good-soft:#15241C; --warn:#D9A24A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0D0F13; --surface:#161922; --surface-2:#1D212C; --ink:#DDE2EA;
+    --muted:#97A0B0; --faint:#6A7282; --rule:#282D3A; --accent:#7AA8D8;
+    --accent-soft:#1B2735; --good:#6FBF94; --good-soft:#15241C; --warn:#D9A24A;
+  }
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);
+    font-size:15px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:840px;margin:0 auto;padding:48px 28px 80px;}
+  h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-0.01em;text-wrap:balance;}
+  h1{font-size:30px;line-height:1.2;margin:0 0 10px;}
+  h2{font-size:20px;margin:44px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--rule);}
+  h3{font-size:16px;margin:24px 0 8px;}
+  p{margin:0 0 12px;}
+  .lede{font-family:var(--display);font-size:17px;color:var(--muted);margin:0 0 6px;line-height:1.5;}
+  .eyebrow{font-family:var(--body);font-size:11px;font-weight:600;letter-spacing:0.14em;
+    text-transform:uppercase;color:var(--accent);margin:0 0 6px;}
+  a{color:var(--accent);text-decoration:none;}
+  code,pre,.mono{font-family:var(--mono);font-variant-numeric:tabular-nums;}
+  .num{font-variant-numeric:tabular-nums;font-family:var(--mono);}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+    flex-wrap:wrap;margin-bottom:40px;}
+  .meta{text-align:right;font-size:12px;color:var(--faint);line-height:1.5;}
+  .scorecard{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 8px;}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:8px;
+    padding:14px 14px 12px;display:flex;flex-direction:column;gap:6px;}
+  .card .dom{font-family:var(--display);font-size:15px;font-weight:600;}
+  .card .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;
+    font-size:12px;color:var(--muted);}
+  .card .row b{font-family:var(--mono);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .badge{display:inline-block;font-size:10px;font-weight:600;letter-spacing:0.06em;
+    padding:2px 7px;border-radius:99px;background:var(--good-soft);color:var(--good);}
+  .delta{color:var(--good);font-weight:600;}
+  .scroll{overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);}
+  th{font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;
+    color:var(--muted);border-bottom:1.5px solid var(--rule);}
+  td{font-variant-numeric:tabular-nums;}
+  td.num,th.num{font-family:var(--mono);}
+  tbody tr:hover{background:var(--surface-2);}
+  .cond{color:var(--faint);font-size:12px;}
+  .kv{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:0;font-size:13.5px;}
+  .kv div{display:contents;}
+  .kv .k{color:var(--muted);padding:6px 14px 6px 0;border-bottom:1px solid var(--rule);}
+  .kv .v{padding:6px 0;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:12.5px;}
+  .note{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);
+    border-radius:6px;padding:12px 14px;margin:14px 0;}
+  .modes{display:flex;flex-direction:column;gap:12px;margin:14px 0;}
+  .mode{background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:13px 15px;}
+  .mode h3{margin:0 0 4px;font-family:var(--body);font-size:13.5px;font-weight:600;}
+  .mode .tag{font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--accent);margin-right:8px;}
+  .mode p{margin:0;font-size:13px;color:var(--muted);}
+  ul.tight{margin:6px 0;padding-left:20px;}
+  ul.tight li{margin:0 0 5px;font-size:13.5px;}
+  .check{color:var(--good);font-weight:600;}
+  .pend{color:var(--faint);}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);
+    font-size:12px;color:var(--faint);}
+  @media (max-width:620px){
+    .scorecard{grid-template-columns:repeat(2,1fr);}
+    .top{flex-direction:column;align-items:flex-start;}
+    .meta{text-align:left;}
+  }
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div>
+      <p class="eyebrow">VitaBench · PGEPA 对抗式 persona 搜索</p>
+      <h1>4 个域，全部泛化，全部合法</h1>
+      <p class="lede">在 delivery / instore / ota / cross_domain 四个域上用同一套 V2 setting 搜索让
+        agent reward 下降的 user persona。四域 val difficulty 全升、test reward 全降、离线 judge 0% severe。</p>
+    </div>
+    <div class="meta">
+      V2 setting · iter 15 · test 3 trials<br>
+      gpt-5.4 high agent/user · gpt-5.5 xhigh mutation<br>
+      gpt-4.1 evaluator/judge · 30/30/40 split<br>
+      2026-08-09
+    </div>
+  </div>
+
+  <p class="eyebrow">总览 scorecard</p>
+  <div class="scorecard">
+    <div class="card">
+      <span class="dom">delivery</span>
+      <div class="row"><span>val Δdiff</span><b class="delta">+0.183</b></div>
+      <div class="row"><span>test Δreward</span><b class="delta">+0.250</b></div>
+      <div class="row"><span>solved</span><b>17 → 8</b></div>
+      <span class="badge">VALID · 0/15</span>
+    </div>
+    <div class="card">
+      <span class="dom">instore</span>
+      <div class="row"><span>val Δdiff</span><b class="delta">+0.250</b></div>
+      <div class="row"><span>test Δreward</span><b class="delta">+0.100</b></div>
+      <div class="row"><span>solved</span><b>24 → 18</b></div>
+      <span class="badge">VALID · 0/7</span>
+    </div>
+    <div class="card">
+      <span class="dom">ota</span>
+      <div class="row"><span>val Δdiff</span><b class="delta">+0.267</b></div>
+      <div class="row"><span>test Δreward</span><b class="delta">+0.175</b></div>
+      <div class="row"><span>solved</span><b>11 → 8</b></div>
+      <span class="badge">VALID · 0/18</span>
+    </div>
+    <div class="card">
+      <span class="dom">cross_domain</span>
+      <div class="row"><span>val Δdiff</span><b class="delta">+0.183</b></div>
+      <div class="row"><span>test Δreward</span><b class="delta">+0.200</b></div>
+      <div class="row"><span>solved</span><b>11 → 4</b></div>
+      <span class="badge">VALID · 0/15</span>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:var(--faint);margin-top:10px;">
+    Δreward = no_persona − best_persona（正值 = persona 让 agent 更难 = 对抗胜利）。solved = 3/3 trial 全对的 task 数。
+  </p>
+
+  <h2>统一 setting（4 域一致）</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>维度</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>task split</td><td>30 train / 30 val / 40 test（单域 &amp; cross_domain 均 100 任务）</td></tr>
+        <tr><td>agent</td><td class="num">gpt-5.4 (reasoning_effort=high)</td></tr>
+        <tr><td>user simulator</td><td class="num">gpt-5.4 (reasoning_effort=high)</td></tr>
+        <tr><td>mutation</td><td class="num">gpt-5.5 (xhigh)</td></tr>
+        <tr><td>evaluator / online judge</td><td class="num">gpt-4.1（非 reasoning）</td></tr>
+        <tr><td>minibatch / val</td><td class="num">10 × 2 trials / 30 × 2 trials</td></tr>
+        <tr><td>起步</td><td>空 persona（genesis）</td></tr>
+        <tr><td>max_step / iters</td><td class="num">100 / 15（MaxCandidateProposalsStopper）</td></tr>
+        <tr><td>test</td><td class="num">3 trials × 40 tasks × {no_persona, best_persona}</td></tr>
+        <tr><td>在线 judge</td><td>开（severe_rate &gt; 5% → 整 batch 门控；verdict 回挂反馈 proposer）</td></tr>
+        <tr><td>persona linter</td><td>natural / valid / no_task_specific 三轴，3 次重试</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    <code>cross_domain</code> 任务加载用注册名 <code>cross_domain</code>，run_task 环境解析用逗号串
+    <code>delivery,ota,instore</code>（<code>get_cross_environment</code> 合并 66 工具），mutation
+    framing/scoring 用键 <code>cross</code>。adapter 用 <code>_scoring_key</code> / <code>_run_domain</code> 归一化。
+  </div>
+
+  <h2>搜索有效性 · val difficulty（2 trials）</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>域</th><th class="num">seed（空persona）</th><th class="num">best persona</th><th class="num">Δdifficulty</th><th class="num">best iter</th><th>泛化到 test</th></tr></thead>
+      <tbody>
+        <tr><td>delivery</td><td class="num">0.4667</td><td class="num">0.6500</td><td class="num delta">+0.1833</td><td class="num">4</td><td><span class="check">✓</span></td></tr>
+        <tr><td>instore</td><td class="num">0.2667</td><td class="num">0.5167</td><td class="num delta">+0.2500</td><td class="num">9</td><td><span class="check">✓</span></td></tr>
+        <tr><td>ota</td><td class="num">0.5333</td><td class="num">0.8000</td><td class="num delta">+0.2667</td><td class="num">11</td><td><span class="check">✓</span></td></tr>
+        <tr><td>cross_domain</td><td class="num">0.5500</td><td class="num">0.7333</td><td class="num delta">+0.1833</td><td class="num">13</td><td><span class="check">✓</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted);">4 域 val difficulty 全部上升 = agent reward 全部下降，搜索机制在所有域工作。</p>
+
+  <h2>test set 泛化（3 trials × 40 tasks）</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>域</th><th>条件</th><th class="num">avg_reward</th><th class="num">pass³</th><th class="num">pass³率</th><th class="num">Δreward</th><th class="num">Δpass³</th><th>结论</th></tr></thead>
+      <tbody>
+        <tr><td>delivery</td><td class="cond">no_persona</td><td class="num">0.6667</td><td class="num">17/40</td><td class="num">0.425</td><td class="num delta">+0.2500</td><td class="num">−0.225</td><td rowspan="2">persona HARDER <span class="check">✓</span> · 少解 9</td></tr>
+        <tr><td>delivery</td><td class="cond">best_persona</td><td class="num">0.4167</td><td class="num">8/40</td><td class="num">0.200</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>instore</td><td class="cond">no_persona</td><td class="num">0.7667</td><td class="num">24/40</td><td class="num">0.600</td><td class="num delta">+0.1000</td><td class="num">−0.150</td><td rowspan="2">persona HARDER <span class="check">✓</span> · 少解 6</td></tr>
+        <tr><td>instore</td><td class="cond">best_persona</td><td class="num">0.6667</td><td class="num">18/40</td><td class="num">0.450</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>ota</td><td class="cond">no_persona</td><td class="num">0.5167</td><td class="num">11/40</td><td class="num">0.275</td><td class="num delta">+0.1750</td><td class="num">−0.075</td><td rowspan="2">persona HARDER <span class="check">✓</span> · 少解 3</td></tr>
+        <tr><td>ota</td><td class="cond">best_persona</td><td class="num">0.3417</td><td class="num">8/40</td><td class="num">0.200</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>cross_domain</td><td class="cond">no_persona</td><td class="num">0.5417</td><td class="num">11/40</td><td class="num">0.275</td><td class="num delta">+0.2000</td><td class="num">−0.175</td><td rowspan="2">persona HARDER <span class="check">✓</span> · 少解 7</td></tr>
+        <tr><td>cross_domain</td><td class="cond">best_persona</td><td class="num">0.3417</td><td class="num">4/40</td><td class="num">0.100</td><td class="num">—</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted);">pass³ = 3/3 trial 全过的 task 比例（fully_correct / n）。avg_reward 是 3-trial 平均（取值 {0, 1/3, 2/3, 1}）。Δpass³ 为负 = persona 让 3 试全过的 task 变少，"严格全过"口径下对抗同样成立。</p>
+  <p style="font-size:13px;color:var(--muted);">4 域全部泛化。按 Δreward：delivery +0.25 &gt; cross_domain +0.20 &gt; ota +0.175 &gt; instore +0.10。
+  cross_domain 少解 7 task（11→4）为各域最多。</p>
+
+  <h2>离线 judge 有效性（4 类 severe，只判 failed 对话）</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>域</th><th class="num">n_failed_judged</th><th class="num">n_severe</th><th class="num">severe_rate</th><th>判定</th></tr></thead>
+      <tbody>
+        <tr><td>delivery</td><td class="num">15</td><td class="num">0</td><td class="num">0.0%</td><td><span class="badge">VALID</span></td></tr>
+        <tr><td>instore</td><td class="num">7</td><td class="num">0</td><td class="num">0.0%</td><td><span class="badge">VALID</span></td></tr>
+        <tr><td>ota</td><td class="num">18</td><td class="num">0</td><td class="num">0.0%</td><td><span class="badge">VALID</span></td></tr>
+        <tr><td>cross_domain</td><td class="num">15</td><td class="num">0</td><td class="num">0.0%</td><td><span class="badge">VALID</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted);">4 域 best persona 全部 severe_rate=0%，无 fabricated_info / refused_to_engage /
+    contradictory / character_break。搜索期间在线 judge 也未触发任何 severe 门控（0 次 BATCH INFEASIBLE）。
+    reward 下降是合法对抗胜利，不是作弊。</p>
+
+  <h2>各域 persona 备注</h2>
+  <ul class="tight">
+    <li><b>delivery</b> —「风险疑问式改稿客户」：把硬要求包装成风险疑问句（"会不会…""别导致…"），背景值说得肯定、最终限制说得委婉，条件式确认。</li>
+    <li><b>instore</b> —「兜底锁定型客户」：带保险栓的条件授权（"能锁住新的再退""确认能用再买""别两头落空"），真实要求是前提先确认。</li>
+    <li><b>ota</b> — best persona（program 6, iter 11 突破）val difficulty 0.8，4 域最高；test reward 0.517→0.342。OTA 多段行程对抗空间大。</li>
+    <li><b>cross_domain</b> — best persona（program 6, iter 13 突破）val difficulty 0.7333；单 persona 跨 3 域（66 合并工具），攻击跨域意图切换与初始框架歧义；test 0.542→0.342，少解 7。</li>
+  </ul>
+
+  <h2>跨域观察</h2>
+  <ul class="tight">
+    <li><b>搜索后期突破是普遍模式</b>：ota iter 11（0.717→0.8）、cross_domain iter 13（0.667→0.7333）才大幅突破，delivery（iter 4）/instore（iter 9）也多在中后段。proposer 需多轮探索才找到强对抗轴——15 iter 预算必要。</li>
+    <li><b>val difficulty 与任务复杂度正相关</b>：ota（0.8）&gt; cross_domain（0.7333）&gt; delivery（0.65）&gt; instore（0.5167）。多段行程 / 跨域切换歧义空间最大，agent 最易被误导；单店预约最简单，最难压。</li>
+    <li><b>泛化一致</b>：4 域 test Δreward 全为正（+0.10 ~ +0.25），无 V1 的反向/不泛化问题。V2 mutation ctx（ADVERSARIAL REASONING 4 步 + 步骤执行/验证关闭阶段 + 行为风格目录 + 收敛禁止 + linter）+ 在线 judge 共同保证泛化与有效性。</li>
+  </ul>
+
+  <h2>翻转任务机制（4 域全部诊断完成）</h2>
+  <p style="font-size:13px;color:var(--muted);">对 test 上 no_persona=1.0→best_persona=0.0 的翻转任务做因果诊断（直接读 conversations 双条件对话 reward）。ota 12 翻转+1 反向、cross_domain 11 翻转+5 反向，4 域共 36 翻转+6 反向。</p>
+
+  <h3 style="margin-top:18px;">delivery / instore</h3>
+  <div class="modes">
+    <div class="mode">
+      <h3><span class="tag">模式 1</span>降级正常机制 → 无解放弃</h3>
+      <p>delivery 主力。备注 / 档案已知地址 / 库存近似替代被风险句判为"不够稳"，agent 要求超出系统能力的保证 → 取消搁置。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">模式 2</span>gated workflow 死锁</h3>
+      <p>instore 主力。直接动作被改写成"先确认前提再做，不行先别动"，前提系统不支持查或用户刻意 withhold → 验证门永远关不掉 → 不下单。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">模式 3</span>过度执行错单</h3>
+      <p>少数。预授权 + "按稳妥版处理"让 agent 跳过核验错单执行，被纠正后取消再不恢复。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:18px;">ota（条件闸门型，4 类）</h3>
+  <div class="modes">
+    <div class="mode">
+      <h3><span class="tag">ota 1</span>候选项≠授权项 / 闸门冻结执行</h3>
+      <p>主力 6。把应执行动作框为"分支/候选/先记上/只下单不支付"，满足条件不升级为执行或拆步跳支付；"先别替我猜"封死用历史推断出发城市（D0808002/D0811002/D0811004）。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">ota 2</span>闸门纠错 / 注入错误前提</h3>
+      <p>2。主动"纠偏"注入超出数据窗口的错误日期 → 系统无数据 → 下游闸门连锁失败（70807001/D0812006）。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">ota 3</span>软偏好升级硬闸门 + 验证标准收窄</h3>
+      <p>2。"一起买"→必须打包 SKU（D0805002）、"有标签"→必须备注落实到订单（D0808012）→ 放弃正确选项或停付。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">ota 4</span>可兜底硬约束被升级为终止信号</h3>
+      <p>1。"闸门没过就别硬订"→ 把"500m 无房"当终止而非降级，不推 fallback（D0807009）。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:18px;">cross_domain（反问验收版，5 类）</h3>
+  <div class="modes">
+    <div class="mode">
+      <h3><span class="tag">cross 1</span>排雷封锁可用数据</h3>
+      <p>主力 7。把 agent 已合法持有的信息（常住地→城市、档案→地址、"带父母"→老人票资格、quantity=0 可下单商品）包装成"未验证/未授权"排雷对象 → 当硬流程否决而非结果层验收 → 零搜索/零下单/不支付。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">cross 2</span>排雷反问误判为授权 / 收口误判为确认</h3>
+      <p>1。"会不会踩雷"被当购买授权 → 提前建单被纠错取消（10812004）。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">cross 3</span>背景信息误判为硬约束</h3>
+      <p>1。"上次买的那家"被当必须找到的约束 → 找不到后幻觉"无能力"放弃（10806004）。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">cross 4</span>信息查询与行动指令混淆</h3>
+      <p>1。"你也一并告诉我"被当纯告知而非采购指令 → 不行动（10804001）。</p>
+    </div>
+    <div class="mode">
+      <h3><span class="tag">cross 5</span>否定语气过强 → 自我设限</h3>
+      <p>1。agent 幻觉工具不可用、跳过整条任务线（A0812003）。</p>
+    </div>
+  </div>
+
+  <div class="note">4 个 persona 攻击 agent 同一弱点：面对语气委婉的风险表达 / 条件式授权 / 反问验收时倾向保守退缩、字面服从，而非主动在约束内兜底。<b>二值评估器放大</b>：calculate_reward 是 all-or-nothing（全 rubric 过=1.0 否则 0.0），persona 绊倒一道闸门→整 trial 翻 0，叠加 3-trial 平均形成"部分成功→完全失败"强降级。反向任务（ota 1、cross 5）表明弱点非绝对：persona 结构化反问恰好消歧或比 raw user sim 自发 harsh 框架更温和时反而帮 agent；net Δreward 仍强正。</div>
+
+  <h2>代码</h2>
+  <ul class="tight">
+    <li><code>scripts/vita_persona_adapter.py</code> — adapter + mutation ctx + 在线 judge + cross_domain 归一化</li>
+    <li><code>scripts/vita_pgepa.py</code> — driver（generational 搜索 + test 评估）</li>
+    <li><code>scripts/vita_offline_judge.py</code> — test-set 有效性 judge</li>
+    <li><code>src/vita/run.py</code> — <code>user_persona_override</code> patch</li>
+  </ul>
+  <p style="font-size:13px;color:var(--muted);">运行：<code class="mono">python scripts/vita_pgepa.py --domain &lt;d&gt; --run-dir &lt;dir&gt; --iters 15 --test-trials 3</code>
+    （其余参数全默认 = 上表 setting）</p>
+
+  <footer>
+    数据来源：<code>data/persona_opt/vita_pgepa_runs/run_{delivery,instore,ota,crossdomain}_v2/</code>
+    · test_report.json · offline_judge_report.json · 详见 VITABENCH_4DOMAIN_RESULTS.md / PGEPA_VITA_EXPERIMENT.md
+  </footer>
+</div>

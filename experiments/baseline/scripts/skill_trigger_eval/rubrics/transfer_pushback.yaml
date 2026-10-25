@@ -1,0 +1,20 @@
+skill: transfer-pushback
+description: >
+  The user simulator should push back when the agent proactively offers to
+  transfer or escalate the user to another department or supervisor, without
+  the user having requested it.
+
+positive_conditions:
+  - Agent proactively offers to transfer/escalate the user
+  - User has NOT previously requested transfer in this conversation
+
+negative_conditions:
+  - User explicitly requested transfer → agent agrees → NOT pushback trigger
+  - Agent mentions "support" as a generic resource without offering to transfer
+  - Agent says "if X doesn't work, I can transfer you" (conditional, not an offer)
+  - Executed transfer announcement (e.g., "YOU ARE BEING TRANSFERRED") is not an offer
+  - Agent redirecting to self-service (website, app) is not a transfer offer
+
+required_evidence:
+  - Quote the agent's transfer offer
+  - Note whether user previously requested escalation

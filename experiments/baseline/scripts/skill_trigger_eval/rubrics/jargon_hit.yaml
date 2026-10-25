@@ -1,0 +1,27 @@
+skill: jargon-hit
+description: >
+  The user simulator should react when the agent uses technical jargon that the
+  user's capability level suggests they would not understand.
+
+positive_conditions:
+  - Agent uses a domain-specific technical term, acronym, or procedural jargon
+  - The term is NOT explained in the same message
+  - User capability suggests they may not understand it
+
+negative_conditions:
+  - The term is common everyday language (account, password, phone, email, etc.)
+  - The agent immediately explains the term clearly in the same message
+  - The user has previously demonstrated understanding of this term in the conversation
+  - The user's capability is expert-level for this domain
+
+required_evidence:
+  - Quote the exact agent phrase containing the jargon
+  - State whether the agent explains it
+
+jargon_examples:
+  telecom:
+    tech-basic: [APN, VPN protocol, IMEI, LTE band, network mode]
+    tech-illiterate: [APN, VPN, network mode, IMEI, LTE, proxy, DNS, bandwidth, latency, throughput, SSID]
+  banking:
+    banking-basic: [ACH, wire transfer routing number, BIN, SWIFT code, MCC, EFT batch, chargeback, interchange fee]
+    banking-illiterate: [ACH, wire, routing number, APR, overdraft fee, grace period, statement cycle, MCC, chargeback]

@@ -1,0 +1,327 @@
+<title>τ-Trait Released Data — Audit Report</title>
+<meta charset="utf-8">
+<style>
+  :root{
+    --ground:#F6F5F1; --surface:#FFFDF8; --ink:#1A1A20; --muted:#5C5C68;
+    --rule:#E4E1D9; --rule-strong:#CFCBC0; --accent:#1F5F6B;
+    --crit:#B23A3A; --warn:#A97318; --ok:#3D6B4A;
+    --chip-crit-bg:#F3DEDE; --chip-crit-fg:#8C2B2B;
+    --chip-warn-bg:#F2E6CF; --chip-warn-fg:#855A12;
+    --chip-ok-bg:#DCE7DE; --chip-ok-fg:#2F5739;
+    --chip-info-bg:#DCE6E8; --chip-info-fg:#1C4A54;
+  }
+  :root:not([data-theme="light"]){
+    --ground:#141519; --surface:#1B1D22; --ink:#E9E7E2; --muted:#9A9AA6;
+    --rule:#2A2C33; --rule-strong:#3A3D45; --accent:#5FB3C0;
+    --crit:#E07070; --warn:#D9A24A; --ok:#6FB083;
+    --chip-crit-bg:#2E1C1C; --chip-crit-fg:#E07070;
+    --chip-warn-bg:#2E2417; --chip-warn-fg:#D9A24A;
+    --chip-ok-bg:#1C2A20; --chip-ok-fg:#6FB083;
+    --chip-info-bg:#1A272A; --chip-info-fg:#5FB3C0;
+  }
+  :root[data-theme="dark"]{
+    --ground:#141519; --surface:#1B1D22; --ink:#E9E7E2; --muted:#9A9AA6;
+    --rule:#2A2C33; --rule-strong:#3A3D45; --accent:#5FB3C0;
+    --crit:#E07070; --warn:#D9A24A; --ok:#6FB083;
+    --chip-crit-bg:#2E1C1C; --chip-crit-fg:#E07070;
+    --chip-warn-bg:#2E2417; --chip-warn-fg:#D9A24A;
+    --chip-ok-bg:#1C2A20; --chip-ok-fg:#6FB083;
+    --chip-info-bg:#1A272A; --chip-info-fg:#5FB3C0;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--ground)}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:-apple-system,"SF Pro Text","Helvetica Neue",Segoe UI,Roboto,sans-serif;
+    font-size:15.5px; line-height:1.62; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:780px; margin:0 auto; padding:48px 28px 96px}
+  .display{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+
+  /* masthead */
+  .mast{border-bottom:1px solid var(--rule); padding-bottom:26px; margin-bottom:30px}
+  .eyebrow{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600}
+  h1.display{font-size:34px; line-height:1.12; margin:10px 0 6px; text-wrap:balance; letter-spacing:-.01em; font-weight:600}
+  .sub{color:var(--muted); font-size:15px; max-width:60ch}
+  .meta{display:flex; gap:22px; flex-wrap:wrap; margin-top:16px; font-size:12.5px; color:var(--muted)}
+  .meta b{color:var(--ink); font-weight:600}
+
+  /* exec summary */
+  .exec{background:var(--surface); border:1px solid var(--rule); border-radius:6px; padding:20px 22px; margin:28px 0 8px}
+  .exec h2{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 12px; font-weight:600}
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+  .stat .n{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:25px; font-weight:600; color:var(--ink); font-variant-numeric:tabular-nums; line-height:1}
+  .stat .l{font-size:11.5px; color:var(--muted); margin-top:5px; line-height:1.35}
+  .exec p{margin:14px 0 0; font-size:14px; color:var(--muted); line-height:1.55}
+
+  h2.sec{font-size:20px; margin:38px 0 4px; font-weight:600; letter-spacing:-.005em; text-wrap:balance}
+  h2.sec .num{font-family:ui-monospace,Menlo,monospace; color:var(--accent); font-size:14px; font-weight:600; margin-right:8px}
+  .sec-lede{color:var(--muted); font-size:13.5px; margin:0 0 16px}
+  p{margin:0 0 13px}
+  ul,ol{margin:0 0 13px; padding-left:20px}
+  li{margin:0 0 7px}
+  code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12.5px; background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:.5px 4px}
+  .mono{font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+  /* tables */
+  .tbl{overflow-x:auto; margin:14px 0 18px; border:1px solid var(--rule); border-radius:6px}
+  table{border-collapse:collapse; width:100%; font-size:13px}
+  th,td{padding:7px 10px; text-align:right; border-bottom:1px solid var(--rule); white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  thead th{background:var(--surface); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:600; position:sticky; top:0}
+  tbody tr:last-child td{border-bottom:none}
+  td.m,th.m{font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+  .hl{color:var(--crit); font-weight:600}
+  .cap{font-size:12px; color:var(--muted); margin:-6px 0 22px}
+
+  /* issue index */
+  .issue{border:1px solid var(--rule); border-radius:6px; padding:15px 18px; margin:0 0 12px; background:var(--surface)}
+  .issue .head{display:flex; gap:10px; align-items:baseline; margin-bottom:7px}
+  .issue .id{font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--accent); font-weight:600}
+  .issue .t{font-size:15px; font-weight:600; text-wrap:balance}
+  .chip{display:inline-block; font-size:10.5px; font-weight:600; letter-spacing:.04em; padding:2px 7px; border-radius:10px; text-transform:uppercase; white-space:nowrap}
+  .chip.crit{background:var(--chip-crit-bg); color:var(--chip-crit-fg)}
+  .chip.warn{background:var(--chip-warn-bg); color:var(--chip-warn-fg)}
+  .chip.ok{background:var(--chip-ok-bg); color:var(--chip-ok-fg)}
+  .chip.info{background:var(--chip-info-bg); color:var(--chip-info-fg)}
+  .issue p{margin:0; font-size:13.5px; color:var(--muted); line-height:1.55}
+  .issue p b{color:var(--ink); font-weight:600}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  @media (max-width:620px){.stats{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr}}
+  hr{border:none; border-top:1px solid var(--rule); margin:34px 0}
+  .foot{font-size:12px; color:var(--muted); margin-top:38px; border-top:1px solid var(--rule); padding-top:16px}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">Data Audit · τ-Trait Released Trajectories</div>
+    <h1 class="display">What the released GPT-5 rollouts do and don't tell us</h1>
+    <p class="sub">A provenance, setting, reward, and user-behavior validity audit of <span class="mono">collinear-ai/tau-trait</span>'s published GPT-5 trajectories — 910 rollouts across 4 traits × 4 domains.</p>
+    <div class="meta">
+      <span><b>Date</b> 2026-08-10</span>
+      <span><b>Source</b> tau-trait @ <span class="mono">5855e28</span></span>
+      <span><b>Scope</b> <span class="mono">trajectories/gpt5_trajectories/</span></span>
+      <span><b>Artifacts</b> <span class="mono">data/intent_eval/tautrait/</span></span>
+    </div>
+  </header>
+
+  <section class="exec">
+    <h2>At a glance</h2>
+    <div class="stats">
+      <div class="stat"><div class="n">910</div><div class="l">rollouts released<br>4 traits × 4 domains + 2 none</div></div>
+      <div class="stat"><div class="n">27.1%</div><div class="l">flagged invalid user behavior<br>maj@1, vs 7.9% neutral baseline</div></div>
+      <div class="stat"><div class="stat"><div class="n">16.8%</div><div class="l">critical violations<br>(missing_constraint dominant)</div></div></div>
+      <div class="stat"><div class="n">1</div><div class="l">trial per condition<br>README says “averaged across 3”</div></div>
+    </div>
+    <p>The data is usable as a fixed-condition evaluation set, but four things limit what can be claimed from it: trait intensity is not stored in the traces (recoverable only from deleted git files), the neutral baseline covers only 2 of 4 domains, every reward is a single-trial 0/1, and the trait is a latent steer the published trace cannot see — so any validity judgement is measured against the neutral task, not against the trait.</p>
+  </section>
+
+  <!-- 1 -->
+  <h2 class="sec"><span class="num">01</span>Data source & provenance</h2>
+  <p class="sec-lede">Where the 910 rollouts come from and what is actually in each file.</p>
+  <ul>
+    <li>Repo <code>collinear-ai/tau-trait</code> (MIT), companion to arXiv <span class="mono">2510.04491</span>. Released trajectories live in <code>trajectories/gpt5_trajectories/</code> — 18 JSON files, one per (trait × domain) plus two <code>none</code> baselines.</li>
+    <li>Each file is a list of rollouts; each rollout = <code>{task_id, reward, info, traj, trial}</code>. <code>traj</code> is the agent-side message log (system / user / assistant / tool); assistant tool-calls are preserved with <code>function.name</code>, <code>arguments</code>, and <code>id</code>.</li>
+    <li><code>info.task</code> carries the neutral user-sim instruction, the ground-truth action sequence (<code>actions</code>), and required outputs (<code>outputs</code>). <code>info.reward_info</code> carries <code>r_actions</code>, <code>r_outputs</code>, <code>gt_data_hash</code>, and the executed actions.</li>
+    <li><b>No trait metadata is stored in any rollout.</b> The trait label is only in the filename; the intensity and trait_dict that produced it are absent (see §3, Issue I-1).</li>
+  </ul>
+
+  <!-- 2 -->
+  <h2 class="sec"><span class="num">02</span>Experimental setting</h2>
+  <p class="sec-lede">Recovered from <code>run.py</code>, <code>envs/base.py</code>, <code>envs/user.py</code>, and <code>agents/tool_calling_agent.py</code>.</p>
+  <div class="grid2">
+    <div>
+      <p><b>Agent</b></p>
+      <ul>
+        <li>Model: <b>GPT-5</b> (folder name)</li>
+        <li>Strategy: <code>tool-calling</code> (native function calling)</li>
+        <li>Temperature: <code>0.0</code></li>
+        <li>Max steps: <b>30</b> (<code>solve(..., max_num_steps=30)</code>)</li>
+        <li>System prompt: domain wiki / agent policy</li>
+      </ul>
+    </div>
+    <div>
+      <p><b>User simulator</b></p>
+      <ul>
+        <li>Model: <code>gpt-4o</code> default, via the Collinear <b>steer</b> endpoint</li>
+        <li>Steer call: <code>temperature=0.7</code>, <code>max_tokens=256</code></li>
+        <li>Endpoint: <code>steer.collinear.ai/steer_bare</code></li>
+        <li>Termination: user emits <code>###STOP###</code>, or <code>terminate_tools</code>, or 30-step cap</li>
+      </ul>
+    </div>
+  </div>
+  <p><b>Trait injection is latent, not textual.</b> In <code>user.py:113–129</code> the trait_dict is sent only to the steer endpoint; the non-steer branch ignores it entirely. The user-sim system prompt (<code>build_system_prompt</code>) contains the neutral instruction plus generic rules and <b>never mentions the trait</b>. This is the single most important setting fact for interpreting any text-based audit: the trait is a steering vector applied at generation, invisible in the recorded transcript.</p>
+  <p><b>Task set</b> (full <code>test</code> split per domain):</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>domain</th><th class="m">n tasks</th><th class="m">trait files</th><th>none baseline</th></tr></thead>
+      <tbody>
+        <tr><td>airline</td><td class="m">60</td><td class="m">4</td><td>—</td></tr>
+        <tr><td>retail</td><td class="m">120</td><td class="m">4</td><td>—</td></tr>
+        <tr><td>telecom</td><td class="m">18</td><td class="m">4</td><td>yes</td></tr>
+        <tr><td>telehealth</td><td class="m">20</td><td class="m">4</td><td>yes</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">→ 4×4 trait files + 2 none = 910 rollouts. Run params: <code>num_trials=1</code>, <code>seed=10</code>, <code>shuffle=0</code>, tasks in id order.</p>
+
+  <!-- 3 -->
+  <h2 class="sec"><span class="num">03</span>Trait intensity — recovered from git history</h2>
+  <p class="sec-lede">Not “only low”. Each file sets its named trait to <b>medium</b>, the other three to <b>low</b>.</p>
+  <p>The released traces do not store the trait_dict. The configs that produced them (<code>eval_scripts/trait_dict_*.json</code>) were removed in commit <code>2c6b2c9</code> but survive in git history:</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>trace filename</th><th>config (deleted)</th><th>named trait</th><th>others</th></tr></thead>
+      <tbody>
+        <tr><td><code>confusion_*.json</code></td><td><code>trait_dict_confusion.json</code></td><td>confusion = medium</td><td>low</td></tr>
+        <tr><td><code>impatience_*.json</code></td><td><code>trait_dict_impatient.json</code></td><td>impatience = medium</td><td>low</td></tr>
+        <tr><td><code>incoherence_*.json</code></td><td><code>trait_dict_coherence.json</code></td><td>incoherence = medium</td><td>low</td></tr>
+        <tr><td><code>skeptical_*.json</code></td><td><code>trait_dict_skeptical.json</code></td><td>skeptical = medium</td><td>low</td></tr>
+        <tr><td><code>*_none.json</code></td><td>—</td><td colspan="2">no trait_dict (null)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">Naming mismatch to watch: <code>incoherence_*.json</code> is produced by <code>trait_dict_coherence.json</code>. So each trace is “1 medium + 3 low”, not a clean single-trait condition and not high intensity.</p>
+
+  <!-- 4 -->
+  <h2 class="sec"><span class="num">04</span>Reward mechanics</h2>
+  <p class="sec-lede"><code>envs/base.py:126 calculate_reward()</code> — a 0/1 outcome score, two gates, no partial credit.</p>
+  <ol>
+    <li><b>DB-state hash (r_actions).</b> Hash the environment DB after the agent's run; reset, replay the ground-truth action sequence, hash again; <code>reward = 1</code> only if the two hashes are byte-identical (<code>consistent_hash(to_hashable(self.data))</code>). Any single field differing collapses the whole score to 0.</li>
+    <li><b>Output containment (r_outputs).</b> If the task lists required <code>outputs</code>, each must appear as a literal substring (case-insensitive, commas stripped) in some <code>RESPOND_ACTION</code> the agent sent to the user. One missing string → 0.</li>
+  </ol>
+  <p><code>reward = 1.0</code> iff both pass. The score is purely terminal-state + required-message; it does not evaluate conversation process, agent style, or how the user behaved. This is why a trait can be flagged “invalid user behavior” while the agent still scores 1 (and vice versa) — the two axes are independent by construction.</p>
+
+  <!-- 5 -->
+  <h2 class="sec"><span class="num">05</span>Validity audit — method</h2>
+  <p class="sec-lede">A maj@1 offline re-judge with the project's strict user-behavior auditor, run over all 910 rollouts.</p>
+  <ul>
+    <li>Judge: <code>scripts/judge_user_intent_preservation.py</code> (4 categories: conversation_structure_violation, premature_termination, ungrounded_reference, missing_constraint). <b>maj@1</b> — one judge sample per rollout (the project default is maj@3, so variance here is higher).</li>
+    <li>Binding text: the neutral <code>info.task.instruction</code> becomes the “role-play instructions the customer should follow.” The trait is <b>deliberately not</b> passed as persona, because the trait is a latent steer the trace cannot see. So <i>invalid</i> here means: <b>the user behaved in a way no reasonable cooperative customer would, judged against the neutral task</b> — i.e. the trait pushed the user across that line.</li>
+    <li>Pipeline: <code>scripts/persona_opt/judge_tautrait.py</code> converts τ-Trait rollouts to the judge's results.json shape, runs sync maj@1, and aggregates per trait / domain / trait×domain. Outputs in <code>data/intent_eval/tautrait/</code>.</li>
+  </ul>
+
+  <!-- 6 -->
+  <h2 class="sec"><span class="num">06</span>Findings — invalid rates</h2>
+  <p class="sec-lede">Overall 247/910 = 27.1% invalid, 16.8% critical; neutral baseline 7.9%.</p>
+
+  <h3 style="font-size:14px;margin:18px 0 6px">Per trait</h3>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>trait</th><th class="m">n</th><th class="m">viol %</th><th class="m">crit %</th><th class="m">intent_lost %</th><th class="m">reward</th></tr></thead>
+      <tbody>
+        <tr><td>skeptical</td><td class="m">218</td><td class="m hl">31.2</td><td class="m">15.6</td><td class="m">15.6</td><td class="m">0.266</td></tr>
+        <tr><td>incoherence</td><td class="m">218</td><td class="m">29.8</td><td class="m">18.3</td><td class="m">17.9</td><td class="m">0.495</td></tr>
+        <tr><td>impatience</td><td class="m">218</td><td class="m">25.7</td><td class="m hl">20.2</td><td class="m">20.2</td><td class="m">0.514</td></tr>
+        <tr><td>confusion</td><td class="m">218</td><td class="m">25.2</td><td class="m">14.7</td><td class="m">14.7</td><td class="m">0.372</td></tr>
+        <tr><td>none</td><td class="m">38</td><td class="m">7.9</td><td class="m">7.9</td><td class="m">7.9</td><td class="m">0.421</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">Violation types (overall 247): missing_constraint 159 · conversation_structure_violation 94 (mixed_modality 53, instruction_leak 27, other 10, turn_stuffing 4) · ungrounded_reference 27 (fabricated_data 14, misstated_context 13).</p>
+
+  <h3 style="font-size:14px;margin:18px 0 6px">Per domain</h3>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>domain</th><th class="m">n</th><th class="m">viol %</th><th class="m">crit %</th><th class="m">reward</th></tr></thead>
+      <tbody>
+        <tr><td>retail</td><td class="m">480</td><td class="m hl">30.0</td><td class="m">15.4</td><td class="m">0.421</td></tr>
+        <tr><td>airline</td><td class="m">240</td><td class="m">26.7</td><td class="m">20.0</td><td class="m">0.421</td></tr>
+        <tr><td>telehealth</td><td class="m">100</td><td class="m">26.0</td><td class="m hl">21.0</td><td class="m">0.180</td></tr>
+        <tr><td>telecom</td><td class="m">90</td><td class="m">14.4</td><td class="m">11.1</td><td class="m">0.600</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-size:14px;margin:18px 0 6px">Trait × domain — violation %</h3>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>domain \ trait</th><th class="m">confusion</th><th class="m">impatience</th><th class="m">incoherence</th><th class="m">skeptical</th><th class="m">none</th></tr></thead>
+      <tbody>
+        <tr><td>airline</td><td class="m">0.200</td><td class="m">0.267</td><td class="m hl">0.367</td><td class="m">0.233</td><td class="m">—</td></tr>
+        <tr><td>retail</td><td class="m">0.300</td><td class="m">0.258</td><td class="m">0.292</td><td class="m hl">0.350</td><td class="m">—</td></tr>
+        <tr><td>telecom</td><td class="m">0.056</td><td class="m">0.167</td><td class="m">0.167</td><td class="m hl">0.278</td><td class="m">0.056</td></tr>
+        <tr><td>telehealth</td><td class="m">0.300</td><td class="m">0.300</td><td class="m">0.250</td><td class="m hl">0.350</td><td class="m">0.100</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-size:14px;margin:18px 0 6px">Telecom reward — Δ vs none (the only clean baseline)</h3>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>trait</th><th class="m">reward</th><th class="m">Δ vs none</th></tr></thead>
+      <tbody>
+        <tr><td>none</td><td class="m">0.722</td><td class="m">—</td></tr>
+        <tr><td>confusion</td><td class="m">0.444</td><td class="m hl">−0.278</td></tr>
+        <tr><td>skeptical</td><td class="m">0.500</td><td class="m">−0.222</td></tr>
+        <tr><td>impatience</td><td class="m">0.611</td><td class="m">−0.111</td></tr>
+        <tr><td>incoherence</td><td class="m">0.722</td><td class="m">0.000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">n = 18 tasks × 1 trial per cell. Noise band ≈ ±0.1; the incoherence 0.0 and impatience −0.111 difference is not significant at this sample size.</p>
+
+  <p><b>Invalid and hard are decoupled.</b> <code>skeptical|retail</code> is both most-invalid (35%) and hardest (reward 0.192). But <code>incoherence|airline</code> is most-invalid on airline (36.7%) while reward is a middling 0.45, and <code>impatience|retail</code> is noisy-invalid (25.8%) yet easiest-ish (reward 0.583). A trait can be rule-breaking without being effective, and effective without being rule-breaking.</p>
+
+  <!-- 7 issues -->
+  <h2 class="sec"><span class="num">07</span>Issues</h2>
+  <p class="sec-lede">Ordered by severity. Severity reflects impact on what can be validly claimed from the released data.</p>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-1</span><span class="t">trait_dict not stored in traces — intensity only recoverable from deleted git history</span><span class="chip crit">critical · reproducibility</span></div>
+    <p>No rollout records the trait_dict or intensity. The producing configs (<code>eval_scripts/trait_dict_*.json</code>) were removed in commit <code>2c6b2c9</code> and survive only via <code>git show</code>. Anyone consuming the released JSONs cannot tell from the data itself that the named trait is <b>medium</b> and the rest <b>low</b>; the filename is the only hint, and it is misleading (incoherence ↔ coherence). A re-release should embed <code>trait_dict</code> and <code>user_model</code> in each rollout's <code>info</code>.</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-2</span><span class="t">single trial released; README reports “averaged across 3 runs”</span><span class="chip crit">critical · variance</span></div>
+    <p>Every rollout has <code>trial = 0</code> — one sample per (trait, domain, task). The README drop table is “averaged across 3 runs,” so the published trajectories do <b>not</b> reproduce the README numbers and cannot support 3-run-smoothed claims. For telecom (18 tasks) a single trial gives a reward noise band near ±0.1, so cell-level Δ values (e.g. incoherence 0.0 vs impatience −0.111) are not distinguishable from noise.</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-3</span><span class="t">neutral baseline exists for only 2 of 4 domains</span><span class="chip crit">critical · coverage</span></div>
+    <p><code>none</code> files exist only for telecom and telehealth (38 rollouts). Airline and retail have <b>no neutral baseline</b> in the released set, so the trait-vs-neutral drop — the benchmark's headline metric — cannot be computed for half the data from these trajectories alone. Any per-domain “drop” table that includes airline/retail must have come from an unreleased run.</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-4</span><span class="t">trait is a latent steer; text-based validity is measured against the neutral task</span><span class="chip warn">caveat · measurement</span></div>
+    <p>The judge binds the user to the neutral instruction and never sees the trait (it is applied at the steer endpoint, not in text). The auditor's normal rule “persona instructions never ground a violation” therefore cannot apply — we deliberately withheld the trait. So “27% invalid” means <b>trait-driven behavior a strict auditor calls an unreasonable customer against the neutral task</b>, which is exactly the fairness question, but it is not the same as “the user sim failed to follow its trait.” Re-running with the trait supplied as persona would yield a lower, different number.</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-5</span><span class="t">maj@1 judge variance and the alignment hazard in re-judging</span><span class="chip warn">caveat · method</span></div>
+    <p>The audit used maj@1 (project default is maj@3); borderline verdicts flip on a single sample. Additionally, the judge's <code>_select_sims</code> reorders sims by <code>(task_id, trial)</code>, and because our first results.json keyed sims by <code>domain|tid</code> (shared across 4 traits), the positional join with per-sim verdicts was initially misaligned — producing absurd cross-domain evidence (a telecom task flagged with telehealth quotes). Fixed by replicating the judge's sort key before joining; any re-use of this pipeline must keep task_id unique per sim or sort-match explicitly.</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-6</span><span class="t">reward is outcome-only; invalid ≠ hard by construction</span><span class="chip warn">caveat · interpretation</span></div>
+    <p>Reward is a DB-hash + output-containment 0/1. A user can break conversational rules yet still let the agent reach the correct terminal state (reward 1), or follow rules yet derail the agent (reward 0). The 27% invalid / 16.8% critical finding and the reward numbers measure orthogonal things and must not be conflated into a single “trait effectiveness” claim.</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-7</span><span class="t">user-sim cost untracked; steer spend invisible</span><span class="chip info">minor · data gap</span></div>
+    <p><code>info.user_cost</code> is <code>0.0</code> for 835 rollouts and <code>null</code> for 75. The steer endpoint's cost is never recorded, so per-rollout and per-trait user-sim spend cannot be audited from the release. Agent cost is also not surfaced in the rollout (only printed at run time).</p>
+  </div>
+
+  <div class="issue">
+    <div class="head"><span class="id">I-8</span><span class="t">README references a config file that does not exist in the repo</span><span class="chip info">minor · docs</span></div>
+    <p>The README example command uses <code>notebooks/trait_dict_skeptical.json</code>; the only file present is <code>notebooks/example_trait_dict_skeptical.json</code> (medium + lows). The example is not runnable as printed and slightly misrepresents the eval config used for the released traces.</p>
+  </div>
+
+  <!-- 8 recs -->
+  <h2 class="sec"><span class="num">08</span>Recommendations</h2>
+  <ol>
+    <li><b>Embed provenance in each rollout:</b> add <code>trait_dict</code>, <code>user_model</code>, <code>agent_model</code>, <code>temperature</code>, <code>trial</code>/<code>num_trials</code> to <code>info</code>. This is the single change that fixes I-1, I-2, I-7 at once.</li>
+    <li><b>Release the airline/retail <code>none</code> baselines</b> so the headline drop is computable for all four domains from the public set (I-3).</li>
+    <li><b>Release multi-trial data</b> (≥3) or explicitly label the release as single-trial and re-state the README table as “from an unreleased 3-run config” (I-2).</li>
+    <li><b>For any validity claim, state the measurement frame:</b> “judged against the neutral task, trait withheld” vs “trait supplied as persona.” They answer different questions and give different numbers (I-4).</li>
+    <li><b>Re-run the validity audit at maj@3</b> with per-sim-unique task_ids, and report violation type per cell — the missing_constraint vs structure split is where trait mechanism lives (I-5).</li>
+    <li><b>Keep invalid and reward separate in reporting</b>; a combined “trait difficulty” metric needs to be defined deliberately, not assumed (I-6).</li>
+  </ol>
+
+  <div class="foot">
+    Audit run on 2026-08-10. Scripts: <code>scripts/persona_opt/judge_tautrait.py</code> (convert / judge / aggregate). Judge: <code>scripts/judge_user_intent_preservation.py</code> sync mode, model <code>gpt-5.2</code>, maj@1. Full per-rollout verdicts: <code>data/intent_eval/tautrait/per_sim.jsonl</code>; aggregate: <code>tautrait_judge_summary.json</code>.
+  </div>
+
+</div>

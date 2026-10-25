@@ -1,0 +1,99 @@
+model_list:
+  - model_name: claude-sonnet-4-6
+    litellm_params:
+      model: openai/Qwen3-32B
+      api_base: http://localhost:8010/v1
+      api_key: EMPTY
+      max_tokens: 4096
+      extra_body:
+        chat_template_kwargs:
+          enable_thinking: false
+    model_info:
+      max_tokens: 32768
+      max_input_tokens: 32768
+      max_output_tokens: 4096
+
+  - model_name: claude-haiku-4-5-20251001
+    litellm_params:
+      model: openai/Qwen3-32B
+      api_base: http://localhost:8010/v1
+      api_key: EMPTY
+      max_tokens: 4096
+      extra_body:
+        chat_template_kwargs:
+          enable_thinking: false
+    model_info:
+      max_tokens: 32768
+      max_input_tokens: 32768
+      max_output_tokens: 4096
+
+  - model_name: openai/Qwen3-32B
+    litellm_params:
+      model: openai/Qwen3-32B
+      api_base: http://localhost:8010/v1
+      api_key: EMPTY
+      max_tokens: 4096
+      extra_body:
+        chat_template_kwargs:
+          enable_thinking: false
+    model_info:
+      max_tokens: 32768
+      max_input_tokens: 32768
+      max_output_tokens: 4096
+
+  - model_name: Qwen3-32B
+    litellm_params:
+      model: openai/Qwen3-32B
+      api_base: http://localhost:8010/v1
+      api_key: EMPTY
+      max_tokens: 4096
+      extra_body:
+        chat_template_kwargs:
+          enable_thinking: false
+    model_info:
+      max_tokens: 32768
+      max_input_tokens: 32768
+      max_output_tokens: 4096
+
+  - model_name: gpt-5.2
+    litellm_params:
+      model: gpt-5.2
+      api_key: os.environ/OPENAI_API_KEY
+      max_tokens: 4096
+      additional_drop_params:
+        - output_config
+    model_info:
+      max_tokens: 400000
+      max_input_tokens: 400000
+      max_output_tokens: 4096
+
+  - model_name: gpt-5.5
+    litellm_params:
+      model: gpt-5.5
+      api_key: os.environ/OPENAI_API_KEY
+      max_tokens: 4096
+      additional_drop_params:
+        - output_config
+    model_info:
+      max_tokens: 400000
+      max_input_tokens: 400000
+      max_output_tokens: 4096
+
+  - model_name: gpt-5.4
+    litellm_params:
+      model: gpt-5.4
+      api_key: os.environ/OPENAI_API_KEY
+      max_tokens: 4096
+      additional_drop_params:
+        - output_config
+    model_info:
+      max_tokens: 400000
+      max_input_tokens: 400000
+      max_output_tokens: 4096
+
+litellm_settings:
+  drop_params: true
+  modify_params: true
+  # vLLM's /v1/responses doesn't support tool use without Harmony.
+  # Force CC's /v1/messages requests through /v1/chat/completions instead.
+  use_chat_completions_url_for_anthropic_messages: true

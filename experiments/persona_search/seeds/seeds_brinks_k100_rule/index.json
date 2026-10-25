@@ -1,0 +1,802 @@
+[
+  {
+    "cluster": 0,
+    "name": "Erratic & Blunt",
+    "effect": "HELPS the task",
+    "n": 59,
+    "frac": 0.046,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_00_erratic_blunt/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Wavering & Verbose",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_01_wavering_verbose/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Erratic & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 15,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_02_erratic_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Frustrated & Hesitant",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_03_frustrated_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 9,
+    "frac": 0.007,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_04_verbose_polite/gen_00.md"
+  },
+  {
+    "cluster": 5,
+    "name": "Frustrated & Hesitant",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_05_frustrated_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 6,
+    "name": "Verbose & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_06_verbose_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 7,
+    "name": "Inquisitive & Terse",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_07_inquisitive_terse/gen_00.md"
+  },
+  {
+    "cluster": 8,
+    "name": "Confident & Verbose",
+    "effect": "HELPS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_08_confident_verbose/gen_00.md"
+  },
+  {
+    "cluster": 9,
+    "name": "Front-loading & Polite",
+    "effect": "HELPS the task",
+    "n": 6,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_09_front_loading_polite/gen_00.md"
+  },
+  {
+    "cluster": 10,
+    "name": "Erratic & Terse",
+    "effect": "HELPS the task",
+    "n": 56,
+    "frac": 0.044,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_10_erratic_terse/gen_00.md"
+  },
+  {
+    "cluster": 11,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_11_confident_polite/gen_00.md"
+  },
+  {
+    "cluster": 12,
+    "name": "Wavering & Verbose",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_12_wavering_verbose/gen_00.md"
+  },
+  {
+    "cluster": 13,
+    "name": "Inquisitive & Frustrated",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_13_inquisitive_frustrated/gen_00.md"
+  },
+  {
+    "cluster": 14,
+    "name": "Front-loading & Blunt",
+    "effect": "HELPS the task",
+    "n": 36,
+    "frac": 0.028,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_14_front_loading_blunt/gen_00.md"
+  },
+  {
+    "cluster": 15,
+    "name": "Blunt & Declarative",
+    "effect": "HELPS the task",
+    "n": 44,
+    "frac": 0.034,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_15_blunt_declarative/gen_00.md"
+  },
+  {
+    "cluster": 16,
+    "name": "Verbose & Confident",
+    "effect": "HARMS the task",
+    "n": 16,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_16_verbose_confident/gen_00.md"
+  },
+  {
+    "cluster": 17,
+    "name": "Verbose & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_17_verbose_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 18,
+    "name": "Front-loading & Blunt",
+    "effect": "HELPS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_18_front_loading_blunt/gen_00.md"
+  },
+  {
+    "cluster": 19,
+    "name": "Confident & Wavering",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_19_confident_wavering/gen_00.md"
+  },
+  {
+    "cluster": 20,
+    "name": "Erratic & Polite",
+    "effect": "HELPS the task",
+    "n": 15,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_20_erratic_polite/gen_00.md"
+  },
+  {
+    "cluster": 21,
+    "name": "Verbose & Hesitant",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_21_verbose_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 22,
+    "name": "Hesitant & Erratic",
+    "effect": "HARMS the task",
+    "n": 16,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_22_hesitant_erratic/gen_00.md"
+  },
+  {
+    "cluster": 23,
+    "name": "Inquisitive & Blunt",
+    "effect": "HELPS the task",
+    "n": 22,
+    "frac": 0.017,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_23_inquisitive_blunt/gen_00.md"
+  },
+  {
+    "cluster": 24,
+    "name": "Confident & Front-loading",
+    "effect": "HELPS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_24_confident_front_loading/gen_00.md"
+  },
+  {
+    "cluster": 25,
+    "name": "Polite & Confident",
+    "effect": "HELPS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_25_polite_confident/gen_00.md"
+  },
+  {
+    "cluster": 26,
+    "name": "Inquisitive & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 18,
+    "frac": 0.014,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_26_inquisitive_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 27,
+    "name": "Polite & Verbose",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_27_polite_verbose/gen_00.md"
+  },
+  {
+    "cluster": 28,
+    "name": "Verbose & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_28_verbose_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 29,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_29_verbose_polite/gen_00.md"
+  },
+  {
+    "cluster": 30,
+    "name": "Pushy & Verbose",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_30_pushy_verbose/gen_00.md"
+  },
+  {
+    "cluster": 31,
+    "name": "Terse & Blunt",
+    "effect": "HELPS the task",
+    "n": 61,
+    "frac": 0.048,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_31_terse_blunt/gen_00.md"
+  },
+  {
+    "cluster": 32,
+    "name": "Verbose & Frustrated",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_32_verbose_frustrated/gen_00.md"
+  },
+  {
+    "cluster": 33,
+    "name": "Drip-feeding & Blunt",
+    "effect": "HELPS the task",
+    "n": 23,
+    "frac": 0.018,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_33_drip_feeding_blunt/gen_00.md"
+  },
+  {
+    "cluster": 34,
+    "name": "Erratic & Inquisitive",
+    "effect": "HELPS the task",
+    "n": 8,
+    "frac": 0.006,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_34_erratic_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 35,
+    "name": "Blunt & Declarative",
+    "effect": "HELPS the task",
+    "n": 58,
+    "frac": 0.045,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_35_blunt_declarative/gen_00.md"
+  },
+  {
+    "cluster": 36,
+    "name": "Inquisitive & Verbose",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_36_inquisitive_verbose/gen_00.md"
+  },
+  {
+    "cluster": 37,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 24,
+    "frac": 0.019,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_37_front_loading_terse/gen_00.md"
+  },
+  {
+    "cluster": 38,
+    "name": "Inquisitive & Front-loading",
+    "effect": "HELPS the task",
+    "n": 11,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_38_inquisitive_front_loading/gen_00.md"
+  },
+  {
+    "cluster": 39,
+    "name": "Polite & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_39_polite_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 40,
+    "name": "Terse & Front-loading",
+    "effect": "HELPS the task",
+    "n": 16,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_40_terse_front_loading/gen_00.md"
+  },
+  {
+    "cluster": 41,
+    "name": "Drip-feeding & Declarative",
+    "effect": "HELPS the task",
+    "n": 23,
+    "frac": 0.018,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_41_drip_feeding_declarative/gen_00.md"
+  },
+  {
+    "cluster": 42,
+    "name": "Wavering & Polite",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_42_wavering_polite/gen_00.md"
+  },
+  {
+    "cluster": 43,
+    "name": "Inquisitive & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_43_inquisitive_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 44,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_44_verbose_polite/gen_00.md"
+  },
+  {
+    "cluster": 45,
+    "name": "Polite & Confident",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_45_polite_confident/gen_00.md"
+  },
+  {
+    "cluster": 46,
+    "name": "Erratic & Declarative",
+    "effect": "HARMS the task",
+    "n": 49,
+    "frac": 0.038,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_46_erratic_declarative/gen_00.md"
+  },
+  {
+    "cluster": 47,
+    "name": "Declarative & Terse",
+    "effect": "HELPS the task",
+    "n": 46,
+    "frac": 0.036,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_47_declarative_terse/gen_00.md"
+  },
+  {
+    "cluster": 48,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_48_confident_polite/gen_00.md"
+  },
+  {
+    "cluster": 49,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_49_confident_polite/gen_00.md"
+  },
+  {
+    "cluster": 50,
+    "name": "Polite & Declarative",
+    "effect": "HELPS the task",
+    "n": 24,
+    "frac": 0.019,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_50_polite_declarative/gen_00.md"
+  },
+  {
+    "cluster": 51,
+    "name": "Erratic & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 39,
+    "frac": 0.03,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_51_erratic_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 52,
+    "name": "Inquisitive & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_52_inquisitive_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 53,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_53_front_loading_terse/gen_00.md"
+  },
+  {
+    "cluster": 54,
+    "name": "Inquisitive & Blunt",
+    "effect": "HELPS the task",
+    "n": 12,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_54_inquisitive_blunt/gen_00.md"
+  },
+  {
+    "cluster": 55,
+    "name": "Verbose & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_55_verbose_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 56,
+    "name": "Wavering & Verbose",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_56_wavering_verbose/gen_00.md"
+  },
+  {
+    "cluster": 57,
+    "name": "Confident & Verbose",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_57_confident_verbose/gen_00.md"
+  },
+  {
+    "cluster": 58,
+    "name": "Inquisitive & Verbose",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_58_inquisitive_verbose/gen_00.md"
+  },
+  {
+    "cluster": 59,
+    "name": "Inquisitive & Hesitant",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_59_inquisitive_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 60,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 12,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_60_verbose_polite/gen_00.md"
+  },
+  {
+    "cluster": 61,
+    "name": "Verbose & Confident",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_61_verbose_confident/gen_00.md"
+  },
+  {
+    "cluster": 62,
+    "name": "Verbose & Hesitant",
+    "effect": "HARMS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_62_verbose_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 63,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_63_confident_polite/gen_00.md"
+  },
+  {
+    "cluster": 64,
+    "name": "Frustrated & Erratic",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_64_frustrated_erratic/gen_00.md"
+  },
+  {
+    "cluster": 65,
+    "name": "Erratic & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 6,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_65_erratic_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 66,
+    "name": "Drip-feeding & Declarative",
+    "effect": "HELPS the task",
+    "n": 49,
+    "frac": 0.038,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_66_drip_feeding_declarative/gen_00.md"
+  },
+  {
+    "cluster": 67,
+    "name": "Polite & Confused",
+    "effect": "HARMS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_67_polite_confused/gen_00.md"
+  },
+  {
+    "cluster": 68,
+    "name": "Polite & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_68_polite_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 69,
+    "name": "Inquisitive & Polite",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_69_inquisitive_polite/gen_00.md"
+  },
+  {
+    "cluster": 70,
+    "name": "Front-loading & Blunt",
+    "effect": "HELPS the task",
+    "n": 15,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_70_front_loading_blunt/gen_00.md"
+  },
+  {
+    "cluster": 71,
+    "name": "Front-loading & Polite",
+    "effect": "HELPS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_71_front_loading_polite/gen_00.md"
+  },
+  {
+    "cluster": 72,
+    "name": "Polite & Confident",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_72_polite_confident/gen_00.md"
+  },
+  {
+    "cluster": 73,
+    "name": "Erratic & Terse",
+    "effect": "HELPS the task",
+    "n": 18,
+    "frac": 0.014,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_73_erratic_terse/gen_00.md"
+  },
+  {
+    "cluster": 74,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 11,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_74_front_loading_terse/gen_00.md"
+  },
+  {
+    "cluster": 75,
+    "name": "Verbose & Frustrated",
+    "effect": "HARMS the task",
+    "n": 6,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_75_verbose_frustrated/gen_00.md"
+  },
+  {
+    "cluster": 76,
+    "name": "Frustrated & Hesitant",
+    "effect": "HARMS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_76_frustrated_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 77,
+    "name": "Polite & Declarative",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_77_polite_declarative/gen_00.md"
+  },
+  {
+    "cluster": 78,
+    "name": "Hesitant & Confident",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_78_hesitant_confident/gen_00.md"
+  },
+  {
+    "cluster": 79,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_79_confident_polite/gen_00.md"
+  },
+  {
+    "cluster": 80,
+    "name": "Front-loading & Frustrated",
+    "effect": "HARMS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_80_front_loading_frustrated/gen_00.md"
+  },
+  {
+    "cluster": 81,
+    "name": "Blunt & Declarative",
+    "effect": "HELPS the task",
+    "n": 93,
+    "frac": 0.073,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_81_blunt_declarative/gen_00.md"
+  },
+  {
+    "cluster": 82,
+    "name": "Frustrated & Confident",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_82_frustrated_confident/gen_00.md"
+  },
+  {
+    "cluster": 83,
+    "name": "Drip-feeding & Inquisitive",
+    "effect": "HELPS the task",
+    "n": 26,
+    "frac": 0.02,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_83_drip_feeding_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 84,
+    "name": "Inquisitive & Polite",
+    "effect": "HELPS the task",
+    "n": 9,
+    "frac": 0.007,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_84_inquisitive_polite/gen_00.md"
+  },
+  {
+    "cluster": 85,
+    "name": "Erratic & Inquisitive",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_85_erratic_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 86,
+    "name": "Polite & Confident",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_86_polite_confident/gen_00.md"
+  },
+  {
+    "cluster": 87,
+    "name": "Confident & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_87_confident_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 88,
+    "name": "Confident & Verbose",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_88_confident_verbose/gen_00.md"
+  },
+  {
+    "cluster": 89,
+    "name": "Polite & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_89_polite_inquisitive/gen_00.md"
+  },
+  {
+    "cluster": 90,
+    "name": "Confident & Polite",
+    "effect": "HELPS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_90_confident_polite/gen_00.md"
+  },
+  {
+    "cluster": 91,
+    "name": "Confident & Front-loading",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_91_confident_front_loading/gen_00.md"
+  },
+  {
+    "cluster": 92,
+    "name": "Wavering & Front-loading",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_92_wavering_front_loading/gen_00.md"
+  },
+  {
+    "cluster": 93,
+    "name": "Polite & Confident",
+    "effect": "HELPS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_93_polite_confident/gen_00.md"
+  },
+  {
+    "cluster": 94,
+    "name": "Confident & Hesitant",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_94_confident_hesitant/gen_00.md"
+  },
+  {
+    "cluster": 95,
+    "name": "Confident & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_95_confident_drip_feeding/gen_00.md"
+  },
+  {
+    "cluster": 96,
+    "name": "Inquisitive & Erratic",
+    "effect": "HELPS the task",
+    "n": 20,
+    "frac": 0.016,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_96_inquisitive_erratic/gen_00.md"
+  },
+  {
+    "cluster": 97,
+    "name": "Polite & Verbose",
+    "effect": "HARMS the task",
+    "n": 9,
+    "frac": 0.007,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_97_polite_verbose/gen_00.md"
+  },
+  {
+    "cluster": 98,
+    "name": "Polite & Verbose",
+    "effect": "HARMS the task",
+    "n": 8,
+    "frac": 0.006,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_98_polite_verbose/gen_00.md"
+  },
+  {
+    "cluster": 99,
+    "name": "Inquisitive & Verbose",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_99_inquisitive_verbose/gen_00.md"
+  }
+]

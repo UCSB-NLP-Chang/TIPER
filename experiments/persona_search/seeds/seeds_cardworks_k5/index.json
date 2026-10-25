@@ -1,0 +1,42 @@
+[
+  {
+    "cluster": 0,
+    "name": "Anxious Action-Seeker",
+    "effect": "HARMS the task",
+    "n": 306,
+    "frac": 0.12,
+    "seed_file": "data/persona_opt/seeds_cardworks_k5/cw_00_anxious_action_seeker/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Rambling Yet Compliant",
+    "effect": "HARMS the task",
+    "n": 358,
+    "frac": 0.141,
+    "seed_file": "data/persona_opt/seeds_cardworks_k5/cw_01_rambling_yet_compliant/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Long-Winded Disputer",
+    "effect": "HARMS the task",
+    "n": 148,
+    "frac": 0.058,
+    "seed_file": "data/persona_opt/seeds_cardworks_k5/cw_02_long_winded_disputer/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Wary Step-By-Step",
+    "effect": "HARMS the task",
+    "n": 1298,
+    "frac": 0.511,
+    "seed_file": "data/persona_opt/seeds_cardworks_k5/cw_03_wary_step_by_step/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Brisk Cooperative Follower",
+    "effect": "HELPS the task",
+    "n": 430,
+    "frac": 0.169,
+    "seed_file": "data/persona_opt/seeds_cardworks_k5/cw_04_brisk_cooperative_follower/gen_00.md"
+  }
+]

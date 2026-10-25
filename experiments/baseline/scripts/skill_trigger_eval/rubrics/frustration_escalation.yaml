@@ -1,0 +1,21 @@
+skill: frustration-escalation
+description: >
+  The user simulator should escalate frustration when 2+ distinct fix attempts
+  have been tried AND failed. A "fix attempt" means the agent suggests an action,
+  the user performs it, and the result shows failure or no improvement.
+
+positive_conditions:
+  - 2+ distinct fix attempts have been tried AND failed
+  - A "fix attempt" = agent suggests action → user performs it → result shows failure/no improvement
+  - Agent-caused failures count (e.g., agent applied wrong setting)
+
+negative_conditions:
+  - Agent is gathering information, not attempting fixes
+  - Only 1 fix attempt has failed
+  - User is frustrated but root cause is waiting time, not failed fixes
+  - User refused to follow instructions (non-compliance does NOT count as failed fix)
+
+required_evidence:
+  - List the failed fix attempts with turn references
+  - Count: num_failed_fix_attempts_so_far
+  - Distinguish between "agent suggested fix" vs "agent asked question"

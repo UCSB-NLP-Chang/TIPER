@@ -1,0 +1,205 @@
+{
+  "banking": [
+    "task_002",
+    "task_007",
+    "task_010",
+    "task_012",
+    "task_015",
+    "task_016",
+    "task_018",
+    "task_021",
+    "task_028",
+    "task_032",
+    "task_033",
+    "task_041",
+    "task_043",
+    "task_045",
+    "task_050",
+    "task_054",
+    "task_056",
+    "task_058",
+    "task_059",
+    "task_072",
+    "task_076",
+    "task_087",
+    "task_095",
+    "task_096",
+    "task_102"
+  ],
+  "telecom": [
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_sms_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:None]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|break_app_storage_permission[PERSONA:None]",
+    "[mms_issue]airplane_mode_on|bad_wifi_calling|break_app_both_permissions|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:None]",
+    "[mms_issue]bad_network_preference|bad_wifi_calling|break_app_sms_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]bad_network_preference|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mms_issue]bad_wifi_calling|break_apn_mms_setting|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:None]",
+    "[mms_issue]bad_wifi_calling|break_apn_mms_setting|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]break_apn_mms_setting|data_mode_off|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:Hard]",
+    "[mms_issue]break_apn_mms_setting|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]break_app_sms_permission|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on[PERSONA:None]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]bad_network_preference|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]data_mode_off|data_usage_exceeded[PERSONA:None]",
+    "[mobile_data_issue]data_saver_mode_on|data_usage_exceeded[PERSONA:Easy]",
+    "[service_issue]airplane_mode_on|contract_end_suspension|lock_sim_card_pin|unseat_sim_card[PERSONA:Hard]",
+    "[service_issue]airplane_mode_on|overdue_bill_suspension[PERSONA:None]",
+    "[service_issue]break_apn_settings|contract_end_suspension|lock_sim_card_pin|unseat_sim_card[PERSONA:Hard]",
+    "[service_issue]break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:Hard]",
+    "[service_issue]overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]"
+  ],
+  "metadata": {
+    "selection_method": "floor_ceiling_removal + uniform_random_sample",
+    "source": "main_agent_matrix",
+    "agents": [
+      "gpt-5.2",
+      "gpt-5.4",
+      "sonnet-4.5"
+    ],
+    "n_trials": 5000,
+    "banking_report": {
+      "informative_pool_size": 57,
+      "sampled": 25,
+      "pool_ranking": [
+        "gpt-5.4",
+        "gpt-5.2",
+        "sonnet-4.5"
+      ],
+      "pool_per_agent_rate": {
+        "gpt-5.2": 0.36647173489278745,
+        "gpt-5.4": 0.47076023391812855,
+        "sonnet-4.5": 0.2807017543859649
+      },
+      "ranking_preserved_fraction": 0.8962,
+      "maxdev_mean": 0.0686991812865497,
+      "maxdev_median": 0.06596491228070173,
+      "maxdev_p90": 0.10923976608187141,
+      "maxdev_worst": 0.2126315789473684,
+      "frac_maxdev_le_5pp": 0.2882,
+      "emitted_draw_maxdev": 0.002573099415204727,
+      "emitted_draw_ranking": [
+        "gpt-5.4",
+        "gpt-5.2",
+        "sonnet-4.5"
+      ],
+      "n_trials": 5000
+    },
+    "telecom_report": {
+      "informative_pool_size": 91,
+      "sampled": 25,
+      "pool_ranking": [
+        "gpt-5.2",
+        "gpt-5.4",
+        "sonnet-4.5"
+      ],
+      "pool_per_agent_rate": {
+        "gpt-5.2": 0.8473748473748473,
+        "gpt-5.4": 0.8315018315018315,
+        "sonnet-4.5": 0.6507936507936507
+      },
+      "ranking_preserved_fraction": 0.6772,
+      "maxdev_mean": 0.05379277655677655,
+      "maxdev_median": 0.04924297924297927,
+      "maxdev_p90": 0.09142857142857164,
+      "maxdev_worst": 0.21142857142857163,
+      "frac_maxdev_le_5pp": 0.506,
+      "emitted_draw_maxdev": 0.001514041514041553,
+      "emitted_draw_ranking": [
+        "gpt-5.2",
+        "gpt-5.4",
+        "sonnet-4.5"
+      ],
+      "n_trials": 5000
+    },
+    "banking_coverage": {
+      "gpt-5.2|gpt52user": {
+        "path": "data/canonical_agent_matrix/banking_gpt52_gpt52user_high_reasoning",
+        "n_tasks": 97,
+        "used": true
+      },
+      "gpt-5.2|sonnet46user": {
+        "path": "data/simulations/banking_gpt52_sonnet46user_high_reasoning",
+        "n_tasks": 96,
+        "used": true
+      },
+      "gpt-5.2|cc_con": {
+        "path": "data/simulations/banking_gpt52_sonnet46cconuser_high_reasoning",
+        "n_tasks": 97,
+        "used": true
+      },
+      "gpt-5.4|gpt52user": {
+        "path": "data/canonical_agent_matrix/banking_gpt54_gpt52user_high_reasoning",
+        "n_tasks": 97,
+        "used": true
+      },
+      "gpt-5.4|sonnet46user": {
+        "path": "data/canonical_agent_matrix/banking_gpt54_sonnet46user_high_reasoning",
+        "n_tasks": 96,
+        "used": true
+      },
+      "gpt-5.4|cc_con": {
+        "path": "data/simulations/banking_gpt54_sonnet46cconuser_high_reasoning",
+        "n_tasks": 0,
+        "used": false
+      },
+      "sonnet-4.5|cc_con": {
+        "path": "data/simulations/banking_sonnet45_sonnet46cconuser_high_reasoning",
+        "n_tasks": 89,
+        "used": true
+      }
+    },
+    "telecom_coverage": {
+      "gpt-5.2|gpt52user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt52_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.2|sonnet46user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt52_sonnet46user_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.2|cc_con": {
+        "path": "data/simulations/telecom_gpt52_sonnet46cconuser_high_reasoning_v2",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.4|gpt52user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt54_gpt52user_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.4|sonnet46user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt54_sonnet46user_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.4|cc_con": {
+        "path": "data/simulations/telecom_gpt54_sonnet46cconuser_high_reasoning_v2",
+        "n_tasks": 114,
+        "used": true
+      },
+      "sonnet-4.5|gpt52user": {
+        "path": "data/canonical_agent_matrix/telecom_sonnet45_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "sonnet-4.5|sonnet46user": {
+        "path": "data/canonical_agent_matrix/telecom_sonnet45_high_sonnet46user",
+        "n_tasks": 114,
+        "used": true
+      },
+      "sonnet-4.5|cc_con": {
+        "path": "data/simulations/telecom_sonnet45_sonnet46cconuser_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      }
+    },
+    "banking_caveat": "RAGGED: sonnet-4.5 only under cc_con; agent x user confounded for banking."
+  }
+}

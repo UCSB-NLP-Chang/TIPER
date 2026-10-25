@@ -1,0 +1,1440 @@
+{
+  "banking": [
+    "task_004",
+    "task_005",
+    "task_007",
+    "task_012",
+    "task_014",
+    "task_015",
+    "task_016",
+    "task_017",
+    "task_022",
+    "task_023",
+    "task_028",
+    "task_034",
+    "task_048",
+    "task_051",
+    "task_052",
+    "task_054",
+    "task_056",
+    "task_058",
+    "task_059",
+    "task_071",
+    "task_075",
+    "task_076",
+    "task_096",
+    "task_101"
+  ],
+  "telecom": [
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_both_permissions|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|unseat_sim_card[PERSONA:Hard]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_mode_off|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]airplane_mode_on|bad_wifi_calling|break_app_both_permissions|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:None]",
+    "[mms_issue]airplane_mode_on|bad_wifi_calling|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:Easy]",
+    "[mms_issue]bad_network_preference|bad_wifi_calling|break_app_both_permissions|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:None]",
+    "[mms_issue]bad_network_preference|break_app_both_permissions[PERSONA:Easy]",
+    "[mms_issue]bad_network_preference|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mms_issue]bad_network_preference|user_abroad_roaming_disabled_off[PERSONA:None]",
+    "[mms_issue]bad_network_preference|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mms_issue]bad_wifi_calling|break_apn_mms_setting|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:None]",
+    "[mms_issue]bad_wifi_calling|break_apn_mms_setting|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mms_issue]break_apn_mms_setting|data_mode_off|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:Hard]",
+    "[mms_issue]break_apn_mms_setting|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:Hard]",
+    "[mms_issue]break_apn_mms_setting|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mms_issue]break_app_sms_permission|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]airplane_mode_on|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on[PERSONA:None]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+    "[mobile_data_issue]bad_network_preference|data_saver_mode_on|data_usage_exceeded[PERSONA:Hard]",
+    "[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+    "[mobile_data_issue]data_mode_off|data_usage_exceeded[PERSONA:None]",
+    "[service_issue]airplane_mode_on|break_apn_settings[PERSONA:Hard]",
+    "[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension[PERSONA:None]",
+    "[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:None]",
+    "[service_issue]airplane_mode_on|break_apn_settings|unseat_sim_card[PERSONA:None]",
+    "[service_issue]airplane_mode_on|overdue_bill_suspension[PERSONA:None]",
+    "[service_issue]airplane_mode_on|overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]",
+    "[service_issue]break_apn_settings|contract_end_suspension|lock_sim_card_pin[PERSONA:Hard]",
+    "[service_issue]break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:Hard]",
+    "[service_issue]contract_end_suspension|lock_sim_card_pin[PERSONA:Hard]",
+    "[service_issue]contract_end_suspension|unseat_sim_card[PERSONA:Hard]"
+  ],
+  "metadata": {
+    "selection_method": "irt_discrimination_stratified_agent+user",
+    "source": "main_agent_matrix",
+    "agents": [
+      "gpt-5.2",
+      "gpt-5.4",
+      "sonnet-4.5"
+    ],
+    "users": [
+      "gpt52user",
+      "sonnet46user",
+      "cc_con"
+    ],
+    "discrimination": "total_disc = model_disc(agents) + user_disc(users)",
+    "banking_caveat": "RAGGED: no user covers all 3 agents; gpt-5.4 cc_con cell broken, sonnet-4.5 only has cc_con. agent x user confounded for banking.",
+    "banking_coverage": {
+      "gpt-5.2|gpt52user": {
+        "path": "data/canonical_agent_matrix/banking_gpt52_gpt52user_high_reasoning",
+        "n_tasks": 97,
+        "used": true
+      },
+      "gpt-5.2|sonnet46user": {
+        "path": "data/simulations/banking_gpt52_sonnet46user_high_reasoning",
+        "n_tasks": 0,
+        "used": false
+      },
+      "gpt-5.2|cc_con": {
+        "path": "data/simulations/banking_gpt52_sonnet46cconuser_high_reasoning",
+        "n_tasks": 97,
+        "used": true
+      },
+      "gpt-5.4|gpt52user": {
+        "path": "data/canonical_agent_matrix/banking_gpt54_gpt52user_high_reasoning",
+        "n_tasks": 97,
+        "used": true
+      },
+      "gpt-5.4|sonnet46user": {
+        "path": "data/canonical_agent_matrix/banking_gpt54_sonnet46user_high_reasoning",
+        "n_tasks": 96,
+        "used": true
+      },
+      "gpt-5.4|cc_con": {
+        "path": "data/simulations/banking_gpt54_sonnet46cconuser_high_reasoning",
+        "n_tasks": 0,
+        "used": false
+      },
+      "sonnet-4.5|cc_con": {
+        "path": "data/simulations/banking_sonnet45_sonnet46cconuser_high_reasoning",
+        "n_tasks": 91,
+        "used": true
+      }
+    },
+    "telecom_coverage": {
+      "gpt-5.2|gpt52user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt52_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.2|sonnet46user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt52_sonnet46user_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.2|cc_con": {
+        "path": "data/simulations/telecom_gpt52_sonnet46cconuser_high_reasoning_v2",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.4|gpt52user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt54_gpt52user_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.4|sonnet46user": {
+        "path": "data/canonical_agent_matrix/telecom_gpt54_sonnet46user_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "gpt-5.4|cc_con": {
+        "path": "data/simulations/telecom_gpt54_sonnet46cconuser_high_reasoning_v2",
+        "n_tasks": 114,
+        "used": true
+      },
+      "sonnet-4.5|gpt52user": {
+        "path": "data/canonical_agent_matrix/telecom_sonnet45_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      },
+      "sonnet-4.5|sonnet46user": {
+        "path": "data/canonical_agent_matrix/telecom_sonnet45_high_sonnet46user",
+        "n_tasks": 114,
+        "used": true
+      },
+      "sonnet-4.5|cc_con": {
+        "path": "data/simulations/telecom_sonnet45_sonnet46cconuser_high_reasoning",
+        "n_tasks": 114,
+        "used": true
+      }
+    },
+    "banking_stats": {
+      "task_096": {
+        "pooled_rate": 0.1,
+        "model_disc": 0.23570226039551584,
+        "user_disc": 0.11785113019775792,
+        "total_disc": 0.35355339059327373,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.0,
+          "sonnet-4.5": 0.5
+        },
+        "per_user_rate": {
+          "gpt52user": 0.0,
+          "cc_con": 0.25,
+          "sonnet46user": 0.0
+        },
+        "n_agents": 3
+      },
+      "task_101": {
+        "pooled_rate": 0.16666666666666666,
+        "model_disc": 0.20786985482077452,
+        "user_disc": 0.1416394309331329,
+        "total_disc": 0.3495092857539074,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.16666666666666666,
+          "sonnet-4.5": 0.5
+        },
+        "per_user_rate": {
+          "gpt52user": 0.0,
+          "cc_con": 0.25,
+          "sonnet46user": 0.3333333333333333
+        },
+        "n_agents": 3
+      },
+      "task_048": {
+        "pooled_rate": 0.13333333333333333,
+        "model_disc": 0.15713484026367722,
+        "user_disc": 0.15713484026367722,
+        "total_disc": 0.31426968052735443,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.3333333333333333,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.3333333333333333,
+          "cc_con": 0.0,
+          "sonnet46user": 0.0
+        },
+        "n_agents": 3
+      },
+      "task_059": {
+        "pooled_rate": 0.13333333333333333,
+        "model_disc": 0.15713484026367722,
+        "user_disc": 0.13608276348795434,
+        "total_disc": 0.29321760375163153,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.3333333333333333,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.16666666666666666,
+          "cc_con": 0.0,
+          "sonnet46user": 0.3333333333333333
+        },
+        "n_agents": 3
+      },
+      "task_028": {
+        "pooled_rate": 0.13333333333333333,
+        "model_disc": 0.13608276348795434,
+        "user_disc": 0.13608276348795434,
+        "total_disc": 0.2721655269759087,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.16666666666666666,
+          "sonnet-4.5": 0.3333333333333333
+        },
+        "per_user_rate": {
+          "gpt52user": 0.0,
+          "cc_con": 0.16666666666666666,
+          "sonnet46user": 0.3333333333333333
+        },
+        "n_agents": 3
+      },
+      "task_071": {
+        "pooled_rate": 0.08333333333333333,
+        "model_disc": 0.08333333333333333,
+        "user_disc": 0.15713484026367722,
+        "total_disc": 0.24046817359701056,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.16666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 0.0,
+          "cc_con": 0.0,
+          "sonnet46user": 0.3333333333333333
+        },
+        "n_agents": 2
+      },
+      "task_075": {
+        "pooled_rate": 0.2,
+        "model_disc": 0.4714045207910317,
+        "user_disc": 0.23570226039551584,
+        "total_disc": 0.7071067811865475,
+        "per_agent_rate": {
+          "gpt-5.2": 0.0,
+          "gpt-5.4": 0.0,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.0,
+          "cc_con": 0.5,
+          "sonnet46user": 0.0
+        },
+        "n_agents": 3
+      },
+      "task_012": {
+        "pooled_rate": 0.5333333333333333,
+        "model_disc": 0.36004114991154784,
+        "user_disc": 0.3424674446093876,
+        "total_disc": 0.7025085945209355,
+        "per_agent_rate": {
+          "gpt-5.2": 0.16666666666666666,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.3333333333333333
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "cc_con": 0.16666666666666666,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_056": {
+        "pooled_rate": 0.3333333333333333,
+        "model_disc": 0.3928371006591931,
+        "user_disc": 0.2721655269759087,
+        "total_disc": 0.6650026276351018,
+        "per_agent_rate": {
+          "gpt-5.2": 0.16666666666666666,
+          "gpt-5.4": 0.16666666666666666,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.0,
+          "cc_con": 0.6666666666666666,
+          "sonnet46user": 0.3333333333333333
+        },
+        "n_agents": 3
+      },
+      "task_058": {
+        "pooled_rate": 0.26666666666666666,
+        "model_disc": 0.4374448818895451,
+        "user_disc": 0.20786985482077452,
+        "total_disc": 0.6453147367103196,
+        "per_agent_rate": {
+          "gpt-5.2": 0.16666666666666666,
+          "gpt-5.4": 0.0,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.16666666666666666,
+          "cc_con": 0.5,
+          "sonnet46user": 0.0
+        },
+        "n_agents": 3
+      },
+      "task_054": {
+        "pooled_rate": 0.3333333333333333,
+        "model_disc": 0.20786985482077452,
+        "user_disc": 0.3928371006591931,
+        "total_disc": 0.6007069554799676,
+        "per_agent_rate": {
+          "gpt-5.2": 0.3333333333333333,
+          "gpt-5.4": 0.5,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.16666666666666666,
+          "cc_con": 0.16666666666666666,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_076": {
+        "pooled_rate": 0.3333333333333333,
+        "model_disc": 0.3928371006591931,
+        "user_disc": 0.20786985482077452,
+        "total_disc": 0.6007069554799676,
+        "per_agent_rate": {
+          "gpt-5.2": 0.16666666666666666,
+          "gpt-5.4": 0.16666666666666666,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.3333333333333333,
+          "cc_con": 0.5,
+          "sonnet46user": 0.0
+        },
+        "n_agents": 3
+      },
+      "task_015": {
+        "pooled_rate": 0.5999999999999999,
+        "model_disc": 0.3424674446093876,
+        "user_disc": 0.23570226039551584,
+        "total_disc": 0.5781697050049035,
+        "per_agent_rate": {
+          "gpt-5.2": 0.16666666666666666,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 0.5,
+          "cc_con": 0.5,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_023": {
+        "pooled_rate": 0.5999999999999999,
+        "model_disc": 0.3600411499115478,
+        "user_disc": 0.20786985482077452,
+        "total_disc": 0.5679110047323224,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8333333333333333,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8333333333333333,
+          "cc_con": 0.3333333333333333,
+          "sonnet46user": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "task_005": {
+        "pooled_rate": 0.4666666666666666,
+        "model_disc": 0.2832788618662658,
+        "user_disc": 0.2832788618662658,
+        "total_disc": 0.5665577237325315,
+        "per_agent_rate": {
+          "gpt-5.2": 0.6666666666666666,
+          "gpt-5.4": 0.5,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "cc_con": 0.5,
+          "sonnet46user": 0.0
+        },
+        "n_agents": 3
+      },
+      "task_022": {
+        "pooled_rate": 0.6,
+        "model_disc": 0.408248290463863,
+        "user_disc": 0.2721655269759087,
+        "total_disc": 0.6804138174397717,
+        "per_agent_rate": {
+          "gpt-5.2": 0.5,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "cc_con": 0.3333333333333333,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_052": {
+        "pooled_rate": 0.6,
+        "model_disc": 0.408248290463863,
+        "user_disc": 0.2721655269759087,
+        "total_disc": 0.6804138174397717,
+        "per_agent_rate": {
+          "gpt-5.2": 0.5,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "cc_con": 0.3333333333333333,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_007": {
+        "pooled_rate": 0.6666666666666667,
+        "model_disc": 0.28327886186626583,
+        "user_disc": 0.3928371006591931,
+        "total_disc": 0.6761159625254589,
+        "per_agent_rate": {
+          "gpt-5.2": 0.5,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.3333333333333333
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "cc_con": 0.16666666666666666,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_017": {
+        "pooled_rate": 0.6666666666666667,
+        "model_disc": 0.28327886186626583,
+        "user_disc": 0.3928371006591931,
+        "total_disc": 0.6761159625254589,
+        "per_agent_rate": {
+          "gpt-5.2": 0.5,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.3333333333333333
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "cc_con": 0.16666666666666666,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_004": {
+        "pooled_rate": 0.7333333333333333,
+        "model_disc": 0.43744488188954506,
+        "user_disc": 0.20786985482077452,
+        "total_disc": 0.6453147367103196,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8333333333333333,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8333333333333333,
+          "cc_con": 0.5,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_051": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.3928371006591931,
+        "user_disc": 0.20786985482077452,
+        "total_disc": 0.6007069554799676,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8333333333333333,
+          "gpt-5.4": 0.8333333333333333,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "cc_con": 0.5,
+          "sonnet46user": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_016": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.41573970964154905,
+        "user_disc": 0.1360827634879543,
+        "total_disc": 0.5518224731295034,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8333333333333333,
+          "cc_con": 0.5,
+          "sonnet46user": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "task_034": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.20786985482077452,
+        "user_disc": 0.33333333333333337,
+        "total_disc": 0.541203188154108,
+        "per_agent_rate": {
+          "gpt-5.2": 0.5,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.3333333333333333,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "task_014": {
+        "pooled_rate": 0.6666666666666667,
+        "model_disc": 0.20786985482077452,
+        "user_disc": 0.28327886186626583,
+        "total_disc": 0.49114871668704035,
+        "per_agent_rate": {
+          "gpt-5.2": 0.6666666666666666,
+          "gpt-5.4": 0.5,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.5,
+          "cc_con": 1.0,
+          "sonnet46user": 0.3333333333333333
+        },
+        "n_agents": 3
+      }
+    },
+    "telecom_stats": {
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.5925925925925926,
+        "model_disc": 0.27715980642769933,
+        "user_disc": 0.27715980642769933,
+        "total_disc": 0.5543196128553987,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 0.2222222222222222,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Hard]": {
+        "pooled_rate": 0.5555555555555556,
+        "model_disc": 0.32710225430843876,
+        "user_disc": 0.15713484026367724,
+        "total_disc": 0.484237094572116,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.1111111111111111
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777778,
+          "sonnet46user": 0.4444444444444444,
+          "cc_con": 0.4444444444444444
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]": {
+        "pooled_rate": 0.4444444444444444,
+        "model_disc": 0.15713484026367722,
+        "user_disc": 0.32710225430843876,
+        "total_disc": 0.48423709457211594,
+        "per_agent_rate": {
+          "gpt-5.2": 0.6666666666666666,
+          "gpt-5.4": 0.3333333333333333,
+          "sonnet-4.5": 0.3333333333333333
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 0.3333333333333333,
+          "cc_con": 0.1111111111111111
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]break_app_sms_permission|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]": {
+        "pooled_rate": 0.5185185185185185,
+        "model_disc": 0.27715980642769933,
+        "user_disc": 0.1888525745775105,
+        "total_disc": 0.4660123810052098,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.4444444444444444,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777777,
+          "sonnet46user": 0.4444444444444444,
+          "cc_con": 0.3333333333333333
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_wifi_calling|break_app_both_permissions|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:None]": {
+        "pooled_rate": 0.5925925925925926,
+        "model_disc": 0.10475656017578482,
+        "user_disc": 0.3186046395200973,
+        "total_disc": 0.42336119969588215,
+        "per_agent_rate": {
+          "gpt-5.2": 0.6666666666666666,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.4444444444444444
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.2222222222222222
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]": {
+        "pooled_rate": 0.5185185185185185,
+        "model_disc": 0.36664796061524685,
+        "user_disc": 0.05237828008789238,
+        "total_disc": 0.4190262407031392,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.4444444444444444,
+          "sonnet-4.5": 0.1111111111111111
+        },
+        "per_user_rate": {
+          "gpt52user": 0.5555555555555555,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.4444444444444444
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.36664796061524685,
+        "user_disc": 0.10475656017578486,
+        "total_disc": 0.4714045207910317,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.1111111111111111
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777778,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_wifi_calling|break_apn_mms_setting|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:None]": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.34346735168502607,
+        "user_disc": 0.10475656017578486,
+        "total_disc": 0.4482239118608109,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777778,
+          "sonnet46user": 0.7777777777777778,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]break_apn_mms_setting|data_mode_off|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:Hard]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.29162992125969667,
+        "user_disc": 0.13857990321384964,
+        "total_disc": 0.4302098244735463,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777777,
+          "sonnet46user": 0.4444444444444444,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.36664796061524685,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.41902624070313926,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.1111111111111111
+        },
+        "per_user_rate": {
+          "gpt52user": 0.5555555555555555,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_network_preference|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:None]": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.18885257457751053,
+        "user_disc": 0.2095131203515697,
+        "total_disc": 0.39836569492908025,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.4444444444444444
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_network_preference|user_abroad_roaming_disabled_on[PERSONA:None]": {
+        "pooled_rate": 0.7407407407407407,
+        "model_disc": 0.20951312035156963,
+        "user_disc": 0.18885257457751056,
+        "total_disc": 0.3983656949290802,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.4444444444444444
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|unseat_sim_card[PERSONA:Hard]": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.24002743327436518,
+        "user_disc": 0.15713484026367724,
+        "total_disc": 0.39716227353804245,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.3333333333333333
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_network_preference|user_abroad_roaming_disabled_off[PERSONA:None]": {
+        "pooled_rate": 0.8518518518518517,
+        "model_disc": 0.1385799032138497,
+        "user_disc": 0.2095131203515697,
+        "total_disc": 0.3480930235654194,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_wifi_calling|break_apn_mms_setting|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.1385799032138497,
+        "user_disc": 0.2095131203515697,
+        "total_disc": 0.3480930235654194,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.5555555555555555
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_both_permissions|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.29162992125969667,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.3440082013475891,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:Easy]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.29162992125969667,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.3440082013475891,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.6296296296296295,
+        "model_disc": 0.29162992125969667,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.3440082013475891,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.2222222222222222
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_network_preference|bad_wifi_calling|break_app_both_permissions|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:None]": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.1571348402636772,
+        "user_disc": 0.18144368465060579,
+        "total_disc": 0.338578524914283,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.4444444444444444
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 0.4444444444444444,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card[PERSONA:Easy]": {
+        "pooled_rate": 0.7407407407407407,
+        "model_disc": 0.2283116297395917,
+        "user_disc": 0.10475656017578482,
+        "total_disc": 0.3330681899153765,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.4444444444444444
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.8148148148148148,
+        "model_disc": 0.1385799032138497,
+        "user_disc": 0.18885257457751056,
+        "total_disc": 0.32743247779136025,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]break_apn_mms_setting|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.8148148148148148,
+        "model_disc": 0.1385799032138497,
+        "user_disc": 0.18885257457751056,
+        "total_disc": 0.32743247779136025,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]break_apn_mms_setting|data_mode_off|user_abroad_roaming_disabled_on[PERSONA:Hard]": {
+        "pooled_rate": 0.8148148148148148,
+        "model_disc": 0.10475656017578482,
+        "user_disc": 0.18885257457751056,
+        "total_disc": 0.29360913475329536,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.5555555555555555,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_wifi_calling|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.05237828008789238,
+        "user_disc": 0.2283116297395917,
+        "total_disc": 0.2806899098274841,
+        "per_agent_rate": {
+          "gpt-5.2": 0.6666666666666666,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.4444444444444444,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|data_saver_mode_on|data_usage_exceeded[PERSONA:Hard]": {
+        "pooled_rate": 0.8888888888888888,
+        "model_disc": 0.15713484026367724,
+        "user_disc": 0.15713484026367724,
+        "total_disc": 0.3142696805273545,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.8148148148148148,
+        "model_disc": 0.13857990321384972,
+        "user_disc": 0.13857990321384972,
+        "total_disc": 0.27715980642769944,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.7777777777777777
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.8148148148148148,
+        "model_disc": 0.1385799032138497,
+        "user_disc": 0.1385799032138497,
+        "total_disc": 0.2771598064276994,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.7777777777777777,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on[PERSONA:None]": {
+        "pooled_rate": 0.8888888888888888,
+        "model_disc": 0.09072184232530293,
+        "user_disc": 0.15713484026367724,
+        "total_disc": 0.2478566825889802,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.8888888888888888
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "sonnet46user": 1.0,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]airplane_mode_on|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.8888888888888888,
+        "model_disc": 0.15713484026367724,
+        "user_disc": 0.09072184232530289,
+        "total_disc": 0.24785668258898014,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.6666666666666666
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.7777777777777778,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_disabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.10475656017578482,
+        "total_disc": 0.20951312035156966,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.7777777777777778,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.10475656017578482,
+        "total_disc": 0.20951312035156966,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.7777777777777778,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]": {
+        "pooled_rate": 0.8518518518518519,
+        "model_disc": 0.05237828008789243,
+        "user_disc": 0.1385799032138497,
+        "total_disc": 0.19095818330174213,
+        "per_agent_rate": {
+          "gpt-5.2": 0.8888888888888888,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.8888888888888888,
+        "model_disc": 0.09072184232530293,
+        "user_disc": 0.09072184232530293,
+        "total_disc": 0.18144368465060587,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.7777777777777777,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|user_abroad_roaming_disabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|bad_vpn|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 0.7777777777777777
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[mobile_data_issue]data_mode_off|data_usage_exceeded[PERSONA:None]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[service_issue]break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:Hard]": {
+        "pooled_rate": 0.33333333333333326,
+        "model_disc": 0.1571348402636772,
+        "user_disc": 0.09072184232530289,
+        "total_disc": 0.24785668258898008,
+        "per_agent_rate": {
+          "gpt-5.2": 0.2222222222222222,
+          "gpt-5.4": 0.2222222222222222,
+          "sonnet-4.5": 0.5555555555555555
+        },
+        "per_user_rate": {
+          "gpt52user": 0.4444444444444444,
+          "sonnet46user": 0.3333333333333333,
+          "cc_con": 0.2222222222222222
+        },
+        "n_agents": 3
+      },
+      "[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension|unseat_sim_card[PERSONA:None]": {
+        "pooled_rate": 0.6666666666666666,
+        "model_disc": 0.32710225430843876,
+        "user_disc": 0.09072184232530289,
+        "total_disc": 0.41782409663374165,
+        "per_agent_rate": {
+          "gpt-5.2": 0.2222222222222222,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.5555555555555555,
+          "sonnet46user": 0.7777777777777777,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension[PERSONA:None]": {
+        "pooled_rate": 0.7777777777777778,
+        "model_disc": 0.3142696805273545,
+        "user_disc": 0.09072184232530289,
+        "total_disc": 0.4049915228526574,
+        "per_agent_rate": {
+          "gpt-5.2": 0.3333333333333333,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777777,
+          "sonnet46user": 0.6666666666666666,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[service_issue]airplane_mode_on|break_apn_settings|unseat_sim_card[PERSONA:None]": {
+        "pooled_rate": 0.7037037037037037,
+        "model_disc": 0.34346735168502607,
+        "user_disc": 0.05237828008789238,
+        "total_disc": 0.3958456317729184,
+        "per_agent_rate": {
+          "gpt-5.2": 0.2222222222222222,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.6666666666666666,
+          "sonnet46user": 0.7777777777777777,
+          "cc_con": 0.6666666666666666
+        },
+        "n_agents": 3
+      },
+      "[service_issue]airplane_mode_on|break_apn_settings[PERSONA:Hard]": {
+        "pooled_rate": 0.7777777777777778,
+        "model_disc": 0.09072184232530289,
+        "user_disc": 0.18144368465060584,
+        "total_disc": 0.27216552697590873,
+        "per_agent_rate": {
+          "gpt-5.2": 0.6666666666666666,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 0.8888888888888888
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.7777777777777777,
+          "cc_con": 0.5555555555555555
+        },
+        "n_agents": 3
+      },
+      "[service_issue]airplane_mode_on|overdue_bill_suspension[PERSONA:None]": {
+        "pooled_rate": 0.8518518518518517,
+        "model_disc": 0.2095131203515697,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.26189140043946213,
+        "per_agent_rate": {
+          "gpt-5.2": 0.5555555555555555,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.7777777777777777
+        },
+        "n_agents": 3
+      },
+      "[service_issue]contract_end_suspension|unseat_sim_card[PERSONA:Hard]": {
+        "pooled_rate": 0.8888888888888888,
+        "model_disc": 0.15713484026367724,
+        "user_disc": 0.09072184232530293,
+        "total_disc": 0.2478566825889802,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.6666666666666666,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777777,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[service_issue]airplane_mode_on|overdue_bill_suspension|unseat_sim_card[PERSONA:Easy]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 1.0,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[service_issue]break_apn_settings|contract_end_suspension|lock_sim_card_pin[PERSONA:Hard]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.10475656017578486,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.7777777777777777,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.8888888888888888
+        },
+        "n_agents": 3
+      },
+      "[service_issue]contract_end_suspension|lock_sim_card_pin[PERSONA:Hard]": {
+        "pooled_rate": 0.9259259259259258,
+        "model_disc": 0.05237828008789243,
+        "user_disc": 0.10475656017578486,
+        "total_disc": 0.1571348402636773,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 0.8888888888888888
+        },
+        "per_user_rate": {
+          "gpt52user": 0.7777777777777777,
+          "sonnet46user": 1.0,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_mode_off|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]": {
+        "pooled_rate": 0.8888888888888888,
+        "model_disc": 0.09072184232530293,
+        "user_disc": 0.09072184232530293,
+        "total_disc": 0.18144368465060587,
+        "per_agent_rate": {
+          "gpt-5.2": 0.7777777777777777,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 1.0,
+          "sonnet46user": 0.8888888888888888,
+          "cc_con": 0.7777777777777777
+        },
+        "n_agents": 3
+      },
+      "[mms_issue]bad_network_preference|break_app_both_permissions[PERSONA:Easy]": {
+        "pooled_rate": 0.9629629629629629,
+        "model_disc": 0.05237828008789243,
+        "user_disc": 0.05237828008789243,
+        "total_disc": 0.10475656017578486,
+        "per_agent_rate": {
+          "gpt-5.2": 1.0,
+          "gpt-5.4": 0.8888888888888888,
+          "sonnet-4.5": 1.0
+        },
+        "per_user_rate": {
+          "gpt52user": 0.8888888888888888,
+          "sonnet46user": 1.0,
+          "cc_con": 1.0
+        },
+        "n_agents": 3
+      }
+    }
+  }
+}

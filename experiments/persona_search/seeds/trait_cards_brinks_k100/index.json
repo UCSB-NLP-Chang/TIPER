@@ -1,0 +1,1911 @@
+[
+  {
+    "cluster": 0,
+    "name": "Erratic & Blunt",
+    "effect": "HELPS the task",
+    "n": 59,
+    "frac": 0.046,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_00_erratic_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_00_erratic_blunt/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Blunt"
+    ],
+    "examples": [
+      "I'm having problems with my living room camera, It's not working.",
+      "Yes. It's flashing yellow."
+    ],
+    "metric_profile": "Wds/trn=3.6, Short%=68.2, Polite%=0.0, Uncert%=0.6, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 1,
+    "name": "Wavering & Verbose",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_01_wavering_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_01_wavering_verbose/trait_card.md",
+    "traits": [
+      "Wavering",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. My name is Jennifer Perry. How can you assist me today?",
+      "Yes. The code word is spine.",
+      "Thank you. I'm having an issue with my sanctuary cam. And I'm noticing a yellow light on the camera. Can you help me with that?",
+      "Alright. I'll give that a try. Just to make sure, my camera model is 2 gig HG1 hundred. Does that change any of the instructions you provided? Also, I'm not extremely tech savvy. So I may require detailed guidance. Is there anything else I should try if the problem persists after power cycling?"
+    ],
+    "metric_profile": "Wds/trn=27.0, Short%=13.2, Polite%=43.4, Uncert%=14.3, InfoQ%=18.0, Pivot%=9.5"
+  },
+  {
+    "cluster": 2,
+    "name": "Erratic & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 15,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_02_erratic_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_02_erratic_drip_feeding/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "e a r m u f f s",
+      "Yes. I was calling in to see how do how can I get the live camera feed on my cell phone?",
+      "Okay. I see it."
+    ],
+    "metric_profile": "Wds/trn=5.4, Short%=66.2, Polite%=6.7, Uncert%=2.6, InfoQ%=8.9, Pivot%=0.4"
+  },
+  {
+    "cluster": 3,
+    "name": "Frustrated & Hesitant",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_03_frustrated_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_03_frustrated_hesitant/trait_card.md",
+    "traits": [
+      "Frustrated",
+      "Hesitant"
+    ],
+    "examples": [
+      "Hello? Veronica. This is Karen Henderson. I'm calling because I've been having an issue with my camera at the front door. It keeps going offline. And I'm not quite sure how to fix it. Can you help me figure out what's going on?",
+      "Sure. The code word is map.",
+      "Great. So my camera at the front door. I believe the model is ADC v <redacted> p t keeps going offline, and I'm not sure why. Can you help me understand what's causing this issue? And how I can fix it? It's been quite frustrating.",
+      "Alright. I've unplugged the camera, and waited for a few seconds. Now I've plugged it back in. How long should it take for the camera to come back online? And what should I look for to know it's working properly again?"
+    ],
+    "metric_profile": "Wds/trn=31.9, Short%=12.5, Polite%=12.5, Uncert%=37.5, InfoQ%=12.5, Pivot%=0.0"
+  },
+  {
+    "cluster": 4,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 9,
+    "frac": 0.007,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_04_verbose_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_04_verbose_polite/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica? This is Jessica Butler. I appreciate you assisting me today. Can we dive into some troubleshooting for",
+      "Sure. My code word is fin.",
+      "Thanks for your patience. This camera at the front left corner has a flashing red light and isn't working. Could you guide me on what needs to be done?",
+      "Let me quickly check that Yes. It seems like other devices are connected to the Wi Fi and working properly. What should I do next?"
+    ],
+    "metric_profile": "Wds/trn=22.3, Short%=11.2, Polite%=32.0, Uncert%=11.1, InfoQ%=0.0, Pivot%=1.0"
+  },
+  {
+    "cluster": 5,
+    "name": "Frustrated & Hesitant",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_05_frustrated_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_05_frustrated_hesitant/trait_card.md",
+    "traits": [
+      "Frustrated",
+      "Hesitant"
+    ],
+    "examples": [
+      "Hello, Veronica. My name is Jennifer Perry.",
+      "Sure. My code word is spine.",
+      "Thank you. My sanctuary cam is showing a very dark image at night. And I was under the impression it has night vision. But it doesn't seem to be working. Can you help me figure out how to fix it?",
+      "Okay. I've unplugged the camera. Waited a few seconds, and plugged it back in. What should I do next?"
+    ],
+    "metric_profile": "Wds/trn=15.8, Short%=23.3, Polite%=14.6, Uncert%=18.8, InfoQ%=16.8, Pivot%=3.3"
+  },
+  {
+    "cluster": 6,
+    "name": "Verbose & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_06_verbose_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_06_verbose_inquisitive/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Jessica Butler. Able to help me with an issue I've been having",
+      "Sure. My code word is fin.",
+      "Great. I've been having an issue with 1 of my interior cameras. It has a flashing red light. And isn't working. It's been a long day. And I'm not too familiar with these things, so I'll need some guidance. Can you help me figure out what's going on?",
+      "Yes. Other devices in my home are connected and working fine. What makes you think the camera's having trouble? Connecting to the Wi Fi, Is there a specific issue that typically causes this?"
+    ],
+    "metric_profile": "Wds/trn=26.6, Short%=9.7, Polite%=29.5, Uncert%=13.4, InfoQ%=23.1, Pivot%=0.0"
+  },
+  {
+    "cluster": 7,
+    "name": "Inquisitive & Terse",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_07_inquisitive_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_07_inquisitive_terse/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Terse"
+    ],
+    "examples": [
+      "How do I reset my camera?"
+    ],
+    "metric_profile": "Wds/trn=2.5, Short%=74.5, Polite%=0.0, Uncert%=0.0, InfoQ%=14.6, Pivot%=0.0"
+  },
+  {
+    "cluster": 8,
+    "name": "Confident & Verbose",
+    "effect": "HELPS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_08_confident_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_08_confident_verbose/trait_card.md",
+    "traits": [
+      "Confident",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. My name is Maria Wells. I could use some help with my security camera. It seems to be offline even after multiple resets. Can you guide me through fixing this issue?",
+      "Of course, the code word is blowfish.",
+      "Yes. It's the camera called SVR. It's been causing some trouble by staying offline.",
+      "Alright. I'll give that a try. Just unplugging it now. Waiting for a few seconds, and plugging it back in. Okay. Done. Now we wait a moment and check if it comes back online. Right?"
+    ],
+    "metric_profile": "Wds/trn=15.5, Short%=16.5, Polite%=2.9, Uncert%=5.1, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 9,
+    "name": "Front-loading & Polite",
+    "effect": "HELPS the task",
+    "n": 6,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_09_front_loading_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_09_front_loading_polite/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Polite"
+    ],
+    "examples": [
+      "My code word is code word.",
+      "I need to cancel my service, please."
+    ],
+    "metric_profile": "Wds/trn=4.0, Short%=50.3, Polite%=35.3, Uncert%=5.6, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 10,
+    "name": "Erratic & Terse",
+    "effect": "HELPS the task",
+    "n": 56,
+    "frac": 0.044,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_10_erratic_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_10_erratic_terse/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Terse"
+    ],
+    "examples": [
+      "My video analytics aren't working. Can you help me fix the issue?"
+    ],
+    "metric_profile": "Wds/trn=3.5, Short%=78.0, Polite%=0.3, Uncert%=0.6, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 11,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_11_confident_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_11_confident_polite/trait_card.md",
+    "traits": [
+      "Confident",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Maria Wells. How are you doing today?",
+      "Of course, Veronica. The code word is blowfish.",
+      "Thank you. I'm calling because the light on my camera is flashing white. And I'm not sure what that means. Could you help me figure this out? It's been a long day, And I'm not too familiar with this issue.",
+      "I see. Thank you for explaining that. Can you tell me a bit about the difference between AP mode and WPS, and which 1 you would recommend for reconnecting the camera?"
+    ],
+    "metric_profile": "Wds/trn=24.1, Short%=11.0, Polite%=44.3, Uncert%=22.0, InfoQ%=20.4, Pivot%=2.3"
+  },
+  {
+    "cluster": 12,
+    "name": "Wavering & Verbose",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_12_wavering_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_12_wavering_verbose/trait_card.md",
+    "traits": [
+      "Wavering",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Jennifer Perry. How can I help you today?",
+      "Yes. The code word is spine.",
+      "Well, my sanctuary cam has a yellow flashing light. And I'm not able to see anything on it. It's been a long day, and not really sure what's going on. Can you help me figure out what the problem might be?",
+      "I think I need technical support for the camera system. Yes. The yellow flashing light is on. And I can't see anything through the sanctuary cam. Do you know what's going on with it?"
+    ],
+    "metric_profile": "Wds/trn=21.1, Short%=9.0, Polite%=18.1, Uncert%=10.0, InfoQ%=18.1, Pivot%=5.7"
+  },
+  {
+    "cluster": 13,
+    "name": "Inquisitive & Frustrated",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_13_inquisitive_frustrated/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_13_inquisitive_frustrated/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Frustrated"
+    ],
+    "examples": [
+      "Yeah. It's Jennifer Perry. I'm having trouble with the camera. What do I do?",
+      "Sure. The code word is spine.",
+      "What now? Can you tell me what to do about the camera, please? I'm getting really fed up here."
+    ],
+    "metric_profile": "Wds/trn=7.0, Short%=40.3, Polite%=24.7, Uncert%=0.0, InfoQ%=24.7, Pivot%=0.0"
+  },
+  {
+    "cluster": 14,
+    "name": "Front-loading & Blunt",
+    "effect": "HELPS the task",
+    "n": 36,
+    "frac": 0.028,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_14_front_loading_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_14_front_loading_blunt/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Blunt"
+    ],
+    "examples": [
+      "This is Judy Dorsey.",
+      "Yeah. My code word is code word 2."
+    ],
+    "metric_profile": "Wds/trn=3.6, Short%=54.8, Polite%=0.3, Uncert%=1.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 15,
+    "name": "Blunt & Declarative",
+    "effect": "HELPS the task",
+    "n": 44,
+    "frac": 0.034,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_15_blunt_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_15_blunt_declarative/trait_card.md",
+    "traits": [
+      "Blunt",
+      "Declarative"
+    ],
+    "examples": [
+      "My code word is Faith.",
+      "My code word is space.",
+      "I I can't hear the audio on my camera.",
+      "Okay. I'm on the app."
+    ],
+    "metric_profile": "Wds/trn=4.1, Short%=51.9, Polite%=0.1, Uncert%=0.3, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 16,
+    "name": "Verbose & Confident",
+    "effect": "HARMS the task",
+    "n": 16,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_16_verbose_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_16_verbose_confident/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Confident"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Eugene Herring. I'm calling because I'm having an issue with 1 of my cameras. It's the ADC <redacted> PT model.",
+      "Sure. My full name is Eugene Hering.",
+      "Yes. Of course. My first name is EUGENE. And my last name is HERRING.",
+      "Sure. The code word is code word."
+    ],
+    "metric_profile": "Wds/trn=19.7, Short%=9.0, Polite%=18.0, Uncert%=7.5, InfoQ%=1.4, Pivot%=1.3"
+  },
+  {
+    "cluster": 17,
+    "name": "Verbose & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_17_verbose_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_17_verbose_drip_feeding/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "Hello. This is Jennifer Perry. I need help with my camera. It isn't connecting.",
+      "Yes. The code word is spine.",
+      "Alright. Give me a moment. Okay. I checked, and it seems to be plugged in properly. What should I do next?",
+      "Let me see. Yes. The router is on. And the Internet seems to be working. I don't use an Ethernet cable for the camera."
+    ],
+    "metric_profile": "Wds/trn=17.8, Short%=13.0, Polite%=3.9, Uncert%=4.2, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 18,
+    "name": "Front-loading & Blunt",
+    "effect": "HELPS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_18_front_loading_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_18_front_loading_blunt/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Blunt"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Douglas Edwards. I'm having some issues with my thermostat system. Need some assistance.",
+      "Sure. The code word is blanket."
+    ],
+    "metric_profile": "Wds/trn=7.2, Short%=40.0, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 19,
+    "name": "Confident & Wavering",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_19_confident_wavering/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_19_confident_wavering/trait_card.md",
+    "traits": [
+      "Confident",
+      "Wavering"
+    ],
+    "examples": [
+      "Hi. Veronica. This is Carmen Maisonette.",
+      "Sure. It's CARMEN for my first name and MAYSONET. For my last name.",
+      "Of course, the code word is code word.",
+      "I'm having some issues with my doorbell camera system. It doesn't seem to be working properly. Can you help me troubleshoot it?"
+    ],
+    "metric_profile": "Wds/trn=13.2, Short%=16.2, Polite%=0.0, Uncert%=6.2, InfoQ%=0.0, Pivot%=6.2"
+  },
+  {
+    "cluster": 20,
+    "name": "Erratic & Polite",
+    "effect": "HELPS the task",
+    "n": 15,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_20_erratic_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_20_erratic_polite/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Polite"
+    ],
+    "examples": [
+      "Yes. My code word is code word.",
+      "Is there a way to set up recording rules for my driveway camera?",
+      "No. That'll be it. Thank you."
+    ],
+    "metric_profile": "Wds/trn=4.7, Short%=57.7, Polite%=16.7, Uncert%=1.5, InfoQ%=10.5, Pivot%=0.0"
+  },
+  {
+    "cluster": 21,
+    "name": "Verbose & Hesitant",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_21_verbose_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_21_verbose_hesitant/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Hesitant"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Benjamin Green. I'm reaching out because I'm having an issue with my camera in the main foyer. It has a solid green light, and I'm not sure if that means it's connected to the Internet. Could you help me figure this out?",
+      "Sure. The code word is foul.",
+      "Thanks for helping me get started. How's your day going so far, by the way? It's been quite a long day for me.",
+      "Thank you. I'd appreciate that. Yes. Let's go ahead and verify the camera's functionality. What would be the best way to do that?"
+    ],
+    "metric_profile": "Wds/trn=28.5, Short%=10.1, Polite%=20.1, Uncert%=10.1, InfoQ%=10.1, Pivot%=0.0"
+  },
+  {
+    "cluster": 22,
+    "name": "Hesitant & Erratic",
+    "effect": "HARMS the task",
+    "n": 16,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_22_hesitant_erratic/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_22_hesitant_erratic/trait_card.md",
+    "traits": [
+      "Hesitant",
+      "Erratic"
+    ],
+    "examples": [
+      "Hi, Veronica. My name is Walter Cook.",
+      "Sure. The code word is bug.",
+      "I'm having some issues with my panel system at home. Can you help me troubleshoot it? It seems to be acting up and I'm not sure what the problem is."
+    ],
+    "metric_profile": "Wds/trn=11.8, Short%=27.3, Polite%=0.0, Uncert%=10.1, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 23,
+    "name": "Inquisitive & Blunt",
+    "effect": "HELPS the task",
+    "n": 22,
+    "frac": 0.017,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_23_inquisitive_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_23_inquisitive_blunt/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Blunt"
+    ],
+    "examples": [
+      "My code word is code word.",
+      "Yeah. How can I adjust my video motion detection rules?"
+    ],
+    "metric_profile": "Wds/trn=4.9, Short%=52.2, Polite%=0.0, Uncert%=0.8, InfoQ%=22.4, Pivot%=0.0"
+  },
+  {
+    "cluster": 24,
+    "name": "Confident & Front-loading",
+    "effect": "HELPS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_24_confident_front_loading/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_24_confident_front_loading/trait_card.md",
+    "traits": [
+      "Confident",
+      "Front-loading"
+    ],
+    "examples": [
+      "Hello, Veronica. I'm Liam Sanders. I'm having some trouble with my camera not connecting. Hope you can help me out. It's been a long day. How's your day going?",
+      "Of course. My code word is bowl. What's next?"
+    ],
+    "metric_profile": "Wds/trn=9.9, Short%=33.3, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 25,
+    "name": "Polite & Confident",
+    "effect": "HELPS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_25_polite_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_25_polite_confident/trait_card.md",
+    "traits": [
+      "Polite",
+      "Confident"
+    ],
+    "examples": [
+      "I'm sorry. I don't have a site number to enter. I'm calling about an issue with my Brinks Home system. The alarm is triggering falsely. Can you assist me with this?",
+      "Yes. I've checked the sensors, and they seem clear of any obstructions or loose connections. The issue persists despite this, and the alarm goes off without any apparent reason. Could there be another underlying issue?",
+      "I haven't tried resetting the system yet. Could you guide me through the steps to do that, please?",
+      "Alright. I will try that. Let me locate the reset button on the control panel. Okay. I'm holding it down for 10 seconds now. Alright. It seems like the system has reset. I'll monitor it to see if the false alarms continue. Thank you for your help."
+    ],
+    "metric_profile": "Wds/trn=22.9, Short%=14.3, Polite%=71.4, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 26,
+    "name": "Inquisitive & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 18,
+    "frac": 0.014,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_26_inquisitive_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_26_inquisitive_drip_feeding/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "My code word is doctor.",
+      "How do I connect my camera to a walk Fi extender?",
+      "I need assistance with adding a Wi Fi extender"
+    ],
+    "metric_profile": "Wds/trn=5.6, Short%=36.4, Polite%=2.9, Uncert%=1.9, InfoQ%=18.3, Pivot%=0.6"
+  },
+  {
+    "cluster": 27,
+    "name": "Polite & Verbose",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_27_polite_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_27_polite_verbose/trait_card.md",
+    "traits": [
+      "Polite",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. Is Jennifer Perry speaking. Having some trouble with 1 of my cameras. And I could really use some help. Thank you.",
+      "This is Jennifer Perry. I'm experiencing issues with my sanctuary cam. It has a yellow flashing light, and I can't see anything on the feed. Could you assist me with this problem? Thank you for your support.",
+      "Certainly. The code word is spine.",
+      "Great. Thank you. How can we proceed to resolve the issue with my sanctuary cam?"
+    ],
+    "metric_profile": "Wds/trn=27.5, Short%=9.1, Polite%=81.8, Uncert%=18.2, InfoQ%=9.1, Pivot%=0.0"
+  },
+  {
+    "cluster": 28,
+    "name": "Verbose & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_28_verbose_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_28_verbose_inquisitive/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Pamela Ford. It's been quite a day, and I'm hoping you might be able to assist me with a camera issue. How are you today?",
+      "Certainly. The code word is eraser. Could you tell me why the code word is necessary? I just want to understand the process better.",
+      "I see. That makes sense. Thank you for explaining. The issue I'm having is with my indoor camera. It has a flashing red light, and isn't working. What might be causing this problem? I'm not very familiar with these things so any guidance would be helpful.",
+      "Let me think. Yes. My phone and laptop seem to be connected to the Wi Fi. Without any issues. Could there be something specific with the camera's Wi Fi settings that might be causing this problem? Could it also be linked to the model I'm using, the ADC V622?"
+    ],
+    "metric_profile": "Wds/trn=41.1, Short%=8.4, Polite%=46.5, Uncert%=25.9, InfoQ%=41.3, Pivot%=0.0"
+  },
+  {
+    "cluster": 29,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_29_verbose_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_29_verbose_polite/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Polite"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Jennifer Perry. Having an issue with my camera. And could use some help.",
+      "Sure. It's JENNIFER and the last name is PERRY.",
+      "Yes. The code word is spine.",
+      "It's the sanctuary cam. Model 2 gig HD 100. It's not connecting properly."
+    ],
+    "metric_profile": "Wds/trn=17.3, Short%=10.6, Polite%=20.7, Uncert%=9.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 30,
+    "name": "Pushy & Verbose",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_30_pushy_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_30_pushy_verbose/trait_card.md",
+    "traits": [
+      "Pushy",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello. This is Jennifer Perry. Thanks for assisting me today. Veronica I've been having an issue with 1 of my cameras. It's been a long day. And I'm not quite sure what's wrong.",
+      "Absolutely. The code word is spine.",
+      "I need technical support for my camera issue. The sanctuary cam has a yellow flashing light. And I can't see anything on it. What could be causing this?",
+      "Sure. I'd like to try that. But I'm not entirely confident about how to proceed. Could you guide me through the steps to reconnect it using WPS? What do I need to do first?"
+    ],
+    "metric_profile": "Wds/trn=27.8, Short%=9.8, Polite%=35.0, Uncert%=9.5, InfoQ%=9.8, Pivot%=1.6"
+  },
+  {
+    "cluster": 31,
+    "name": "Terse & Blunt",
+    "effect": "HELPS the task",
+    "n": 61,
+    "frac": 0.048,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_31_terse_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_31_terse_blunt/trait_card.md",
+    "traits": [
+      "Terse",
+      "Blunt"
+    ],
+    "examples": [
+      "Yeah. It's map, like a pirate's map."
+    ],
+    "metric_profile": "Wds/trn=2.7, Short%=74.3, Polite%=0.2, Uncert%=1.8, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 32,
+    "name": "Verbose & Frustrated",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_32_verbose_frustrated/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_32_verbose_frustrated/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Frustrated"
+    ],
+    "examples": [
+      "Hello, Veronica. I am Jessica Butler. Can you assist me with an issue I am having with my interior camera? It has no lights and isn't working.",
+      "Yes. The code word is fin. Can we get this resolved quickly? I'm eager to get the camera working again.",
+      "Not that I know of. Everything else in the house seems to be working fine. Should I check the power supply to the camera?",
+      "Alright. I've checked the outlet with another device. And it's working. I've unplugged the camera, waited 30 seconds, and plugged it back in. Still no light is coming on. What should we try next?"
+    ],
+    "metric_profile": "Wds/trn=27.5, Short%=17.1, Polite%=4.7, Uncert%=8.4, InfoQ%=0.0, Pivot%=5.8"
+  },
+  {
+    "cluster": 33,
+    "name": "Drip-feeding & Blunt",
+    "effect": "HELPS the task",
+    "n": 23,
+    "frac": 0.018,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_33_drip_feeding_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_33_drip_feeding_blunt/trait_card.md",
+    "traits": [
+      "Drip-feeding",
+      "Blunt"
+    ],
+    "examples": [
+      "My code word is code word.",
+      "Where do I see the live camera feed on phone",
+      "Okay. Give me a second.",
+      "Okay. I'm not seeing the camera here."
+    ],
+    "metric_profile": "Wds/trn=3.9, Short%=54.8, Polite%=1.1, Uncert%=1.7, InfoQ%=10.0, Pivot%=0.3"
+  },
+  {
+    "cluster": 34,
+    "name": "Erratic & Inquisitive",
+    "effect": "HELPS the task",
+    "n": 8,
+    "frac": 0.006,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_34_erratic_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_34_erratic_inquisitive/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Inquisitive"
+    ],
+    "examples": [
+      "I received a new Wi Fi router and I changed my password. How can I reconnect my camera?"
+    ],
+    "metric_profile": "Wds/trn=4.3, Short%=73.6, Polite%=17.4, Uncert%=0.0, InfoQ%=17.4, Pivot%=0.0"
+  },
+  {
+    "cluster": 35,
+    "name": "Blunt & Declarative",
+    "effect": "HELPS the task",
+    "n": 58,
+    "frac": 0.045,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_35_blunt_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_35_blunt_declarative/trait_card.md",
+    "traits": [
+      "Blunt",
+      "Declarative"
+    ],
+    "examples": [
+      "Yeah. My code word is code word.",
+      "What's my monthly fee?"
+    ],
+    "metric_profile": "Wds/trn=3.5, Short%=57.0, Polite%=0.0, Uncert%=1.5, InfoQ%=0.0, Pivot%=0.5"
+  },
+  {
+    "cluster": 36,
+    "name": "Inquisitive & Verbose",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_36_inquisitive_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_36_inquisitive_verbose/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Jennifer Perry. How can you assist me today?",
+      "Yes. The code word is spine.",
+      "Great. Thank you. So I've been having an issue with my sanctuary cam at night. The picture appears super dark, and I thought it had night vision. You help me figure out what's going wrong?",
+      "I'm not very familiar with the camera settings. Could you guide me on how to check the night vision settings? Also, the camera's current position should have enough ambient light. Why would moving it closer to a light source make a difference?"
+    ],
+    "metric_profile": "Wds/trn=24.7, Short%=13.4, Polite%=26.2, Uncert%=15.8, InfoQ%=30.2, Pivot%=3.7"
+  },
+  {
+    "cluster": 37,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 24,
+    "frac": 0.019,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_37_front_loading_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_37_front_loading_terse/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Terse"
+    ],
+    "examples": [],
+    "metric_profile": "Wds/trn=1.8, Short%=92.7, Polite%=0.0, Uncert%=1.4, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 38,
+    "name": "Inquisitive & Front-loading",
+    "effect": "HELPS the task",
+    "n": 11,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_38_inquisitive_front_loading/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_38_inquisitive_front_loading/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Front-loading"
+    ],
+    "examples": [],
+    "metric_profile": "Wds/trn=3.7, Short%=66.7, Polite%=0.0, Uncert%=4.5, InfoQ%=25.8, Pivot%=0.0"
+  },
+  {
+    "cluster": 39,
+    "name": "Polite & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_39_polite_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_39_polite_inquisitive/trait_card.md",
+    "traits": [
+      "Polite",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Jessica Butler. Thanks for helping me out today.",
+      "Sure thing. The code word is fin.",
+      "Thank you. So the issue I'm having is with my interior camera. It's flashing a white light, and I'm not quite sure what that means. Can you help me figure it out?",
+      "Alright. Thanks. Could you tell me what that flashing white light might indicate? Is it something that needs immediate attention? I'm a bit unsure about what to do next."
+    ],
+    "metric_profile": "Wds/trn=18.0, Short%=11.1, Polite%=77.8, Uncert%=11.1, InfoQ%=22.2, Pivot%=0.0"
+  },
+  {
+    "cluster": 40,
+    "name": "Terse & Front-loading",
+    "effect": "HELPS the task",
+    "n": 16,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_40_terse_front_loading/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_40_terse_front_loading/trait_card.md",
+    "traits": [
+      "Terse",
+      "Front-loading"
+    ],
+    "examples": [],
+    "metric_profile": "Wds/trn=1.2, Short%=100.0, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 41,
+    "name": "Drip-feeding & Declarative",
+    "effect": "HELPS the task",
+    "n": 23,
+    "frac": 0.018,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_41_drip_feeding_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_41_drip_feeding_declarative/trait_card.md",
+    "traits": [
+      "Drip-feeding",
+      "Declarative"
+    ],
+    "examples": [
+      "Yes. My code word is map.",
+      "Yes. My camera has no power. So what should I do?",
+      "Looks like that's my indoor camera.",
+      "Yeah. It looks like it's connected."
+    ],
+    "metric_profile": "Wds/trn=4.2, Short%=44.3, Polite%=9.9, Uncert%=4.4, InfoQ%=0.5, Pivot%=0.7"
+  },
+  {
+    "cluster": 42,
+    "name": "Wavering & Polite",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_42_wavering_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_42_wavering_polite/trait_card.md",
+    "traits": [
+      "Wavering",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Cheryl Dixon speaking. How has your day been so far? I'm calling because I need some help with adding my camera to the Brinks Home app. It's been a long day at work. And I'm finding it a bit challenging to figure out.",
+      "Thanks, Veronica. The code word is fong fong.",
+      "Great. I'm glad we're all set. So how can I add my camera to the Brinks Home app?",
+      "Thanks for your patience. After ensuring the camera is powered on and connected to my network, How do I actually add it to the app? Are there any specific steps I need to follow in the app?"
+    ],
+    "metric_profile": "Wds/trn=27.1, Short%=12.5, Polite%=62.5, Uncert%=0.0, InfoQ%=37.5, Pivot%=12.5"
+  },
+  {
+    "cluster": 43,
+    "name": "Inquisitive & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_43_inquisitive_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_43_inquisitive_drip_feeding/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "Yes. After changing my Wi Fi service, my ADC 610 p 10 stopped working.",
+      "How do I update the firmware?",
+      "Okay. I updated the firmware. And I went through the steps to reconnect it to the Wi Fi. How do I test it now?"
+    ],
+    "metric_profile": "Wds/trn=7.4, Short%=41.0, Polite%=13.7, Uncert%=0.0, InfoQ%=35.4, Pivot%=0.0"
+  },
+  {
+    "cluster": 44,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_44_verbose_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_44_verbose_polite/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Donald Thomas. How are you doing today?",
+      "Certainly, my code word is woman.",
+      "Thank you. I'm having an issue with the camera in my living room. There's a flashing red light and it's not working. It's been a long day at work, and I'm feeling a bit lost on what to do. Could you help me figure out what's wrong?",
+      "Let me see. Everything else seems to be connected fine. My phone and laptop are running smoothly on the Wi Fi. What should I do next? Why would the camera have issues if the other devices are working?"
+    ],
+    "metric_profile": "Wds/trn=28.0, Short%=12.4, Polite%=44.8, Uncert%=13.1, InfoQ%=21.5, Pivot%=3.2"
+  },
+  {
+    "cluster": 45,
+    "name": "Polite & Confident",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_45_polite_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_45_polite_confident/trait_card.md",
+    "traits": [
+      "Polite",
+      "Confident"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Teresa Hicks.",
+      "Certainly, the code word is peace.",
+      "I'm having some issues with my camera on the garage. I need help adjusting the video motion detection rules. Can you guide me through how to do that? It's been a long day, and I don't have much experience with this.",
+      "I need help with adjusting the video detection rules on my garage camera. Is there a department that can assist me with that?"
+    ],
+    "metric_profile": "Wds/trn=18.2, Short%=9.4, Polite%=49.7, Uncert%=11.2, InfoQ%=9.4, Pivot%=1.8"
+  },
+  {
+    "cluster": 46,
+    "name": "Erratic & Declarative",
+    "effect": "HARMS the task",
+    "n": 49,
+    "frac": 0.038,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_46_erratic_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_46_erratic_declarative/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Declarative"
+    ],
+    "examples": [
+      "C o s o.",
+      "I don't know it.",
+      "Can I integrate the ABCB<redacted> camera with my existing smart home like my Alexa or Google Home?",
+      "No. That was all. Thank you."
+    ],
+    "metric_profile": "Wds/trn=4.7, Short%=61.2, Polite%=14.8, Uncert%=3.5, InfoQ%=0.0, Pivot%=0.4"
+  },
+  {
+    "cluster": 47,
+    "name": "Declarative & Terse",
+    "effect": "HELPS the task",
+    "n": 46,
+    "frac": 0.036,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_47_declarative_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_47_declarative_terse/trait_card.md",
+    "traits": [
+      "Declarative",
+      "Terse"
+    ],
+    "examples": [
+      "I have a ADC CSVR126 camera. And it isn't connecting.",
+      "I see the solid green light.",
+      "No. That will be it. Thank you.",
+      "You too. Bye bye."
+    ],
+    "metric_profile": "Wds/trn=3.4, Short%=64.1, Polite%=10.8, Uncert%=0.1, InfoQ%=0.0, Pivot%=0.4"
+  },
+  {
+    "cluster": 48,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_48_confident_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_48_confident_polite/trait_card.md",
+    "traits": [
+      "Confident",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Megan Mason. I'm calling because I need some help adding a camera using the Brinks Home app. It's been a long day, and I'm not too familiar with the process. You guide me through it?",
+      "Of course, my name is Megan Mason. Thanks for your help.",
+      "Sure. The code word is tanker.",
+      "Great. Thank you. I'd like to add a camera using the Brinks Home app. I'm not very tech savvy, so I'll need a bit of a walk through. The camera is in the Ohio SVR location. Can you help me with this?"
+    ],
+    "metric_profile": "Wds/trn=16.5, Short%=19.8, Polite%=27.1, Uncert%=9.4, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 49,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_49_confident_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_49_confident_polite/trait_card.md",
+    "traits": [
+      "Confident",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. My name is Teresa Hicks. It's been quite a busy day and I'm hoping you can assist me with some questions I have regarding my front camera's video analytics. How are you today?",
+      "Of course, I can provide my code word. It's peace.",
+      "The code word is peace.",
+      "Thank you. I'm having trouble with the front camera. It's positioned at the front door, and I believe the model is ADC <redacted> x. I'm trying to figure out how to change the video analytics settings for it. Could you guide me through the process?"
+    ],
+    "metric_profile": "Wds/trn=20.8, Short%=11.2, Polite%=34.0, Uncert%=4.8, InfoQ%=2.3, Pivot%=0.0"
+  },
+  {
+    "cluster": 50,
+    "name": "Polite & Declarative",
+    "effect": "HELPS the task",
+    "n": 24,
+    "frac": 0.019,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_50_polite_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_50_polite_declarative/trait_card.md",
+    "traits": [
+      "Polite",
+      "Declarative"
+    ],
+    "examples": [
+      "My code word is code word.",
+      "I'd like to speak with tech support, please."
+    ],
+    "metric_profile": "Wds/trn=4.5, Short%=54.4, Polite%=24.8, Uncert%=0.4, InfoQ%=0.3, Pivot%=0.7"
+  },
+  {
+    "cluster": 51,
+    "name": "Erratic & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 39,
+    "frac": 0.03,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_51_erratic_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_51_erratic_drip_feeding/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "How do I reconnect cameras after changing Wi Fi password?",
+      "Wi Fi is good. Signal's good. And it's flashing blue."
+    ],
+    "metric_profile": "Wds/trn=4.5, Short%=60.6, Polite%=1.5, Uncert%=0.7, InfoQ%=10.5, Pivot%=0.0"
+  },
+  {
+    "cluster": 52,
+    "name": "Inquisitive & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_52_inquisitive_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_52_inquisitive_drip_feeding/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "How do I resolve a low battery issue in sensors?",
+      "My back patio door?",
+      "Yes. Sorry. What was the battery again?",
+      "Okay. Perfect. And then how do I replace it?"
+    ],
+    "metric_profile": "Wds/trn=5.6, Short%=34.8, Polite%=7.7, Uncert%=5.6, InfoQ%=29.5, Pivot%=0.0"
+  },
+  {
+    "cluster": 53,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_53_front_loading_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_53_front_loading_terse/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Terse"
+    ],
+    "examples": [],
+    "metric_profile": "Wds/trn=2.3, Short%=77.1, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 54,
+    "name": "Inquisitive & Blunt",
+    "effect": "HELPS the task",
+    "n": 12,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_54_inquisitive_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_54_inquisitive_blunt/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Blunt"
+    ],
+    "examples": [
+      "How do I install this camera?"
+    ],
+    "metric_profile": "Wds/trn=3.4, Short%=67.2, Polite%=0.0, Uncert%=0.0, InfoQ%=24.2, Pivot%=0.0"
+  },
+  {
+    "cluster": 55,
+    "name": "Verbose & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_55_verbose_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_55_verbose_inquisitive/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hello, Veronica? This is Christine Fernandez. I need some help with adding my camera to the Brinks Home app. It's been quite a long day at work, and I'm not very familiar with the process. Could you assist me with this?",
+      "Yes. Of course. My code word is Stick.",
+      "Thank you, Veronica. What do I need to do next to add my camera to the Brinks Home app?",
+      "Yes, please. A step by step guide would be very helpful. And not entirely sure where to begin."
+    ],
+    "metric_profile": "Wds/trn=24.5, Short%=8.3, Polite%=27.2, Uncert%=5.6, InfoQ%=18.9, Pivot%=2.2"
+  },
+  {
+    "cluster": 56,
+    "name": "Wavering & Verbose",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_56_wavering_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_56_wavering_verbose/trait_card.md",
+    "traits": [
+      "Wavering",
+      "Verbose"
+    ],
+    "examples": [
+      "Yeah. Right. Hello, Veronica. I'm Jennifer Perry. Can we just get this sorted quickly? I've been having some issues with 1 of my cameras, and frankly, it's driving me up the wall. The thing just went offline after showing some yellow lights and now the WPS button on my router doesn't work. So what's going on here?",
+      "Yeah. It's Spine. Now can we please address the issue with this camera? It's a sanctuary cam model 2GIGHD1 hundred. It's offline, I'm losing my patience here.",
+      "Great. Now that we've got that out of the way, what's the next step to fix this camera? Thing is, I've reconnected it before. But now the image is all fuzzy. And soon enough, the whole thing just stops working. And I can't even try to reconnect because the WPS button on my router isn't responding. What's the hold up here? How can we make it work again?",
+      "Unplugging the camera is not an option right now. I'm in a wheelchair. Can't reach the thing. There has to be another way to sort this out without me moving things around physically. Is there anything else we can try? That doesn't require me to physically mess about with the camera?"
+    ],
+    "metric_profile": "Wds/trn=43.9, Short%=11.1, Polite%=22.2, Uncert%=11.1, InfoQ%=22.2, Pivot%=22.2"
+  },
+  {
+    "cluster": 57,
+    "name": "Confident & Verbose",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_57_confident_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_57_confident_verbose/trait_card.md",
+    "traits": [
+      "Confident",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. It's Maria Wells here. How's your day going so far?",
+      "Certainly, Veronica. The code word is blowfish.",
+      "Well, I've been having an issue with 1 of my cameras. I've reset it multiple times, but it still remains offline. Could you help me figure out why this is happening? It's located at the SVR."
+    ],
+    "metric_profile": "Wds/trn=18.2, Short%=21.9, Polite%=0.0, Uncert%=3.1, InfoQ%=3.1, Pivot%=3.1"
+  },
+  {
+    "cluster": 58,
+    "name": "Inquisitive & Verbose",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_58_inquisitive_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_58_inquisitive_verbose/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Verbose"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Megan Mason. I'm calling because I'm having an issue with 1 of my cameras. It's not connecting. Can you help me with that?",
+      "Sure. My code word is tanker 1.",
+      "It's the Ohio SVR camera. That seems to be having the connectivity issue. Can you tell me why this might be happening?"
+    ],
+    "metric_profile": "Wds/trn=18.3, Short%=22.5, Polite%=0.0, Uncert%=12.5, InfoQ%=22.5, Pivot%=0.0"
+  },
+  {
+    "cluster": 59,
+    "name": "Inquisitive & Hesitant",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_59_inquisitive_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_59_inquisitive_hesitant/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Hesitant"
+    ],
+    "examples": [
+      "Bear spelled b e a r",
+      "How do I set up recording rules for my camera?",
+      "How do I test it to make sure it's working?",
+      "Okay. I think it may be working. Are you able to see it on my end?"
+    ],
+    "metric_profile": "Wds/trn=7.1, Short%=34.2, Polite%=17.8, Uncert%=12.6, InfoQ%=22.7, Pivot%=0.0"
+  },
+  {
+    "cluster": 60,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 12,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_60_verbose_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_60_verbose_polite/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Polite"
+    ],
+    "examples": [
+      "So Veronica. This is Mary Powell. I need some help with an issue I'm having with my backyard",
+      "Sure. The code word is gumball.",
+      "Great. Thank you. Well, there's this blue light on my backyard camera that's been blinking, and I'm not sure what it indicates. It's starting to worry me. Could you explain what this might be? And how I could resolve it?",
+      "I see. You for the information. Yes. Let's try reconnecting it using WPS. Can you guide me through the process?"
+    ],
+    "metric_profile": "Wds/trn=19.5, Short%=11.4, Polite%=22.0, Uncert%=10.0, InfoQ%=9.9, Pivot%=0.9"
+  },
+  {
+    "cluster": 61,
+    "name": "Verbose & Confident",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_61_verbose_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_61_verbose_confident/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Confident"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Catherine Harrison. Could you please help me with an issue I'm experiencing with my security camera? It's in my garage. And it's become nonfunctional. And I could really use some assistance. Thank you.",
+      "Certainly, Veronica. The word you're looking for is code word wood.",
+      "You're welcome. Now about my garage camera. I'm having difficulty accessing it. I can't power cycle it myself considering my physical constraints. Could you please arrange for a technician to assist me? Also, could you remind me how the system number and site number might be used in this context? Just to fully understand. Thank you.",
+      "The garage camera. An ADC <redacted> x, seems to have stopped working entirely. It isn't accessible through my security system interface. And I'm unable to determine if it's a power connectivity, or hardware issue. Since I'm physically unable to reach it myself, to troubleshoot or power cycle it, I need assistance. Can a technician come out to resolve this issue for me?"
+    ],
+    "metric_profile": "Wds/trn=34.3, Short%=16.7, Polite%=50.0, Uncert%=8.3, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 62,
+    "name": "Verbose & Hesitant",
+    "effect": "HARMS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_62_verbose_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_62_verbose_hesitant/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Hesitant"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Harold Kelly. I could use your help with an issue I'm having.",
+      "Sure. The code word is hat.",
+      "Great. Thank you. I'm having an issue with my front camera. I can't seem to hear the audio on it. Could you help me figure out what's happening?",
+      "Oh, I'm not entirely sure how to check that. Can you guide me through how to confirm if the front camera is connected to the Brinks home network?"
+    ],
+    "metric_profile": "Wds/trn=22.7, Short%=10.8, Polite%=8.9, Uncert%=12.3, InfoQ%=15.3, Pivot%=0.0"
+  },
+  {
+    "cluster": 63,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_63_confident_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_63_confident_polite/trait_card.md",
+    "traits": [
+      "Confident",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Jessica Butler. I'm hoping you can help me with a question about my Brinks Home app. It's been a long day, and I'm having a bit of trouble figuring things out. How's your day going so far?",
+      "Sure. My code word is fin.",
+      "Great. Thanks for that. I'm trying to add my interior camera to the Brinks Home app. But I'm not sure how to do it. It's model ADCV510 I'm not very familiar with this kind of thing. Could you guide me through the process? Why is it necessary to add the camera to the app this way?",
+      "Yes. I need help adding my interior camera. Could you walk me through the steps?"
+    ],
+    "metric_profile": "Wds/trn=27.3, Short%=14.1, Polite%=58.5, Uncert%=17.0, InfoQ%=10.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 64,
+    "name": "Frustrated & Erratic",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_64_frustrated_erratic/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_64_frustrated_erratic/trait_card.md",
+    "traits": [
+      "Frustrated",
+      "Erratic"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Lian Sanders.",
+      "Sure. The code word is bowl.",
+      "I've been having an issue with my camera in the bedroom. It has stopped recording, but there's a red light that keeps turning on. You help me figure out what's going on?"
+    ],
+    "metric_profile": "Wds/trn=11.5, Short%=41.1, Polite%=23.3, Uncert%=7.4, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 65,
+    "name": "Erratic & Drip-feeding",
+    "effect": "HELPS the task",
+    "n": 6,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_65_erratic_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_65_erratic_drip_feeding/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "Yeah. The light on the camera isn't flashing blue for a while. Can you tell me what's going on and what we know what I need to do to fix this?",
+      "Okay. What's the next step?",
+      "Okay. I've done that."
+    ],
+    "metric_profile": "Wds/trn=8.5, Short%=64.8, Polite%=3.5, Uncert%=2.4, InfoQ%=7.7, Pivot%=0.0"
+  },
+  {
+    "cluster": 66,
+    "name": "Drip-feeding & Declarative",
+    "effect": "HELPS the task",
+    "n": 49,
+    "frac": 0.038,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_66_drip_feeding_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_66_drip_feeding_declarative/trait_card.md",
+    "traits": [
+      "Drip-feeding",
+      "Declarative"
+    ],
+    "examples": [
+      "This camera has a red light, and it isn't working.",
+      "Nope. It didn't it didn't stop flashing.",
+      "Okay. I was able to get it connected."
+    ],
+    "metric_profile": "Wds/trn=4.1, Short%=57.9, Polite%=2.5, Uncert%=1.5, InfoQ%=0.2, Pivot%=0.4"
+  },
+  {
+    "cluster": 67,
+    "name": "Polite & Confused",
+    "effect": "HARMS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_67_polite_confused/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_67_polite_confused/trait_card.md",
+    "traits": [
+      "Polite",
+      "Confused"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Jennifer Perry. I'm calling because I'm having trouble with my sanctuary cam. It isn't connecting. Can you",
+      "Sure. The code word is Spine.",
+      "Yes. My network router is active and providing Internet access.",
+      "I've pressed and held the reset button for 15 seconds. And the front LED has turned yellow. What should I do next?"
+    ],
+    "metric_profile": "Wds/trn=11.8, Short%=18.7, Polite%=25.3, Uncert%=6.7, InfoQ%=0.0, Pivot%=2.5"
+  },
+  {
+    "cluster": 68,
+    "name": "Polite & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_68_polite_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_68_polite_inquisitive/trait_card.md",
+    "traits": [
+      "Polite",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Karen Henderson. How are you today? It's been a bit of a long day for me. And I'm hoping you can help me with my Brinks Home app.",
+      "Of course, Veronica. My code word is map.",
+      "Thank you, Veronica. I'm ready whenever you are. What's the next step?",
+      "I appreciate the quick help, Veronica. I need assistance adding my camera to the Brinks Home app. It's located by my front door. How do I go about doing that?"
+    ],
+    "metric_profile": "Wds/trn=19.5, Short%=18.2, Polite%=63.6, Uncert%=9.1, InfoQ%=27.3, Pivot%=0.0"
+  },
+  {
+    "cluster": 69,
+    "name": "Inquisitive & Polite",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_69_inquisitive_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_69_inquisitive_polite/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Polite"
+    ],
+    "examples": [
+      "How can I configure my cameras to avoid recording when my system is disarmed?",
+      "Can you provide me with the step by step assistance?",
+      "Can you transfer me?"
+    ],
+    "metric_profile": "Wds/trn=5.5, Short%=50.0, Polite%=17.9, Uncert%=1.5, InfoQ%=16.1, Pivot%=0.5"
+  },
+  {
+    "cluster": 70,
+    "name": "Front-loading & Blunt",
+    "effect": "HELPS the task",
+    "n": 15,
+    "frac": 0.012,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_70_front_loading_blunt/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_70_front_loading_blunt/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Blunt"
+    ],
+    "examples": [
+      "Ramble. I'm rambling because yeah.",
+      "My code word is code word."
+    ],
+    "metric_profile": "Wds/trn=5.0, Short%=55.0, Polite%=0.0, Uncert%=3.6, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 71,
+    "name": "Front-loading & Polite",
+    "effect": "HELPS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_71_front_loading_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_71_front_loading_polite/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Jennifer Perry speaking. I'm calling because I'm having an issue with my sanctuary cam. The camera is showing a yellow flashing light. And I can't see anything. Could you please help me?",
+      "Yes. My code word is Spine."
+    ],
+    "metric_profile": "Wds/trn=14.3, Short%=33.3, Polite%=33.3, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 72,
+    "name": "Polite & Confident",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_72_polite_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_72_polite_confident/trait_card.md",
+    "traits": [
+      "Polite",
+      "Confident"
+    ],
+    "examples": [
+      "Hello. Veronica. This is Jennifer Perry. Are you today?",
+      "Certainly, Veronica. The code word is spine.",
+      "Thank you. I'm ready when you are. Is there anything else you need from me?",
+      "Well, I'm having an issue with my camera, the sanctuary cam. It seems really dark at night, and I thought it was supposed to have night vision. Could you help me figure out what's going on?"
+    ],
+    "metric_profile": "Wds/trn=17.3, Short%=9.1, Polite%=30.5, Uncert%=0.0, InfoQ%=18.3, Pivot%=0.0"
+  },
+  {
+    "cluster": 73,
+    "name": "Erratic & Terse",
+    "effect": "HELPS the task",
+    "n": 18,
+    "frac": 0.014,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_73_erratic_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_73_erratic_terse/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Terse"
+    ],
+    "examples": [
+      "CHRIS TINE FER NAN DEV.",
+      "I changed my Wi Fi. And my camera is not connecting through my mobile app."
+    ],
+    "metric_profile": "Wds/trn=4.7, Short%=73.5, Polite%=6.1, Uncert%=0.3, InfoQ%=0.3, Pivot%=0.0"
+  },
+  {
+    "cluster": 74,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 11,
+    "frac": 0.009,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_74_front_loading_terse/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_74_front_loading_terse/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Terse"
+    ],
+    "examples": [],
+    "metric_profile": "Wds/trn=1.0, Short%=100.0, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 75,
+    "name": "Verbose & Frustrated",
+    "effect": "HARMS the task",
+    "n": 6,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_75_verbose_frustrated/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_75_verbose_frustrated/trait_card.md",
+    "traits": [
+      "Verbose",
+      "Frustrated"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Maria Wells. I'm calling because I'm having trouble with 1 of my cameras. There's no lights, it's not working. Can you help me fix it?",
+      "Sure. The code word is blowfish.",
+      "The camera that's having trouble is the 1 labeled SVR. It's the ADC dash CSVR 126 dash 16CH model. There's no lights on it, and it isn't working.",
+      "Okay. I'll give that a try. Just a moment, please. Alright. I unplugged it. Waited a bit, and now it's plugged back in. Still, there are no lights showing. What should I do next?"
+    ],
+    "metric_profile": "Wds/trn=19.3, Short%=15.3, Polite%=18.8, Uncert%=10.5, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 76,
+    "name": "Frustrated & Hesitant",
+    "effect": "HARMS the task",
+    "n": 10,
+    "frac": 0.008,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_76_frustrated_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_76_frustrated_hesitant/trait_card.md",
+    "traits": [
+      "Frustrated",
+      "Hesitant"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Arlene Smith. I'm having some trouble with my account and need help.",
+      "Sure. The code word is code word.",
+      "I'm having issues logging into my account. It keeps saying my password is incorrect, but I'm sure I'm entering it right. Can you help me reset it or figure out what's going on?"
+    ],
+    "metric_profile": "Wds/trn=11.9, Short%=21.0, Polite%=0.0, Uncert%=7.8, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 77,
+    "name": "Polite & Declarative",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_77_polite_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_77_polite_declarative/trait_card.md",
+    "traits": [
+      "Polite",
+      "Declarative"
+    ],
+    "examples": [
+      "Hi. This is Daniel.",
+      "The code word is code word.",
+      "Could I please cancel my service?"
+    ],
+    "metric_profile": "Wds/trn=4.6, Short%=28.5, Polite%=25.8, Uncert%=2.6, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 78,
+    "name": "Hesitant & Confident",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_78_hesitant_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_78_hesitant_confident/trait_card.md",
+    "traits": [
+      "Hesitant",
+      "Confident"
+    ],
+    "examples": [
+      "Hi, Jordan. I think there is something wrong with my camera right now. It doesn't seem to be working anymore.",
+      "I mean, I only see a red light that's on right now. I don't exactly know what's going on. It's just doesn't show anything on the screen.",
+      "No. Not quite. But let me actually try that right now.",
+      "Alright. Okay. Yeah. I think it's working right now. Yeah. This is this is amazing. Thank you for saving my day."
+    ],
+    "metric_profile": "Wds/trn=19.8, Short%=0.0, Polite%=25.0, Uncert%=50.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 79,
+    "name": "Confident & Polite",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_79_confident_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_79_confident_polite/trait_card.md",
+    "traits": [
+      "Confident",
+      "Polite"
+    ],
+    "examples": [
+      "Hello, Veronica. My name is Jennifer Perry. How are you doing today?",
+      "Certainly, my code word is spine. Can you help me with an issue I'm having? 1 of my cameras has been giving me trouble.",
+      "Great. Thank you. I'm having some issues with 1 of my cameras. It showed yellow lights. I reconnect to it, then the image was bad, Then the whole thing went offline. And my WPS button on the router isn't working anymore. Can you help me figure out what's going on?",
+      "The issue is with the sanctuary cam. It's been quite frustrating"
+    ],
+    "metric_profile": "Wds/trn=18.4, Short%=12.2, Polite%=29.4, Uncert%=6.7, InfoQ%=0.0, Pivot%=2.2"
+  },
+  {
+    "cluster": 80,
+    "name": "Front-loading & Frustrated",
+    "effect": "HARMS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_80_front_loading_frustrated/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_80_front_loading_frustrated/trait_card.md",
+    "traits": [
+      "Front-loading",
+      "Frustrated"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Arlene Smith. I've been having some issues with my security camera not recording. And I need some help getting it sorted out.",
+      "Sure. The code word is code word."
+    ],
+    "metric_profile": "Wds/trn=10.6, Short%=33.3, Polite%=0.0, Uncert%=2.6, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 81,
+    "name": "Blunt & Declarative",
+    "effect": "HELPS the task",
+    "n": 93,
+    "frac": 0.073,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_81_blunt_declarative/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_81_blunt_declarative/trait_card.md",
+    "traits": [
+      "Blunt",
+      "Declarative"
+    ],
+    "examples": [
+      "My camera has no lights and isn't working."
+    ],
+    "metric_profile": "Wds/trn=3.3, Short%=62.4, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.2"
+  },
+  {
+    "cluster": 82,
+    "name": "Frustrated & Confident",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_82_frustrated_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_82_frustrated_confident/trait_card.md",
+    "traits": [
+      "Frustrated",
+      "Confident"
+    ],
+    "examples": [
+      "My name is Clement Mills.",
+      "Yeah. So my smoke detectors, they've been giving off this low battery alarm, and it's constant driving me nuts. I have 4 of them. Thing is, I didn't even realize these were from Brinks at first. They're way up on the ceiling. So I can't just take them down myself, and I'm definitely not calling the handyman back for this. I just want the alarm gone. Do something to make it stop. It's really frustrating.",
+      "No. I really don't wanna deal with an app right now. I just need the alarm to stop."
+    ],
+    "metric_profile": "Wds/trn=17.2, Short%=50.0, Polite%=0.0, Uncert%=0.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 83,
+    "name": "Drip-feeding & Inquisitive",
+    "effect": "HELPS the task",
+    "n": 26,
+    "frac": 0.02,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_83_drip_feeding_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_83_drip_feeding_inquisitive/trait_card.md",
+    "traits": [
+      "Drip-feeding",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Yes. My code word is code word.",
+      "Yes. My yard camera stopped working. Is that something you can help with?",
+      "Yes. I believe it is.",
+      "Okay. It's solid green."
+    ],
+    "metric_profile": "Wds/trn=5.3, Short%=44.3, Polite%=10.2, Uncert%=3.3, InfoQ%=8.4, Pivot%=0.4"
+  },
+  {
+    "cluster": 84,
+    "name": "Inquisitive & Polite",
+    "effect": "HELPS the task",
+    "n": 9,
+    "frac": 0.007,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_84_inquisitive_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_84_inquisitive_polite/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Polite"
+    ],
+    "examples": [
+      "This is Mary Elizabeth Smith",
+      "My code word is bracelet,",
+      "How do I ask the video recordings from my back office camera?",
+      "Yeah. I first, I just wanna get to them."
+    ],
+    "metric_profile": "Wds/trn=4.2, Short%=40.7, Polite%=19.2, Uncert%=0.0, InfoQ%=15.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 85,
+    "name": "Erratic & Inquisitive",
+    "effect": "HELPS the task",
+    "n": 13,
+    "frac": 0.01,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_85_erratic_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_85_erratic_inquisitive/trait_card.md",
+    "traits": [
+      "Erratic",
+      "Inquisitive"
+    ],
+    "examples": [
+      "I need to set up my video motion detection parameters. How do I do that?"
+    ],
+    "metric_profile": "Wds/trn=3.6, Short%=82.3, Polite%=0.0, Uncert%=0.0, InfoQ%=16.6, Pivot%=0.0"
+  },
+  {
+    "cluster": 86,
+    "name": "Polite & Confident",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_86_polite_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_86_polite_confident/trait_card.md",
+    "traits": [
+      "Polite",
+      "Confident"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Teresa Hicks. I'm hoping you can help me with a problem.",
+      "Sure. The code word is peace.",
+      "Great. Thanks. I'm trying to adjust the video motion detection rules for my garage camera. But I'm not sure how to do it. Could you help guide me through the steps?",
+      "I'm looking to modify the motion detection rules for my garage camera. It's picking up too much unnecessary movement. And I wanna fine tune it to avoid constant alerts. Can you direct me on how to do that?"
+    ],
+    "metric_profile": "Wds/trn=21.9, Short%=12.7, Polite%=55.2, Uncert%=10.8, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 87,
+    "name": "Confident & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_87_confident_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_87_confident_inquisitive/trait_card.md",
+    "traits": [
+      "Confident",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Maria Wells. I'm having an issue with my camera. There's a blue light flashing. And it doesn't seem to be working. Can you help me with this? Also, how's your day been so far?",
+      "Of course, my name is Maria Wells. Can you help me? Get in touch with someone who can assist me with my camera issue.",
+      "Sure. The code word is blowfish.",
+      "Yes, please. Step by step instructions How do I reset the WPS mode?"
+    ],
+    "metric_profile": "Wds/trn=21.4, Short%=12.1, Polite%=21.8, Uncert%=7.3, InfoQ%=22.6, Pivot%=1.8"
+  },
+  {
+    "cluster": 88,
+    "name": "Confident & Verbose",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_88_confident_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_88_confident_verbose/trait_card.md",
+    "traits": [
+      "Confident",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Tiffany Hawkins, How are you today?",
+      "Certainly, my code word is Renee Bracey.",
+      "I'm having an issue with my camera, and I also have a question about my upcoming appointment. Could you help me with these?"
+    ],
+    "metric_profile": "Wds/trn=12.8, Short%=20.8, Polite%=0.0, Uncert%=8.3, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 89,
+    "name": "Polite & Inquisitive",
+    "effect": "HARMS the task",
+    "n": 3,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_89_polite_inquisitive/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_89_polite_inquisitive/trait_card.md",
+    "traits": [
+      "Polite",
+      "Inquisitive"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Teresa Hicks. Looking to get some help with My Brinks equipment. How's your day going so far?",
+      "Sure thing. The code word is peace.",
+      "Great. Thanks. I need help changing the video analytics. Settings on my front camera. It's been a long day at work, and I'm not very familiar with the details. Can you guide me",
+      "I am looking to adjust the video analytics. For my front camera to improve its performance. I wanna make sure it's capturing the right moments. What settings can I tweak? Or where should I start? Also, do you know why adjusting these settings is important?"
+    ],
+    "metric_profile": "Wds/trn=22.9, Short%=8.2, Polite%=43.1, Uncert%=5.8, InfoQ%=24.6, Pivot%=0.0"
+  },
+  {
+    "cluster": 90,
+    "name": "Confident & Polite",
+    "effect": "HELPS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_90_confident_polite/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_90_confident_polite/trait_card.md",
+    "traits": [
+      "Confident",
+      "Polite"
+    ],
+    "examples": [
+      "Hi, Veronica. My name is John Caputo.",
+      "Sure. It's j o h n CAPUTO.",
+      "Of course. The code word is code word.",
+      "I'm having an issue with 1 of the items in my equipment list. Can you help me with that?"
+    ],
+    "metric_profile": "Wds/trn=16.0, Short%=9.1, Polite%=36.4, Uncert%=4.5, InfoQ%=13.6, Pivot%=0.0"
+  },
+  {
+    "cluster": 91,
+    "name": "Confident & Front-loading",
+    "effect": "HARMS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_91_confident_front_loading/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_91_confident_front_loading/trait_card.md",
+    "traits": [
+      "Confident",
+      "Front-loading"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Richard Miller. I'm calling because I'm having some issues with my panel system. Could you help me with that?",
+      "Of course, my name is Richard Miller.",
+      "Sure. My code word is hammer.",
+      "The panel system seems to be unresponsive. I've noticed that it's not reacting to commands and the display isn't showing anything. I've tried resetting it, but that didn't seem to help."
+    ],
+    "metric_profile": "Wds/trn=14.0, Short%=21.2, Polite%=5.0, Uncert%=10.0, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 92,
+    "name": "Wavering & Front-loading",
+    "effect": "HARMS the task",
+    "n": 2,
+    "frac": 0.002,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_92_wavering_front_loading/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_92_wavering_front_loading/trait_card.md",
+    "traits": [
+      "Wavering",
+      "Front-loading"
+    ],
+    "examples": [
+      "Hey. Hey, Jordan. You so much. My name is Sam. I'm calling to see if you could help me to troubleshoot my camera today. All of a sudden, it's not working now.",
+      "I mean, I don't know. It's just not working. And all I can tell is that there's a red light on the device right now.",
+      "No. I don't think so.",
+      "Okay. How can I do that?"
+    ],
+    "metric_profile": "Wds/trn=18.3, Short%=8.3, Polite%=15.5, Uncert%=15.5, InfoQ%=15.5, Pivot%=7.1"
+  },
+  {
+    "cluster": 93,
+    "name": "Polite & Confident",
+    "effect": "HELPS the task",
+    "n": 4,
+    "frac": 0.003,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_93_polite_confident/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_93_polite_confident/trait_card.md",
+    "traits": [
+      "Polite",
+      "Confident"
+    ],
+    "examples": [
+      "Hello, Veronica. This is Megan Mason. How are you doing today?",
+      "Certainly. My code word is tanker 3.",
+      "I'm trying to add a camera using the Brinks Home app. I have a camera located at Ohio SVR. Can you guide me through the process? It's been a long day, and I could use a lot of guidance.",
+      "Thank you, Veronica. So I need to ensure that the camera is connected to Wi Fi first. May I ask, how do I confirm if it's already connected to Wi Fi? Or how do I connect it to Wi Fi"
+    ],
+    "metric_profile": "Wds/trn=22.5, Short%=12.9, Polite%=54.9, Uncert%=3.1, InfoQ%=12.9, Pivot%=0.0"
+  },
+  {
+    "cluster": 94,
+    "name": "Confident & Hesitant",
+    "effect": "HARMS the task",
+    "n": 1,
+    "frac": 0.001,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_94_confident_hesitant/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_94_confident_hesitant/trait_card.md",
+    "traits": [
+      "Confident",
+      "Hesitant"
+    ],
+    "examples": [
+      "Hi, Veronica. This is Adel Alsafar.",
+      "Sure. It's Adel ADEL, Alsafar. ALSAFAR.",
+      "Of course, the code word is code word.",
+      "I'm currently having an issue with 1 of my devices. It's a contact sensor located at living room window 2. And I believe the model is QS<redacted> dash 840. Can you help me with this?"
+    ],
+    "metric_profile": "Wds/trn=9.8, Short%=33.3, Polite%=16.7, Uncert%=16.7, InfoQ%=0.0, Pivot%=0.0"
+  },
+  {
+    "cluster": 95,
+    "name": "Confident & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 7,
+    "frac": 0.005,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_95_confident_drip_feeding/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_95_confident_drip_feeding/trait_card.md",
+    "traits": [
+      "Confident",
+      "Drip-feeding"
+    ],
+    "examples": [
+      "This is Jennifer Perry speaking. I'm having some trouble with my camera, and I was hoping you could help me sort it out. It's that sanctuary cam. The model 2 gig HD 100. It doesn't seem to be connecting.",
+      "Of course. My name is Jennifer Perry.",
+      "Yes. My code word is fine.",
+      "Yes. Spine is spelled s p I N e Thanks for your patience."
+    ],
+    "metric_profile": "Wds/trn=12.1, Short%=30.7, Polite%=10.8, Uncert%=5.1, InfoQ%=7.7, Pivot%=1.4"
+  },
+  {
+    "cluster": 96,
+    "name": "Inquisitive & Erratic",
+    "effect": "HELPS the task",
+    "n": 20,
+    "frac": 0.016,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_96_inquisitive_erratic/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_96_inquisitive_erratic/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Erratic"
+    ],
+    "examples": [
+      "Veronica, can you tell me who has the better system? Brinks Home or Vivint?"
+    ],
+    "metric_profile": "Wds/trn=4.8, Short%=67.7, Polite%=0.0, Uncert%=1.2, InfoQ%=24.2, Pivot%=0.9"
+  },
+  {
+    "cluster": 97,
+    "name": "Polite & Verbose",
+    "effect": "HARMS the task",
+    "n": 9,
+    "frac": 0.007,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_97_polite_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_97_polite_verbose/trait_card.md",
+    "traits": [
+      "Polite",
+      "Verbose"
+    ],
+    "examples": [
+      "Hello. This is Jennifer Perry speaking.",
+      "My code word is spine.",
+      "I've noticed a yellow light on my camera. It's a SentryCam model, 2 gig HD 100. Can you tell me what this yellow light means? I'm not quite sure what to do.",
+      "Alright. Thank you for the information. I'll try power cycling the camera. By unplugging it and then plugging it back in. Let's see if that fixes the issue."
+    ],
+    "metric_profile": "Wds/trn=16.7, Short%=14.6, Polite%=36.3, Uncert%=8.5, InfoQ%=14.9, Pivot%=3.0"
+  },
+  {
+    "cluster": 98,
+    "name": "Polite & Verbose",
+    "effect": "HARMS the task",
+    "n": 8,
+    "frac": 0.006,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_98_polite_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_98_polite_verbose/trait_card.md",
+    "traits": [
+      "Polite",
+      "Verbose"
+    ],
+    "examples": [
+      "Hi. This is Teresa Hicks. I'm needing help with the video motion detection on my garage camera.",
+      "The code word is peace.",
+      "I need to adjust the video motion detection rules. For my garage camera. It's a bit tricky for me tech wise. So I'd appreciate some guidance. The camera model is ADC 723 x. Any idea how I can go about doing this?",
+      "Alright. I think I understand. But Could you repeat step 4 for me?"
+    ],
+    "metric_profile": "Wds/trn=15.3, Short%=23.6, Polite%=39.5, Uncert%=10.3, InfoQ%=0.0, Pivot%=2.1"
+  },
+  {
+    "cluster": 99,
+    "name": "Inquisitive & Verbose",
+    "effect": "HARMS the task",
+    "n": 5,
+    "frac": 0.004,
+    "seed_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/seeds_brinks_k100_rule/brinks_99_inquisitive_verbose/gen_00.md",
+    "trait_file": "/Users/yutao.xie/work/tau2bench_cc/data/persona_opt/trait_cards_brinks_k100/trait_99_inquisitive_verbose/trait_card.md",
+    "traits": [
+      "Inquisitive",
+      "Verbose"
+    ],
+    "examples": [
+      "Hi. I'm Jennifer Perry. I need some help with my security camera. It has a red light flashing. And it's not working. Can you help me troubleshoot this?",
+      "Sure. The code word is spine.",
+      "Yes. My other devices are connected",
+      "to Wi Fi and seem to be working fine. So what could be causing this camera issue? Is it definitely related to Wi Fi? Is there a way to reset the camera? Or reconnect it to the network?"
+    ],
+    "metric_profile": "Wds/trn=25.5, Short%=11.7, Polite%=26.1, Uncert%=10.1, InfoQ%=34.3, Pivot%=0.0"
+  }
+]

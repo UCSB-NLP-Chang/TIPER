@@ -1,0 +1,34 @@
+[
+  {
+    "cluster": 0,
+    "name": "Persistent Detail-Dumper",
+    "effect": "HARMS the task",
+    "n": 362,
+    "frac": 0.143,
+    "seed_file": "data/persona_opt/seeds_cardworks_k4/cw_00_persistent_detail_dumper/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Cooperative Detail Giver",
+    "effect": "HELPS the task",
+    "n": 463,
+    "frac": 0.182,
+    "seed_file": "data/persona_opt/seeds_cardworks_k4/cw_01_cooperative_detail_giver/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Persistent & Wary",
+    "effect": "HARMS the task",
+    "n": 200,
+    "frac": 0.079,
+    "seed_file": "data/persona_opt/seeds_cardworks_k4/cw_02_persistent_wary/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Anxious Step-by-Step",
+    "effect": "HARMS the task",
+    "n": 1515,
+    "frac": 0.596,
+    "seed_file": "data/persona_opt/seeds_cardworks_k4/cw_03_anxious_step_by_step/gen_00.md"
+  }
+]

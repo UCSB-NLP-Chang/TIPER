@@ -1,0 +1,50 @@
+[
+  {
+    "cluster": 0,
+    "name": "Persistent & Repetitive",
+    "effect": "HARMS the task",
+    "n": 348,
+    "frac": 0.137,
+    "seed_file": "data/persona_opt/seeds_cardworks_k6/cw_00_persistent_repetitive/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Persistent Worried Explainer",
+    "effect": "HARMS the task",
+    "n": 326,
+    "frac": 0.128,
+    "seed_file": "data/persona_opt/seeds_cardworks_k6/cw_01_persistent_worried_explainer/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Persistent Problem Narrator",
+    "effect": "HARMS the task",
+    "n": 146,
+    "frac": 0.057,
+    "seed_file": "data/persona_opt/seeds_cardworks_k6/cw_02_persistent_problem_narrator/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Wary Step-by-Step",
+    "effect": "HARMS the task",
+    "n": 1178,
+    "frac": 0.464,
+    "seed_file": "data/persona_opt/seeds_cardworks_k6/cw_03_wary_step_by_step/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Cooperative & Concerned",
+    "effect": "HELPS the task",
+    "n": 432,
+    "frac": 0.17,
+    "seed_file": "data/persona_opt/seeds_cardworks_k6/cw_04_cooperative_concerned/gen_00.md"
+  },
+  {
+    "cluster": 5,
+    "name": "Persistent Clarifier",
+    "effect": "HARMS the task",
+    "n": 110,
+    "frac": 0.043,
+    "seed_file": "data/persona_opt/seeds_cardworks_k6/cw_05_persistent_clarifier/gen_00.md"
+  }
+]

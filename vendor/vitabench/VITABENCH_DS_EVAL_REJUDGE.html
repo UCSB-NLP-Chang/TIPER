@@ -1,0 +1,249 @@
+<style>
+  :root{
+    --bg:#F6F7F9; --surface:#FFFFFF; --surface-2:#EDEFF3; --ink:#14171C;
+    --muted:#586072; --faint:#8A92A2; --rule:#DCE0E7; --accent:#2F6F6A;
+    --accent-soft:#E6F0EE; --good:#2E7D5B; --good-soft:#E4F0EA; --warn:#B26A00;
+    --strict:#B23B3B; --strict-soft:#F2E4E4;
+    --display:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;
+    --body:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,Roboto,sans-serif;
+    --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0D0F13; --surface:#161922; --surface-2:#1D212C; --ink:#DDE2EA;
+      --muted:#97A0B0; --faint:#6A7282; --rule:#282D3A; --accent:#6FBFA8;
+      --accent-soft:#17261F; --good:#6FBF94; --good-soft:#15241C; --warn:#D9A24A;
+      --strict:#D98A8A; --strict-soft:#2A1818;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0D0F13; --surface:#161922; --surface-2:#1D212C; --ink:#DDE2EA;
+    --muted:#97A0B0; --faint:#6A7282; --rule:#282D3A; --accent:#6FBFA8;
+    --accent-soft:#17261F; --good:#6FBF94; --good-soft:#15241C; --warn:#D9A24A;
+    --strict:#D98A8A; --strict-soft:#2A1818;
+  }
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);
+    font-size:15px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:860px;margin:0 auto;padding:48px 28px 80px;}
+  h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-0.01em;text-wrap:balance;}
+  h1{font-size:30px;line-height:1.2;margin:0 0 10px;}
+  h2{font-size:20px;margin:44px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--rule);}
+  h3{font-size:16px;margin:24px 0 8px;}
+  p{margin:0 0 12px;}
+  .lede{font-family:var(--display);font-size:17px;color:var(--muted);margin:0 0 6px;line-height:1.5;}
+  .eyebrow{font-family:var(--body);font-size:11px;font-weight:600;letter-spacing:0.14em;
+    text-transform:uppercase;color:var(--accent);margin:0 0 6px;}
+  a{color:var(--accent);text-decoration:none;}
+  code,pre,.mono{font-family:var(--mono);font-variant-numeric:tabular-nums;}
+  .num{font-variant-numeric:tabular-nums;font-family:var(--mono);}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+    flex-wrap:wrap;margin-bottom:36px;}
+  .meta{text-align:right;font-size:12px;color:var(--faint);line-height:1.5;}
+  .scorecard{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 8px;}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:8px;
+    padding:14px 14px 12px;display:flex;flex-direction:column;gap:6px;}
+  .card .dom{font-family:var(--display);font-size:15px;font-weight:600;}
+  .card .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;
+    font-size:12px;color:var(--muted);}
+  .card .row b{font-family:var(--mono);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .delta{color:var(--good);font-weight:600;}
+  .strict-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:0.06em;
+    padding:2px 7px;border-radius:99px;background:var(--good-soft);color:var(--good);}
+  .scroll{overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);}
+  th{font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;
+    color:var(--muted);border-bottom:1.5px solid var(--rule);}
+  td{font-variant-numeric:tabular-nums;}
+  td.num,th.num{font-family:var(--mono);}
+  tbody tr:hover{background:var(--surface-2);}
+  .cond{color:var(--faint);font-size:12px;}
+  .neg{color:var(--strict);font-weight:600;}
+  .pos{color:var(--good);font-weight:600;}
+  .kv{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:0;font-size:13.5px;}
+  .kv div{display:contents;}
+  .kv .k{color:var(--muted);padding:6px 14px 6px 0;border-bottom:1px solid var(--rule);}
+  .kv .v{padding:6px 0;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:12.5px;}
+  .note{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);
+    border-radius:6px;padding:12px 14px;margin:14px 0;}
+  .findings{display:flex;flex-direction:column;gap:12px;margin:14px 0;}
+  .finding{background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:13px 15px;}
+  .finding h3{margin:0 0 4px;font-family:var(--body);font-size:13.5px;font-weight:600;}
+  .finding .tag{font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--accent);margin-right:8px;}
+  .finding p{margin:0;font-size:13px;color:var(--muted);}
+  ul.tight{margin:6px 0;padding-left:20px;}
+  ul.tight li{margin:0 0 5px;font-size:13.5px;}
+  .caveat{background:var(--surface-2);border-radius:7px;padding:13px 16px;margin:10px 0;}
+  .caveat h3{margin:0 0 6px;font-family:var(--body);font-size:13px;font-weight:600;color:var(--muted);}
+  .caveat p{margin:0 0 8px;font-size:13px;color:var(--muted);}
+  .caveat p:last-child{margin:0;}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);
+    font-size:12px;color:var(--faint);}
+  @media (max-width:620px){
+    .scorecard{grid-template-columns:repeat(2,1fr);}
+    .top{flex-direction:column;align-items:flex-start;}
+    .meta{text-align:left;}
+  }
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div>
+      <p class="eyebrow">VitaBench · 换 evaluator 重评</p>
+      <h1>deepseek-v4-flash-0731 当裁判，分数还稳吗</h1>
+      <p class="lede">把 V2 四域 test set 的对话原样留着，只把评分裁判从 gpt-4.1 换成 deepseek-v4-flash-0731
+        重新打分。不重跑 agent。结论方向不变，deepseek 一致偏严，persona 对抗效果全部成立。</p>
+    </div>
+    <div class="meta">
+      离线 re-judge · 不重跑 agent<br>
+      4 域 × 40 task × {no, best}<br>
+      双 judge 同批对照<br>
+      2026-08-10
+    </div>
+  </div>
+
+  <p class="eyebrow">update 分数 scorecard（deepseek 当裁判）</p>
+  <div class="scorecard">
+    <div class="card">
+      <span class="dom">delivery</span>
+      <div class="row"><span>no / best</span><b>0.775 / 0.600</b></div>
+      <div class="row"><span>Δ(no−best)</span><b class="delta">+0.175</b></div>
+      <div class="row"><span>fully</span><b>31 / 24</b></div>
+      <span class="strict-tag">VALID</span>
+    </div>
+    <div class="card">
+      <span class="dom">instore</span>
+      <div class="row"><span>no / best</span><b>0.875 / 0.650</b></div>
+      <div class="row"><span>Δ(no−best)</span><b class="delta">+0.225</b></div>
+      <div class="row"><span>fully</span><b>35 / 26</b></div>
+      <span class="strict-tag">VALID</span>
+    </div>
+    <div class="card">
+      <span class="dom">ota</span>
+      <div class="row"><span>no / best</span><b>0.650 / 0.425</b></div>
+      <div class="row"><span>Δ(no−best)</span><b class="delta">+0.225</b></div>
+      <div class="row"><span>fully</span><b>26 / 17</b></div>
+      <span class="strict-tag">VALID</span>
+    </div>
+    <div class="card">
+      <span class="dom">cross_domain</span>
+      <div class="row"><span>no / best</span><b>0.525 / 0.400</b></div>
+      <div class="row"><span>Δ(no−best)</span><b class="delta">+0.125</b></div>
+      <div class="row"><span>fully</span><b>21 / 16</b></div>
+      <span class="strict-tag">VALID</span>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:var(--faint);margin-top:10px;">
+    Δ(no−best) = no_persona − best_persona（正值 = persona 让 agent 更难 = 对抗胜利）。4 域全为正，换裁判不改变 persona 有效。
+  </p>
+
+  <h2>实验设计</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>维度</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>目的</td><td>评估器换模型后，V2 test set 分数是否稳健</td></tr>
+        <tr><td>方法</td><td>离线 re-judge：加载 V2 已保存对话 trace，用 <code>TrajectoryEvaluator</code> + 新 judge 重打分</td></tr>
+        <tr><td>重跑 agent 吗</td><td><b>否</b>。agent/user 仿真沿用 V2（gpt-5.4 high 对话），只重新评分</td></tr>
+        <tr><td>对照</td><td>同一批 trace 同时用 gpt-4.1（V2 原 judge）重打分 → 消除 trial 差异，纯看 judge 效应</td></tr>
+        <tr><td>trace 来源</td><td class="num">run_&lt;d&gt;_v2/conversations/test_{no,best}_persona/&lt;task_id&gt;.json（每 task 1 代表 trial）</td></tr>
+        <tr><td>评估器</td><td class="num">① gpt-4.1（OpenAI 直连） ② deepseek-v4-flash-0731（经 shim）</td></tr>
+        <tr><td>评分</td><td class="num">sliding window=10 / overlap=2，二元 reward（全 rubric 过=1.0 否则 0.0）</td></tr>
+        <tr><td>并发</td><td class="num">20；deepseek 经 shim 主动节流 ~19 req/min</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    为什么同 batch 跑两个 judge：V2 <code>test_report.json</code> 是 3-trial 聚合，re-judge 用 1 个代表 trial，trial 数不同不可直接比。同批代表 trial 上同时跑 gpt-4.1 + deepseek，差值即<b>纯 judge 效应</b>，干净可比。
+  </div>
+
+  <h2>基础设施：shim</h2>
+  <p style="font-size:13px;color:var(--muted);">deepseek-v4-flash-0731 经 Cresta Fireworks dev-proxy（只说 Anthropic Messages 协议）；VitaBench evaluator 发 OpenAI chat-completions。<code>openai_to_fireworks_proxy.py</code>（:4114）做双向转换 + 三层韧性。</p>
+  <ul class="tight">
+    <li><b>OpenAI ↔ Anthropic 双向</b>：messages、tools（function↔input_schema）、tool_calls↔tool_use、stop_reason→finish_reason</li>
+    <li><b>Round-robin</b>：DNS 解析 4 个 dev-proxy replica IP，<code>itertools.cycle</code> 轮询直连（Host header + SSL 跳 hostname 验证）</li>
+    <li><b>Exponential backoff</b>：429 / 5xx / 超时 / 空响应重试，<code>min(2·2^attempt, 30s)</code>，最多 4 次</li>
+    <li><b>主动 rate limiter</b>：dev-proxy 限额 20 req/min，令牌桶节流 3.1s/请求（~19/min）从源头避 429</li>
+    <li><b>evaluator_extracter graceful</b>：空/坏 JSON 返回 <code>[]</code> 不崩溃（修复原 <code>JSONDecodeError</code> 整条 reward 报废）</li>
+  </ul>
+  <div class="note">
+    实测：rate limiter 加入后 429 重试从 <b>143 → 0</b>（全程 4 域）。parse 失败 72 次（~1.9%）全部 graceful，无崩溃。
+  </div>
+
+  <h2>主结果：4 域 × 2 条件 × 2 judge</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>域</th><th>条件</th><th class="num">gpt-4.1 avg</th><th class="num">gpt-4.1 fully</th><th class="num">deepseek avg</th><th class="num">deepseek fully</th><th class="num">ds − gpt4.1</th></tr></thead>
+      <tbody>
+        <tr><td>delivery</td><td class="cond">no_persona</td><td class="num">0.825</td><td class="num">33/40</td><td class="num">0.775</td><td class="num">31/40</td><td class="num neg">−0.050</td></tr>
+        <tr><td>delivery</td><td class="cond">best_persona</td><td class="num">0.625</td><td class="num">25/40</td><td class="num">0.600</td><td class="num">24/40</td><td class="num neg">−0.025</td></tr>
+        <tr><td>instore</td><td class="cond">no_persona</td><td class="num">0.900</td><td class="num">36/40</td><td class="num">0.875</td><td class="num">35/40</td><td class="num neg">−0.025</td></tr>
+        <tr><td>instore</td><td class="cond">best_persona</td><td class="num">0.675</td><td class="num">27/40</td><td class="num">0.650</td><td class="num">26/40</td><td class="num neg">−0.025</td></tr>
+        <tr><td>ota</td><td class="cond">no_persona</td><td class="num">0.775</td><td class="num">31/40</td><td class="num">0.650</td><td class="num">26/40</td><td class="num neg">−0.125</td></tr>
+        <tr><td>ota</td><td class="cond">best_persona</td><td class="num">0.450</td><td class="num">18/40</td><td class="num">0.425</td><td class="num">17/40</td><td class="num neg">−0.025</td></tr>
+        <tr><td>cross_domain</td><td class="cond">no_persona</td><td class="num">0.675</td><td class="num">27/40</td><td class="num">0.525</td><td class="num">21/40</td><td class="num neg">−0.150</td></tr>
+        <tr><td>cross_domain</td><td class="cond">best_persona</td><td class="num">0.500</td><td class="num">20/40</td><td class="num">0.400</td><td class="num">16/40</td><td class="num neg">−0.100</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>persona 对抗效果 Δ(no − best)</h3>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>域</th><th class="num">gpt-4.1 Δ</th><th class="num">deepseek Δ</th><th class="num">差值</th></tr></thead>
+      <tbody>
+        <tr><td>delivery</td><td class="num pos">+0.200</td><td class="num pos">+0.175</td><td class="num">−0.025</td></tr>
+        <tr><td>instore</td><td class="num pos">+0.225</td><td class="num pos">+0.225</td><td class="num">0.000</td></tr>
+        <tr><td>ota</td><td class="num pos">+0.325</td><td class="num pos">+0.225</td><td class="num">−0.100</td></tr>
+        <tr><td>cross_domain</td><td class="num pos">+0.175</td><td class="num pos">+0.125</td><td class="num">−0.050</td></tr>
+        <tr><td><b>4 域均值</b></td><td class="num pos"><b>+0.231</b></td><td class="num pos"><b>+0.187</b></td><td class="num">−0.044</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted);">fully_correct 合计：gpt-4.1 no 127/160、best 90/160；deepseek no 113/160、best 83/160。</p>
+
+  <h2>三个发现</h2>
+  <div class="findings">
+    <div class="finding">
+      <h3><span class="tag">发现 1</span>deepseek judge 一致地比 gpt-4.1 更严</h3>
+      <p>8/8 条件差值全为负（−0.025 ~ −0.150），无任何条件下 deepseek 更宽松。复杂域差距最大：cross_domain no −0.150、ota no −0.125；简单域（instore）几乎一致（−0.025）。任务越复杂、对话越长，两 judge 分歧越大。</p>
+    </div>
+    <div class="finding">
+      <h3><span class="tag">发现 2</span>persona 对抗效果在 deepseek 下完全成立</h3>
+      <p>4 域 Δ(no−best) 全为正（+0.125 ~ +0.225）。针对 gpt-5.4 搜出的对抗式 persona，换 deepseek 当裁判依然让 agent reward 显著下降。instore 完全一致（0.225），delivery 几乎一致（0.200 vs 0.175）。</p>
+    </div>
+    <div class="finding">
+      <h3><span class="tag">发现 3</span>换 evaluator 不改变 V2 任何结论方向</h3>
+      <p>persona 有效（Δ&gt;0）、4 域泛化、reward 下降合法——在 deepseek judge 下全部成立。deepseek 下 Δ 幅度略小（均值 0.187 vs 0.231）：deepseek 对 no_persona 压低更多（−0.088）而对 best_persona 压低较少（−0.044），两端不对称压缩使 Δ 收窄，但方向与显著性不变。</p>
+    </div>
+  </div>
+
+  <h2>caveat</h2>
+  <div class="caveat">
+    <h3>1. judge 随机性</h3>
+    <p>evaluator 调用带 temperature=1.0，同 trace 两次 re-judge 波动 ±0.05~0.075（delivery no_persona gpt-4.1 一次 0.750、一次 0.825）。简单域差距接近噪声，但 4 域 8 条件<b>一致偏严</b> + 复杂域差距大，说明系统性偏严真实存在。</p>
+  </div>
+  <div class="caveat">
+    <h3>2. 代表 trial vs 3-trial 聚合</h3>
+    <p>re-judge 基于 V2 保存的每 task 1 个代表 trial，V2 <code>test_report.json</code> 是 3-trial 聚合，绝对分数不直接可比（代表 trial 比聚合乐观）。本报告 gpt-4.1 vs deepseek 对比在同批代表 trial 上进行，<b>消除该差异</b>，纯反映 judge 效应。</p>
+  </div>
+  <div class="caveat">
+    <h3>3. 离线 re-judge ≠ deepseek 当 agent</h3>
+    <p>对话内容是 V2 的 gpt-5.4 high 产出，deepseek 只评分不参与仿真。"deepseek 当 agent"是另一回事（此前误跑：deepseek 当 agent 在 delivery 拿 0.992，那是 agent 角色，非本报告范畴）。</p>
+  </div>
+
+  <h2>代码与数据</h2>
+  <ul class="tight">
+    <li><code>scripts/vita_rejudge_deepseek.py</code> — re-judge 驱动（双 judge 同 batch 打分）</li>
+    <li><code>openai_to_fireworks_proxy.py</code>（:4114）— OpenAI↔Anthropic shim + roundrobin + backoff + rate limiter</li>
+    <li><code>src/vita/utils/utils.py</code> — <code>evaluator_extracter</code> graceful 修复</li>
+    <li><code>VITABENCH_DS_EVAL_REJUDGE.md</code> — 本报告 markdown 版</li>
+  </ul>
+  <p style="font-size:13px;color:var(--muted);">数据：<code>data/persona_opt/vita_pgepa_runs/run_{delivery,instore,ota,crossdomain}_v2/rejudge_report_dseval.json</code> · <code>rejudge_summary_dseval.json</code></p>
+
+  <footer>
+    系列：VITABENCH_4DOMAIN_RESULTS（gpt-4.1 judge，3-trial 聚合）· 本篇 VITABENCH_DS_EVAL_REJUDGE（deepseek judge，代表 trial re-judge）<br>
+    运行：<code class="mono">python scripts/vita_rejudge_deepseek.py --domains delivery,instore,ota,cross_domain --max-concurrency 20 --suffix dseval</code>
+  </footer>
+</div>

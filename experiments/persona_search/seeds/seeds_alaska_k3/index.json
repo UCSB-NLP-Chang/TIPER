@@ -1,0 +1,26 @@
+[
+  {
+    "cluster": 0,
+    "name": "Task-Focused Impatient",
+    "effect": "HARMS the task",
+    "n": 1504,
+    "frac": 0.635,
+    "seed_file": "data/persona_opt/seeds_alaska_k3/brinks_00_task_focused_impatient/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Practical & Polite",
+    "effect": "HELPS the task",
+    "n": 530,
+    "frac": 0.224,
+    "seed_file": "data/persona_opt/seeds_alaska_k3/brinks_01_practical_polite/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Friendly Detail-Seeker",
+    "effect": "HELPS the task",
+    "n": 334,
+    "frac": 0.141,
+    "seed_file": "data/persona_opt/seeds_alaska_k3/brinks_02_friendly_detail_seeker/gen_00.md"
+  }
+]

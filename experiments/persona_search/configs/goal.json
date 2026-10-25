@@ -1,0 +1,44 @@
+{
+  "objective": "minimize_agent_success",
+  "_comment_objective": "Find VALID user personas that drive the GPT-5.4 agent's tau2-bench success rate as low as possible. Lower avg_success_rate = harder = better.",
+
+  "target_flavor": "FREE EXPLORATION — any realistic, valid difficult customer that makes the task harder for the agent. Do not fixate on one archetype; roam across behavioral directions (impatience, fragmentary disclosure, skepticism, ambiguity, low domain familiarity, heavy confirmation needs, etc.) while always staying judge-valid.",
+
+  "models": {
+    "agent": {"llm": "gpt-5.4", "args": {"reasoning_effort": "high"}},
+    "user": {"type": "cc_user", "llm": "claude-opus-4-7", "effort": "xhigh", "use_bedrock": true,
+             "bedrock_profile": "us-west-2-staging_dev"}
+  },
+
+  "evaluation": {
+    "representative_set": "data/tau2/representative_tasks_agg_min.json",
+    "n_tasks": 30,
+    "domains": {"telecom": 23, "banking_knowledge": 7},
+    "banking_retrieval_config": "terminal_use",
+    "num_trials": 1
+  },
+
+  "validity": {
+    "judge": "scripts/judge_user_intent_preservation.py",
+    "rule": "illegal if severe_failure_rate > 0.05; rate = severe_failures / n_scored (ALL non-infra sims)",
+    "threshold": 0.05,
+    "maj": 3,
+    "judge_only_failures": true,
+    "max_failures": 10,
+    "_comment_pruning": "A severe failure can only occur in a sim the agent FAILED; successful sims are 'ok' by construction. So judge only failed sims (reward<0.999), worst-first, capped at max_failures per persona, but divide severe count by the FULL scored-sim count so the 0.05 threshold keeps its meaning."
+  },
+
+  "selection": {"n_per_round": 3, "rule": "exclude illegal; prefer untested; fill with valid by ascending avg_success_rate"},
+
+  "mutation": {
+    "author": "claude_code",
+    "children_per_round": 3,
+    "rewrite_fraction": 0.30,
+    "dedup": {"sim_method": "embed", "cos_threshold": 0.92, "illegal_threshold": 0.85, "max_retries_per_child": 5}
+  },
+
+  "stop": {"min_delta_success_rate": 0.01, "patience": 3},
+
+  "seed_personas": ["suspicious-withholding", "concise-trusting", "distracted-rambler"],
+  "_comment_seed": "Randomly picked from the 5 existing cc_user_sim/personas; round-0 untested set."
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "cluster": 0,
+    "name": "Polite & Persistent",
+    "effect": "HELPS the task",
+    "n": 309,
+    "frac": 0.13,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_00_polite_persistent/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Direct & Persistent",
+    "effect": "HELPS the task",
+    "n": 100,
+    "frac": 0.042,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_01_direct_persistent/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Inquisitive Planner",
+    "effect": "HELPS the task",
+    "n": 247,
+    "frac": 0.104,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_02_inquisitive_planner/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Polite Guided Fixer",
+    "effect": "HELPS the task",
+    "n": 761,
+    "frac": 0.321,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_03_polite_guided_fixer/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Polite Confirming",
+    "effect": "HELPS the task",
+    "n": 131,
+    "frac": 0.055,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_04_polite_confirming/gen_00.md"
+  },
+  {
+    "cluster": 5,
+    "name": "Minimal & Cooperative",
+    "effect": "HELPS the task",
+    "n": 7,
+    "frac": 0.003,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_05_minimal_cooperative/gen_00.md"
+  },
+  {
+    "cluster": 6,
+    "name": "Polite Task-Focused",
+    "effect": "HELPS the task",
+    "n": 20,
+    "frac": 0.008,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_06_polite_task_focused/gen_00.md"
+  },
+  {
+    "cluster": 7,
+    "name": "Efficient & Cooperative",
+    "effect": "HELPS the task",
+    "n": 367,
+    "frac": 0.155,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_07_efficient_cooperative/gen_00.md"
+  },
+  {
+    "cluster": 8,
+    "name": "Direct & Demanding",
+    "effect": "HARMS the task",
+    "n": 40,
+    "frac": 0.017,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_08_direct_demanding/gen_00.md"
+  },
+  {
+    "cluster": 9,
+    "name": "Terse & Impatient",
+    "effect": "HARMS the task",
+    "n": 386,
+    "frac": 0.163,
+    "seed_file": "data/persona_opt/seeds_alaska_k10/brinks_09_terse_impatient/gen_00.md"
+  }
+]

@@ -1,0 +1,1489 @@
+{
+  "categories": {
+    "credit_card_inquiry": [
+      "task_001",
+      "task_002",
+      "task_003",
+      "task_006",
+      "task_007",
+      "task_023",
+      "task_024",
+      "task_025"
+    ],
+    "human_transfer": [
+      "task_004",
+      "task_008",
+      "task_012",
+      "task_014",
+      "task_034"
+    ],
+    "mixed_complex": [
+      "task_005",
+      "task_026",
+      "task_028",
+      "task_031",
+      "task_032",
+      "task_033",
+      "task_035",
+      "task_037",
+      "task_038",
+      "task_039",
+      "task_040",
+      "task_041",
+      "task_044",
+      "task_047",
+      "task_048",
+      "task_049",
+      "task_053",
+      "task_055",
+      "task_057",
+      "task_058",
+      "task_059",
+      "task_061",
+      "task_063",
+      "task_064",
+      "task_066",
+      "task_067",
+      "task_068",
+      "task_069",
+      "task_078",
+      "task_079",
+      "task_081",
+      "task_088",
+      "task_092",
+      "task_099",
+      "task_100"
+    ],
+    "referral_program": [
+      "task_010",
+      "task_098",
+      "task_101",
+      "task_102"
+    ],
+    "discoverable_user_tool": [
+      "task_015",
+      "task_017",
+      "task_018",
+      "task_019",
+      "task_020",
+      "task_021",
+      "task_022",
+      "task_027",
+      "task_029"
+    ],
+    "account_management": [
+      "task_016"
+    ],
+    "discoverable_agent_tool": [
+      "task_036",
+      "task_043",
+      "task_045",
+      "task_046",
+      "task_050",
+      "task_051",
+      "task_052",
+      "task_054",
+      "task_056",
+      "task_060",
+      "task_062",
+      "task_065",
+      "task_070",
+      "task_071",
+      "task_072",
+      "task_073",
+      "task_074",
+      "task_075",
+      "task_076",
+      "task_077",
+      "task_080",
+      "task_082",
+      "task_083",
+      "task_084",
+      "task_085",
+      "task_086",
+      "task_087",
+      "task_089",
+      "task_090",
+      "task_091",
+      "task_093",
+      "task_094",
+      "task_095",
+      "task_096",
+      "task_097"
+    ]
+  },
+  "task_metadata": {
+    "task_001": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 4
+    },
+    "task_002": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 6
+    },
+    "task_003": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 5
+    },
+    "task_004": {
+      "category": "human_transfer",
+      "action_count": 1,
+      "unique_actions": [
+        "transfer_to_human_agents"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 1
+    },
+    "task_005": {
+      "category": "mixed_complex",
+      "action_count": 3,
+      "unique_actions": [
+        "change_user_email",
+        "log_verification",
+        "transfer_to_human_agents"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 1
+    },
+    "task_006": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 6
+    },
+    "task_007": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 4
+    },
+    "task_008": {
+      "category": "human_transfer",
+      "action_count": 1,
+      "unique_actions": [
+        "transfer_to_human_agents"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 6
+    },
+    "task_010": {
+      "category": "referral_program",
+      "action_count": 2,
+      "unique_actions": [
+        "log_verification",
+        "submit_referral"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "submit_referral"
+      ],
+      "required_documents": 2
+    },
+    "task_012": {
+      "category": "human_transfer",
+      "action_count": 1,
+      "unique_actions": [
+        "transfer_to_human_agents"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 1
+    },
+    "task_014": {
+      "category": "human_transfer",
+      "action_count": 1,
+      "unique_actions": [
+        "transfer_to_human_agents"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 5
+    },
+    "task_015": {
+      "category": "discoverable_user_tool",
+      "action_count": 2,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 5
+    },
+    "task_016": {
+      "category": "account_management",
+      "action_count": 2,
+      "unique_actions": [
+        "log_verification",
+        "submit_transaction"
+      ],
+      "user_tools": [
+        "submit_transaction",
+        "apply_for_credit_card"
+      ],
+      "required_documents": 3
+    },
+    "task_017": {
+      "category": "discoverable_user_tool",
+      "action_count": 4,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 4
+    },
+    "task_018": {
+      "category": "discoverable_user_tool",
+      "action_count": 8,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 10
+    },
+    "task_019": {
+      "category": "discoverable_user_tool",
+      "action_count": 6,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 6
+    },
+    "task_020": {
+      "category": "discoverable_user_tool",
+      "action_count": 6,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 8
+    },
+    "task_021": {
+      "category": "discoverable_user_tool",
+      "action_count": 4,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 8
+    },
+    "task_022": {
+      "category": "discoverable_user_tool",
+      "action_count": 12,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 13
+    },
+    "task_023": {
+      "category": "credit_card_inquiry",
+      "action_count": 2,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 5
+    },
+    "task_024": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 6
+    },
+    "task_025": {
+      "category": "credit_card_inquiry",
+      "action_count": 1,
+      "unique_actions": [
+        "apply_for_credit_card"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 10
+    },
+    "task_026": {
+      "category": "mixed_complex",
+      "action_count": 11,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 8
+    },
+    "task_027": {
+      "category": "discoverable_user_tool",
+      "action_count": 6,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 8
+    },
+    "task_028": {
+      "category": "mixed_complex",
+      "action_count": 15,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 11
+    },
+    "task_029": {
+      "category": "discoverable_user_tool",
+      "action_count": 8,
+      "unique_actions": [
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 10
+    },
+    "task_031": {
+      "category": "mixed_complex",
+      "action_count": 5,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 3
+    },
+    "task_032": {
+      "category": "mixed_complex",
+      "action_count": 5,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 1
+    },
+    "task_033": {
+      "category": "mixed_complex",
+      "action_count": 5,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 1
+    },
+    "task_034": {
+      "category": "human_transfer",
+      "action_count": 9,
+      "unique_actions": [
+        "request_human_agent_transfer",
+        "transfer_to_human_agents"
+      ],
+      "user_tools": [
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 2
+    },
+    "task_035": {
+      "category": "mixed_complex",
+      "action_count": 3,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 1
+    },
+    "task_036": {
+      "category": "discoverable_agent_tool",
+      "action_count": 3,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 1
+    },
+    "task_037": {
+      "category": "mixed_complex",
+      "action_count": 8,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 4
+    },
+    "task_038": {
+      "category": "mixed_complex",
+      "action_count": 9,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 4
+    },
+    "task_039": {
+      "category": "mixed_complex",
+      "action_count": 16,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 5
+    },
+    "task_040": {
+      "category": "mixed_complex",
+      "action_count": 15,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 4
+    },
+    "task_041": {
+      "category": "mixed_complex",
+      "action_count": 25,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 4
+    },
+    "task_043": {
+      "category": "discoverable_agent_tool",
+      "action_count": 15,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 7
+    },
+    "task_044": {
+      "category": "mixed_complex",
+      "action_count": 10,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 6
+    },
+    "task_045": {
+      "category": "discoverable_agent_tool",
+      "action_count": 15,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 11
+    },
+    "task_046": {
+      "category": "discoverable_agent_tool",
+      "action_count": 3,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 3
+    },
+    "task_047": {
+      "category": "mixed_complex",
+      "action_count": 15,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 12
+    },
+    "task_048": {
+      "category": "mixed_complex",
+      "action_count": 24,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 10
+    },
+    "task_049": {
+      "category": "mixed_complex",
+      "action_count": 19,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "request_human_agent_transfer",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 8
+    },
+    "task_050": {
+      "category": "discoverable_agent_tool",
+      "action_count": 13,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 6
+    },
+    "task_051": {
+      "category": "discoverable_agent_tool",
+      "action_count": 20,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 7
+    },
+    "task_052": {
+      "category": "discoverable_agent_tool",
+      "action_count": 13,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 7
+    },
+    "task_053": {
+      "category": "mixed_complex",
+      "action_count": 16,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 9
+    },
+    "task_054": {
+      "category": "discoverable_agent_tool",
+      "action_count": 17,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 9
+    },
+    "task_055": {
+      "category": "mixed_complex",
+      "action_count": 8,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 8
+    },
+    "task_056": {
+      "category": "discoverable_agent_tool",
+      "action_count": 8,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 12
+    },
+    "task_057": {
+      "category": "mixed_complex",
+      "action_count": 7,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 5
+    },
+    "task_058": {
+      "category": "mixed_complex",
+      "action_count": 4,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 5
+    },
+    "task_059": {
+      "category": "mixed_complex",
+      "action_count": 6,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 5
+    },
+    "task_060": {
+      "category": "discoverable_agent_tool",
+      "action_count": 7,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 10
+    },
+    "task_061": {
+      "category": "mixed_complex",
+      "action_count": 9,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "call_discoverable_user_tool",
+        "give_discoverable_user_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 12
+    },
+    "task_062": {
+      "category": "discoverable_agent_tool",
+      "action_count": 13,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 16
+    },
+    "task_063": {
+      "category": "mixed_complex",
+      "action_count": 4,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 13
+    },
+    "task_064": {
+      "category": "mixed_complex",
+      "action_count": 4,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 16
+    },
+    "task_065": {
+      "category": "discoverable_agent_tool",
+      "action_count": 6,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 23
+    },
+    "task_066": {
+      "category": "mixed_complex",
+      "action_count": 9,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 15
+    },
+    "task_067": {
+      "category": "mixed_complex",
+      "action_count": 9,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 17
+    },
+    "task_068": {
+      "category": "mixed_complex",
+      "action_count": 7,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 16
+    },
+    "task_069": {
+      "category": "mixed_complex",
+      "action_count": 7,
+      "unique_actions": [
+        "apply_for_credit_card",
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card"
+      ],
+      "required_documents": 19
+    },
+    "task_070": {
+      "category": "discoverable_agent_tool",
+      "action_count": 5,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 16
+    },
+    "task_071": {
+      "category": "discoverable_agent_tool",
+      "action_count": 6,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 30
+    },
+    "task_072": {
+      "category": "discoverable_agent_tool",
+      "action_count": 9,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 9
+    },
+    "task_073": {
+      "category": "discoverable_agent_tool",
+      "action_count": 11,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 10
+    },
+    "task_074": {
+      "category": "discoverable_agent_tool",
+      "action_count": 13,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 13
+    },
+    "task_075": {
+      "category": "discoverable_agent_tool",
+      "action_count": 3,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 25
+    },
+    "task_076": {
+      "category": "discoverable_agent_tool",
+      "action_count": 3,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 24
+    },
+    "task_077": {
+      "category": "discoverable_agent_tool",
+      "action_count": 23,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 12
+    },
+    "task_078": {
+      "category": "mixed_complex",
+      "action_count": 21,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "get_credit_card_accounts_by_user",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 11
+    },
+    "task_079": {
+      "category": "mixed_complex",
+      "action_count": 24,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "get_credit_card_accounts_by_user",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [],
+      "required_documents": 11
+    },
+    "task_080": {
+      "category": "discoverable_agent_tool",
+      "action_count": 30,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool"
+      ],
+      "required_documents": 19
+    },
+    "task_081": {
+      "category": "mixed_complex",
+      "action_count": 33,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "request_human_agent_transfer",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "apply_for_credit_card",
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 13
+    },
+    "task_082": {
+      "category": "discoverable_agent_tool",
+      "action_count": 15,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 12
+    },
+    "task_083": {
+      "category": "discoverable_agent_tool",
+      "action_count": 10,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 7
+    },
+    "task_084": {
+      "category": "discoverable_agent_tool",
+      "action_count": 12,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 10
+    },
+    "task_085": {
+      "category": "discoverable_agent_tool",
+      "action_count": 10,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 7
+    },
+    "task_086": {
+      "category": "discoverable_agent_tool",
+      "action_count": 18,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 14
+    },
+    "task_087": {
+      "category": "discoverable_agent_tool",
+      "action_count": 20,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 10
+    },
+    "task_088": {
+      "category": "mixed_complex",
+      "action_count": 17,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 14
+    },
+    "task_089": {
+      "category": "discoverable_agent_tool",
+      "action_count": 13,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 10
+    },
+    "task_090": {
+      "category": "discoverable_agent_tool",
+      "action_count": 16,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 12
+    },
+    "task_091": {
+      "category": "discoverable_agent_tool",
+      "action_count": 25,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 13
+    },
+    "task_092": {
+      "category": "mixed_complex",
+      "action_count": 21,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "transfer_to_human_agents",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 12
+    },
+    "task_093": {
+      "category": "discoverable_agent_tool",
+      "action_count": 9,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 11
+    },
+    "task_094": {
+      "category": "discoverable_agent_tool",
+      "action_count": 9,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 13
+    },
+    "task_095": {
+      "category": "discoverable_agent_tool",
+      "action_count": 9,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 15
+    },
+    "task_096": {
+      "category": "discoverable_agent_tool",
+      "action_count": 12,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 23
+    },
+    "task_097": {
+      "category": "discoverable_agent_tool",
+      "action_count": 18,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "request_human_agent_transfer"
+      ],
+      "required_documents": 25
+    },
+    "task_098": {
+      "category": "referral_program",
+      "action_count": 3,
+      "unique_actions": [
+        "get_referrals_by_user",
+        "log_verification",
+        "submit_referral"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "submit_referral"
+      ],
+      "required_documents": 19
+    },
+    "task_099": {
+      "category": "mixed_complex",
+      "action_count": 5,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "get_referrals_by_user",
+        "log_verification",
+        "submit_referral",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "submit_referral"
+      ],
+      "required_documents": 12
+    },
+    "task_100": {
+      "category": "mixed_complex",
+      "action_count": 4,
+      "unique_actions": [
+        "call_discoverable_agent_tool",
+        "log_verification",
+        "submit_referral",
+        "unlock_discoverable_agent_tool"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "submit_referral"
+      ],
+      "required_documents": 12
+    },
+    "task_101": {
+      "category": "referral_program",
+      "action_count": 4,
+      "unique_actions": [
+        "get_referrals_by_user",
+        "log_verification",
+        "submit_referral"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "submit_referral"
+      ],
+      "required_documents": 21
+    },
+    "task_102": {
+      "category": "referral_program",
+      "action_count": 3,
+      "unique_actions": [
+        "get_referrals_by_user",
+        "log_verification",
+        "submit_referral"
+      ],
+      "user_tools": [
+        "call_discoverable_user_tool",
+        "submit_referral"
+      ],
+      "required_documents": 21
+    }
+  },
+  "summary": {
+    "mixed_complex": {
+      "count": 35,
+      "percentage": 36.1,
+      "samples": [
+        "task_005",
+        "task_026",
+        "task_028",
+        "task_031",
+        "task_032"
+      ]
+    },
+    "discoverable_agent_tool": {
+      "count": 35,
+      "percentage": 36.1,
+      "samples": [
+        "task_036",
+        "task_043",
+        "task_045",
+        "task_046",
+        "task_050"
+      ]
+    },
+    "discoverable_user_tool": {
+      "count": 9,
+      "percentage": 9.3,
+      "samples": [
+        "task_015",
+        "task_017",
+        "task_018",
+        "task_019",
+        "task_020"
+      ]
+    },
+    "credit_card_inquiry": {
+      "count": 8,
+      "percentage": 8.2,
+      "samples": [
+        "task_001",
+        "task_002",
+        "task_003",
+        "task_006",
+        "task_007"
+      ]
+    },
+    "human_transfer": {
+      "count": 5,
+      "percentage": 5.2,
+      "samples": [
+        "task_004",
+        "task_008",
+        "task_012",
+        "task_014",
+        "task_034"
+      ]
+    },
+    "referral_program": {
+      "count": 4,
+      "percentage": 4.1,
+      "samples": [
+        "task_010",
+        "task_098",
+        "task_101",
+        "task_102"
+      ]
+    },
+    "account_management": {
+      "count": 1,
+      "percentage": 1.0,
+      "samples": [
+        "task_016"
+      ]
+    }
+  }
+}

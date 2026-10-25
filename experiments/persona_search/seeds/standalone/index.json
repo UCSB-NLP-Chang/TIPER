@@ -1,0 +1,42 @@
+[
+  {
+    "cluster": 0,
+    "name": "Terse & Blunt",
+    "effect": "HELPS the task",
+    "n": 469,
+    "frac": 0.366,
+    "seed_file": "persona_opt_standalone/seeds/brinks_00_terse_blunt/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Terse & Erratic",
+    "effect": "HELPS the task",
+    "n": 430,
+    "frac": 0.335,
+    "seed_file": "persona_opt_standalone/seeds/brinks_01_terse_erratic/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Front-loading & Terse",
+    "effect": "HELPS the task",
+    "n": 110,
+    "frac": 0.086,
+    "seed_file": "persona_opt_standalone/seeds/brinks_02_front_loading_terse/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Verbose & Polite",
+    "effect": "HARMS the task",
+    "n": 224,
+    "frac": 0.175,
+    "seed_file": "persona_opt_standalone/seeds/brinks_03_verbose_polite/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Confused & Drip-feeding",
+    "effect": "HARMS the task",
+    "n": 49,
+    "frac": 0.038,
+    "seed_file": "persona_opt_standalone/seeds/brinks_04_confused_drip_feeding/gen_00.md"
+  }
+]

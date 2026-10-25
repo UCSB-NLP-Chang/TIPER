@@ -1,0 +1,58 @@
+[
+  {
+    "cluster": 0,
+    "name": "Polite Goal-Focused",
+    "effect": "HELPS the task",
+    "n": 403,
+    "frac": 0.17,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_00_polite_goal_focused/gen_00.md"
+  },
+  {
+    "cluster": 1,
+    "name": "Polite Task-Finisher",
+    "effect": "HELPS the task",
+    "n": 133,
+    "frac": 0.056,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_01_polite_task_finisher/gen_00.md"
+  },
+  {
+    "cluster": 2,
+    "name": "Curious & Courteous",
+    "effect": "HELPS the task",
+    "n": 275,
+    "frac": 0.116,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_02_curious_courteous/gen_00.md"
+  },
+  {
+    "cluster": 3,
+    "name": "Direct & Impatient",
+    "effect": "HARMS the task",
+    "n": 1124,
+    "frac": 0.475,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_03_direct_impatient/gen_00.md"
+  },
+  {
+    "cluster": 4,
+    "name": "Practical & Clarifying",
+    "effect": "HELPS the task",
+    "n": 377,
+    "frac": 0.159,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_04_practical_clarifying/gen_00.md"
+  },
+  {
+    "cluster": 5,
+    "name": "Brief & Compliant",
+    "effect": "HELPS the task",
+    "n": 7,
+    "frac": 0.003,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_05_brief_compliant/gen_00.md"
+  },
+  {
+    "cluster": 6,
+    "name": "Polite Task-Finisher",
+    "effect": "HELPS the task",
+    "n": 49,
+    "frac": 0.021,
+    "seed_file": "data/persona_opt/seeds_alaska_k7/brinks_06_polite_task_finisher/gen_00.md"
+  }
+]

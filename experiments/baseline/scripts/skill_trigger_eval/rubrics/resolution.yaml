@@ -1,0 +1,31 @@
+skill: resolution
+description: >
+  The user simulator should react when the user's issue has been genuinely resolved.
+  Resolution must be confirmed by tool results or clear evidence, not just the agent's claim.
+
+positive_conditions:
+  telecom:
+    - Speed test returned "excellent" or issue-specific success signal
+    - Signal strength confirmed as strong/excellent
+    - Service successfully activated, configured, or restored
+  banking:
+    - Transaction posted, fee reversed, account unlocked
+    - Dispute filed, card reissued, transfer completed
+    - Clear final answer given to an informational query
+  general:
+    - Tool result confirms resolution, not just agent's claim
+    - The resolution addresses the user's ORIGINAL complaint
+
+negative_conditions:
+  - Agent claims resolved but no tool confirmation
+  - Partial progress (e.g., speed is "good" not "excellent" for telecom)
+  - Issue is resolved for a different problem than the user's original complaint
+  - Agent says "this should fix it" without verification
+
+required_evidence:
+  - Quote the resolution signal (tool result or agent confirmation)
+  - Confirm it matches the user's original issue
+
+canonicalization: >
+  resolution and resolution-banking are the same skill adapted for different domains.
+  In metrics, they are unified as "resolution" with domain tracked separately.
