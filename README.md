@@ -1,5 +1,9 @@
-# tau2bench_clean — Adversarial Persona Search Research Monorepo
+# TIPER — Adversarial Persona Search Research Monorepo
 
+> Code for the paper **[Uncovering Robustness Weaknesses in LLM Agents via Persona
+> Evolution with Task-Integrity Constraints](https://arxiv.org/pdf/2610.16155)**
+> ([arXiv:2610.16155](https://arxiv.org/abs/2610.16155)).
+>
 > A code-first research monorepo built on the [τ²-bench](https://arxiv.org/abs/2506.07982)
 > simulation framework. Reusable packages in `src/`, runnable studies in `experiments/`,
 > versioned inputs in `datasets/`, third-party benchmarks in `vendor/`, and
@@ -8,13 +12,13 @@
 
 [![python](https://img.shields.io/badge/Python-3.12%2B-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![arXiv](https://img.shields.io/badge/cs.AI-arXiv%3A2506.07982-B31B1B.svg?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2506.07982)
+[![arXiv](https://img.shields.io/badge/cs.AI-arXiv%3A2610.16155-B31B1B.svg?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2610.16155)
 
 ## Overview
 
-This repo researches **adversarial user-persona search**: finding user simulator
-personas that reliably make a target agent fail, while staying realistic (natural,
-non-fabricating). The core engine is **pgepa** (parallel-generational GEPA), a
+This repo implements **TIPER**: adversarial user-persona search — finding user
+simulator personas that reliably make a target agent fail, while staying
+realistic (natural, non-fabricating). The core engine is **pgepa** (parallel-generational GEPA), a
 genetic search that mutates personas via an LLM proposer and selects on a
 difficulty objective (1 − agent reward), gated by a validity judge that rejects
 task-sabotaging / fabricating personas.
@@ -279,7 +283,21 @@ place under `vendor/sweet_rl/data/`.
 
 ## Citation
 
-If you use the framework, please cite the τ²-bench paper:
+If you use this repo or the persona-evolution methodology, please cite the TIPER paper:
+
+```bibtex
+@misc{xie2026tiper,
+  title={Uncovering Robustness Weaknesses in LLM Agents via Persona Evolution with Task-Integrity Constraints},
+  author={Yutao Xie and Jingbo Yang and Guanyu Yao and Xiaoyu Yang and Duo Ding and Shiyu Chang},
+  year={2026},
+  eprint={2610.16155},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2610.16155}
+}
+```
+
+If you use the underlying simulation framework, please also cite τ²-bench:
 
 ```bibtex
 @misc{barres2025tau2,
