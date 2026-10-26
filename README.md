@@ -7,8 +7,7 @@
 > A code-first research monorepo built on the [τ²-bench](https://arxiv.org/abs/2506.07982)
 > simulation framework. Reusable packages in `src/`, runnable studies in `experiments/`,
 > versioned inputs in `datasets/`, third-party benchmarks in `vendor/`, and
-> model-routing shims in `services/`. Generated/private
-> data (40G trajectories) lives outside git — see [Data & trajectories](#data--trajectories).
+> model-routing shims in `services/`.
 
 [![python](https://img.shields.io/badge/Python-3.12%2B-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -247,27 +246,14 @@ tau2 run --domain airline --agent llm_agent --agent-llm gpt-4.1 \
 
 Results → `$TAU2BENCH_DATA_ROOT/artifacts/simulations/`. `tau2 view` to browse.
 
-## Data & Trajectories
+## Data
 
 This repo is **code-only** for experiment outputs. Framework sim inputs
-(`datasets/tau2/` 173M) are self-contained, but the 40G of search/cert
-**trajectories** are not in git. To use trajectory-dependent scripts:
+(`datasets/tau2/` 173M) are self-contained.
 
-```bash
-# point at a workspace that has the trajectories
-export TAU2BENCH_DATA_ROOT=/path/to/tau2bench_data_workspace
-```
-
-Trajectories are archived as `main_trajectories.tar.zst` (3.3G → 36.9G, zstd -19).
-Decompress:
-
-```bash
-zstd -dc main_trajectories.tar.zst | tar -xf -   # in the workspace root
-```
-
-ColBench task data (`sweet_rl/data/backend_tasks/`) is also not vendored — obtain
-from the [sweet_rl/ColBench](https://github.com/MAGA-Lian/sweet_rl) project and
-place under `vendor/sweet_rl/data/`.
+ColBench task data (`vendor/sweet_rl/data/backend_tasks/`) is not vendored —
+obtain from the [sweet_rl/ColBench](https://github.com/MAGA-Lian/sweet_rl)
+project and place under `vendor/sweet_rl/data/`.
 
 ## Documentation
 
@@ -294,19 +280,5 @@ If you use this repo or the persona-evolution methodology, please cite the TIPER
   archivePrefix={arXiv},
   primaryClass={cs.AI},
   url={https://arxiv.org/abs/2610.16155}
-}
-```
-
-If you use the underlying simulation framework, please also cite τ²-bench:
-
-```bibtex
-@misc{barres2025tau2,
-  title={$\tau^2$-Bench: Evaluating Conversational Agents in a Dual-Control Environment},
-  author={Victor Barres and Honghua Dong and Soham Ray and Xujie Si and Karthik Narasimhan},
-  year={2025},
-  eprint={2506.07982},
-  archivePrefix={arXiv},
-  primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2506.07982}
 }
 ```
